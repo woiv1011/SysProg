@@ -1,0 +1,1514 @@
+Token Integer             Line:       1    Column:       3    Value: 1
+Token Identifier          Line:       1    Column:       6    Lexem: x01
+Token BraceRoundOpen      Line:       1    Column:      10
+Token Integer             Line:       1    Column:      11    Value: 0
+Token Identifier          Line:       1    Column:      12    Lexem: x01
+Token BraceRoundClose     Line:       1    Column:      15
+Token Integer             Line:       1    Column:      18    Value: 1
+Token BraceRoundOpen      Line:       1    Column:      22
+Token Integer             Line:       1    Column:      23    Value: 1
+Token BraceRoundClose     Line:       1    Column:      27
+Token Integer             Line:       1    Column:      36    Value: 1
+Token Identifier          Line:       1    Column:      42    Lexem: A
+Token Integer             Line:       2    Column:       3    Value: 2
+Token Identifier          Line:       2    Column:       6    Lexem: x02
+Token BraceRoundOpen      Line:       2    Column:      10
+Token Integer             Line:       2    Column:      11    Value: 0
+Token Identifier          Line:       2    Column:      12    Lexem: x02
+Token BraceRoundClose     Line:       2    Column:      15
+Token Integer             Line:       2    Column:      18    Value: 2
+Token BraceRoundOpen      Line:       2    Column:      22
+Token Integer             Line:       2    Column:      23    Value: 2
+Token BraceRoundClose     Line:       2    Column:      27
+Token Integer             Line:       2    Column:      35    Value: 10
+Token Identifier          Line:       2    Column:      42    Lexem: B
+Token Integer             Line:       3    Column:       3    Value: 3
+Token Identifier          Line:       3    Column:       6    Lexem: x03
+Token BraceRoundOpen      Line:       3    Column:      10
+Token Integer             Line:       3    Column:      11    Value: 0
+Token Identifier          Line:       3    Column:      12    Lexem: x03
+Token BraceRoundClose     Line:       3    Column:      15
+Token Integer             Line:       3    Column:      18    Value: 3
+Token BraceRoundOpen      Line:       3    Column:      22
+Token Integer             Line:       3    Column:      23    Value: 3
+Token BraceRoundClose     Line:       3    Column:      27
+Token Integer             Line:       3    Column:      35    Value: 11
+Token Identifier          Line:       3    Column:      42    Lexem: C
+Token Integer             Line:       4    Column:       3    Value: 4
+Token Identifier          Line:       4    Column:       6    Lexem: x04
+Token BraceRoundOpen      Line:       4    Column:      10
+Token Integer             Line:       4    Column:      11    Value: 0
+Token Identifier          Line:       4    Column:      12    Lexem: x04
+Token BraceRoundClose     Line:       4    Column:      15
+Token Integer             Line:       4    Column:      18    Value: 4
+Token BraceRoundOpen      Line:       4    Column:      22
+Token Integer             Line:       4    Column:      23    Value: 4
+Token BraceRoundClose     Line:       4    Column:      27
+Token Integer             Line:       4    Column:      34    Value: 100
+Token Identifier          Line:       4    Column:      42    Lexem: D
+Token Integer             Line:       5    Column:       3    Value: 5
+Token Identifier          Line:       5    Column:       6    Lexem: x05
+Token BraceRoundOpen      Line:       5    Column:      10
+Token Integer             Line:       5    Column:      11    Value: 0
+Token Identifier          Line:       5    Column:      12    Lexem: x05
+Token BraceRoundClose     Line:       5    Column:      15
+Token Integer             Line:       5    Column:      18    Value: 5
+Token BraceRoundOpen      Line:       5    Column:      22
+Token Integer             Line:       5    Column:      23    Value: 5
+Token BraceRoundClose     Line:       5    Column:      27
+Token Integer             Line:       5    Column:      34    Value: 101
+Token Identifier          Line:       5    Column:      42    Lexem: E
+Token Integer             Line:       6    Column:       3    Value: 6
+Token Identifier          Line:       6    Column:       6    Lexem: x06
+Token BraceRoundOpen      Line:       6    Column:      10
+Token Integer             Line:       6    Column:      11    Value: 0
+Token Identifier          Line:       6    Column:      12    Lexem: x06
+Token BraceRoundClose     Line:       6    Column:      15
+Token Integer             Line:       6    Column:      18    Value: 6
+Token BraceRoundOpen      Line:       6    Column:      22
+Token Integer             Line:       6    Column:      23    Value: 6
+Token BraceRoundClose     Line:       6    Column:      27
+Token Integer             Line:       6    Column:      34    Value: 110
+Token Identifier          Line:       6    Column:      42    Lexem: F
+Token Integer             Line:       7    Column:       3    Value: 7
+Token Identifier          Line:       7    Column:       6    Lexem: x07
+Token BraceRoundOpen      Line:       7    Column:      10
+Token Integer             Line:       7    Column:      11    Value: 0
+Token Identifier          Line:       7    Column:      12    Lexem: x07
+Token BraceRoundClose     Line:       7    Column:      15
+Token Integer             Line:       7    Column:      18    Value: 7
+Token BraceRoundOpen      Line:       7    Column:      22
+Token Integer             Line:       7    Column:      23    Value: 7
+Token BraceRoundClose     Line:       7    Column:      27
+Token Integer             Line:       7    Column:      34    Value: 111
+Token Identifier          Line:       7    Column:      39    Lexem: a
+Token Identifier          Line:       7    Column:      42    Lexem: G
+Token Integer             Line:       8    Column:       3    Value: 8
+Token Identifier          Line:       8    Column:       6    Lexem: x08
+Token BraceRoundOpen      Line:       8    Column:      10
+Token Integer             Line:       8    Column:      11    Value: 0
+Token Identifier          Line:       8    Column:      12    Lexem: x08
+Token BraceRoundClose     Line:       8    Column:      15
+Token Integer             Line:       8    Column:      18    Value: 10
+Token BraceRoundOpen      Line:       8    Column:      22
+Token Integer             Line:       8    Column:      23    Value: 8
+Token BraceRoundClose     Line:       8    Column:      27
+Token Integer             Line:       8    Column:      33    Value: 1000
+Token Identifier          Line:       8    Column:      39    Lexem: b
+Token Identifier          Line:       8    Column:      42    Lexem: H
+Token Integer             Line:       9    Column:       3    Value: 9
+Token Identifier          Line:       9    Column:       6    Lexem: x09
+Token BraceRoundOpen      Line:       9    Column:      10
+Token Integer             Line:       9    Column:      11    Value: 0
+Token Identifier          Line:       9    Column:      12    Lexem: x09
+Token BraceRoundClose     Line:       9    Column:      15
+Token Integer             Line:       9    Column:      18    Value: 11
+Token BraceRoundOpen      Line:       9    Column:      22
+Token Integer             Line:       9    Column:      23    Value: 9
+Token BraceRoundClose     Line:       9    Column:      27
+Token Integer             Line:       9    Column:      33    Value: 1001
+Token Identifier          Line:       9    Column:      39    Lexem: t
+Token Identifier          Line:       9    Column:      42    Lexem: I
+Token Identifier          Line:       9    Column:      44    Lexem: TAB
+Token Integer             Line:      10    Column:       2    Value: 10
+Token Identifier          Line:      10    Column:       6    Lexem: x0A
+Token BraceRoundOpen      Line:      10    Column:      10
+Token Integer             Line:      10    Column:      11    Value: 0
+Token Identifier          Line:      10    Column:      12    Lexem: x0A
+Token BraceRoundClose     Line:      10    Column:      15
+Token Integer             Line:      10    Column:      18    Value: 12
+Token BraceRoundOpen      Line:      10    Column:      22
+Token Integer             Line:      10    Column:      23    Value: 10
+Token BraceRoundClose     Line:      10    Column:      27
+Token Integer             Line:      10    Column:      33    Value: 1010
+Token Identifier          Line:      10    Column:      39    Lexem: n
+Token Identifier          Line:      10    Column:      42    Lexem: J
+Token Identifier          Line:      10    Column:      44    Lexem: LF
+Token Integer             Line:      11    Column:       2    Value: 11
+Token Identifier          Line:      11    Column:       6    Lexem: x0B
+Token BraceRoundOpen      Line:      11    Column:      10
+Token Integer             Line:      11    Column:      11    Value: 0
+Token Identifier          Line:      11    Column:      12    Lexem: x0B
+Token BraceRoundClose     Line:      11    Column:      15
+Token Integer             Line:      11    Column:      18    Value: 13
+Token BraceRoundOpen      Line:      11    Column:      22
+Token Integer             Line:      11    Column:      23    Value: 11
+Token BraceRoundClose     Line:      11    Column:      27
+Token Integer             Line:      11    Column:      33    Value: 1011
+Token Identifier          Line:      11    Column:      39    Lexem: v
+Token Identifier          Line:      11    Column:      42    Lexem: K
+Token Integer             Line:      12    Column:       2    Value: 12
+Token Identifier          Line:      12    Column:       6    Lexem: x0C
+Token BraceRoundOpen      Line:      12    Column:      10
+Token Integer             Line:      12    Column:      11    Value: 0
+Token Identifier          Line:      12    Column:      12    Lexem: x0C
+Token BraceRoundClose     Line:      12    Column:      15
+Token Integer             Line:      12    Column:      18    Value: 14
+Token BraceRoundOpen      Line:      12    Column:      22
+Token Integer             Line:      12    Column:      23    Value: 12
+Token BraceRoundClose     Line:      12    Column:      27
+Token Integer             Line:      12    Column:      33    Value: 1100
+Token Identifier          Line:      12    Column:      39    Lexem: f
+Token Identifier          Line:      12    Column:      42    Lexem: L
+Token Integer             Line:      13    Column:       2    Value: 13
+Token Identifier          Line:      13    Column:       6    Lexem: x0D
+Token BraceRoundOpen      Line:      13    Column:      10
+Token Integer             Line:      13    Column:      11    Value: 0
+Token Identifier          Line:      13    Column:      12    Lexem: x0D
+Token BraceRoundClose     Line:      13    Column:      15
+Token Integer             Line:      13    Column:      18    Value: 15
+Token BraceRoundOpen      Line:      13    Column:      22
+Token Integer             Line:      13    Column:      23    Value: 13
+Token BraceRoundClose     Line:      13    Column:      27
+Token Integer             Line:      13    Column:      33    Value: 1101
+Token Identifier          Line:      13    Column:      39    Lexem: r
+Token Identifier          Line:      13    Column:      42    Lexem: M
+Token Identifier          Line:      13    Column:      44    Lexem: CR
+Token Integer             Line:      14    Column:       2    Value: 14
+Token Identifier          Line:      14    Column:       6    Lexem: x0E
+Token BraceRoundOpen      Line:      14    Column:      10
+Token Integer             Line:      14    Column:      11    Value: 0
+Token Identifier          Line:      14    Column:      12    Lexem: x0E
+Token BraceRoundClose     Line:      14    Column:      15
+Token Integer             Line:      14    Column:      18    Value: 16
+Token BraceRoundOpen      Line:      14    Column:      22
+Token Integer             Line:      14    Column:      23    Value: 14
+Token BraceRoundClose     Line:      14    Column:      27
+Token Integer             Line:      14    Column:      33    Value: 1110
+Token Identifier          Line:      14    Column:      42    Lexem: N
+Token Integer             Line:      15    Column:       2    Value: 15
+Token Identifier          Line:      15    Column:       6    Lexem: x0F
+Token BraceRoundOpen      Line:      15    Column:      10
+Token Integer             Line:      15    Column:      11    Value: 0
+Token Identifier          Line:      15    Column:      12    Lexem: x0F
+Token BraceRoundClose     Line:      15    Column:      15
+Token Integer             Line:      15    Column:      18    Value: 17
+Token BraceRoundOpen      Line:      15    Column:      22
+Token Integer             Line:      15    Column:      23    Value: 15
+Token BraceRoundClose     Line:      15    Column:      27
+Token Integer             Line:      15    Column:      33    Value: 1111
+Token Identifier          Line:      15    Column:      42    Lexem: O
+Token Integer             Line:      16    Column:       2    Value: 16
+Token Identifier          Line:      16    Column:       6    Lexem: x10
+Token BraceRoundOpen      Line:      16    Column:      10
+Token Integer             Line:      16    Column:      11    Value: 0
+Token Identifier          Line:      16    Column:      12    Lexem: x10
+Token BraceRoundClose     Line:      16    Column:      15
+Token Integer             Line:      16    Column:      18    Value: 20
+Token BraceRoundOpen      Line:      16    Column:      22
+Token Integer             Line:      16    Column:      23    Value: 16
+Token BraceRoundClose     Line:      16    Column:      27
+Token Integer             Line:      16    Column:      32    Value: 10000
+Token Identifier          Line:      16    Column:      42    Lexem: P
+Token Integer             Line:      17    Column:       2    Value: 17
+Token Identifier          Line:      17    Column:       6    Lexem: x11
+Token BraceRoundOpen      Line:      17    Column:      10
+Token Integer             Line:      17    Column:      11    Value: 0
+Token Identifier          Line:      17    Column:      12    Lexem: x11
+Token BraceRoundClose     Line:      17    Column:      15
+Token Integer             Line:      17    Column:      18    Value: 21
+Token BraceRoundOpen      Line:      17    Column:      22
+Token Integer             Line:      17    Column:      23    Value: 17
+Token BraceRoundClose     Line:      17    Column:      27
+Token Integer             Line:      17    Column:      32    Value: 10001
+Token Identifier          Line:      17    Column:      42    Lexem: Q
+Token Integer             Line:      18    Column:       2    Value: 18
+Token Identifier          Line:      18    Column:       6    Lexem: x12
+Token BraceRoundOpen      Line:      18    Column:      10
+Token Integer             Line:      18    Column:      11    Value: 0
+Token Identifier          Line:      18    Column:      12    Lexem: x12
+Token BraceRoundClose     Line:      18    Column:      15
+Token Integer             Line:      18    Column:      18    Value: 22
+Token BraceRoundOpen      Line:      18    Column:      22
+Token Integer             Line:      18    Column:      23    Value: 18
+Token BraceRoundClose     Line:      18    Column:      27
+Token Integer             Line:      18    Column:      32    Value: 10010
+Token Identifier          Line:      18    Column:      42    Lexem: R
+Token Integer             Line:      19    Column:       2    Value: 19
+Token Identifier          Line:      19    Column:       6    Lexem: x13
+Token BraceRoundOpen      Line:      19    Column:      10
+Token Integer             Line:      19    Column:      11    Value: 0
+Token Identifier          Line:      19    Column:      12    Lexem: x13
+Token BraceRoundClose     Line:      19    Column:      15
+Token Integer             Line:      19    Column:      18    Value: 23
+Token BraceRoundOpen      Line:      19    Column:      22
+Token Integer             Line:      19    Column:      23    Value: 19
+Token BraceRoundClose     Line:      19    Column:      27
+Token Integer             Line:      19    Column:      32    Value: 10011
+Token Identifier          Line:      19    Column:      42    Lexem: S
+Token Integer             Line:      20    Column:       2    Value: 20
+Token Identifier          Line:      20    Column:       6    Lexem: x14
+Token BraceRoundOpen      Line:      20    Column:      10
+Token Integer             Line:      20    Column:      11    Value: 0
+Token Identifier          Line:      20    Column:      12    Lexem: x14
+Token BraceRoundClose     Line:      20    Column:      15
+Token Integer             Line:      20    Column:      18    Value: 24
+Token BraceRoundOpen      Line:      20    Column:      22
+Token Integer             Line:      20    Column:      23    Value: 20
+Token BraceRoundClose     Line:      20    Column:      27
+Token Integer             Line:      20    Column:      32    Value: 10100
+Token Identifier          Line:      20    Column:      42    Lexem: T
+Token Integer             Line:      21    Column:       2    Value: 21
+Token Identifier          Line:      21    Column:       6    Lexem: x15
+Token BraceRoundOpen      Line:      21    Column:      10
+Token Integer             Line:      21    Column:      11    Value: 0
+Token Identifier          Line:      21    Column:      12    Lexem: x15
+Token BraceRoundClose     Line:      21    Column:      15
+Token Integer             Line:      21    Column:      18    Value: 25
+Token BraceRoundOpen      Line:      21    Column:      22
+Token Integer             Line:      21    Column:      23    Value: 21
+Token BraceRoundClose     Line:      21    Column:      27
+Token Integer             Line:      21    Column:      32    Value: 10101
+Token Identifier          Line:      21    Column:      42    Lexem: U
+Token Integer             Line:      22    Column:       2    Value: 22
+Token Identifier          Line:      22    Column:       6    Lexem: x16
+Token BraceRoundOpen      Line:      22    Column:      10
+Token Integer             Line:      22    Column:      11    Value: 0
+Token Identifier          Line:      22    Column:      12    Lexem: x16
+Token BraceRoundClose     Line:      22    Column:      15
+Token Integer             Line:      22    Column:      18    Value: 26
+Token BraceRoundOpen      Line:      22    Column:      22
+Token Integer             Line:      22    Column:      23    Value: 22
+Token BraceRoundClose     Line:      22    Column:      27
+Token Integer             Line:      22    Column:      32    Value: 10110
+Token Identifier          Line:      22    Column:      42    Lexem: V
+Token Integer             Line:      23    Column:       2    Value: 23
+Token Identifier          Line:      23    Column:       6    Lexem: x17
+Token BraceRoundOpen      Line:      23    Column:      10
+Token Integer             Line:      23    Column:      11    Value: 0
+Token Identifier          Line:      23    Column:      12    Lexem: x17
+Token BraceRoundClose     Line:      23    Column:      15
+Token Integer             Line:      23    Column:      18    Value: 27
+Token BraceRoundOpen      Line:      23    Column:      22
+Token Integer             Line:      23    Column:      23    Value: 23
+Token BraceRoundClose     Line:      23    Column:      27
+Token Integer             Line:      23    Column:      32    Value: 10111
+Token Identifier          Line:      23    Column:      42    Lexem: W
+Token Integer             Line:      24    Column:       2    Value: 24
+Token Identifier          Line:      24    Column:       6    Lexem: x18
+Token BraceRoundOpen      Line:      24    Column:      10
+Token Integer             Line:      24    Column:      11    Value: 0
+Token Identifier          Line:      24    Column:      12    Lexem: x18
+Token BraceRoundClose     Line:      24    Column:      15
+Token Integer             Line:      24    Column:      18    Value: 30
+Token BraceRoundOpen      Line:      24    Column:      22
+Token Integer             Line:      24    Column:      23    Value: 24
+Token BraceRoundClose     Line:      24    Column:      27
+Token Integer             Line:      24    Column:      32    Value: 11000
+Token Identifier          Line:      24    Column:      42    Lexem: X
+Token Integer             Line:      25    Column:       2    Value: 25
+Token Identifier          Line:      25    Column:       6    Lexem: x19
+Token BraceRoundOpen      Line:      25    Column:      10
+Token Integer             Line:      25    Column:      11    Value: 0
+Token Identifier          Line:      25    Column:      12    Lexem: x19
+Token BraceRoundClose     Line:      25    Column:      15
+Token Integer             Line:      25    Column:      18    Value: 31
+Token BraceRoundOpen      Line:      25    Column:      22
+Token Integer             Line:      25    Column:      23    Value: 25
+Token BraceRoundClose     Line:      25    Column:      27
+Token Integer             Line:      25    Column:      32    Value: 11001
+Token Identifier          Line:      25    Column:      42    Lexem: Y
+Token Integer             Line:      26    Column:       2    Value: 26
+Token Identifier          Line:      26    Column:       6    Lexem: x1A
+Token BraceRoundOpen      Line:      26    Column:      10
+Token Integer             Line:      26    Column:      11    Value: 0
+Token Identifier          Line:      26    Column:      12    Lexem: x1A
+Token BraceRoundClose     Line:      26    Column:      15
+Token Integer             Line:      26    Column:      18    Value: 32
+Token BraceRoundOpen      Line:      26    Column:      22
+Token Integer             Line:      26    Column:      23    Value: 26
+Token BraceRoundClose     Line:      26    Column:      27
+Token Integer             Line:      26    Column:      32    Value: 11010
+Token Identifier          Line:      26    Column:      42    Lexem: Z
+Token Integer             Line:      27    Column:       2    Value: 27
+Token Identifier          Line:      27    Column:       6    Lexem: x1B
+Token BraceRoundOpen      Line:      27    Column:      10
+Token Integer             Line:      27    Column:      11    Value: 0
+Token Identifier          Line:      27    Column:      12    Lexem: x1B
+Token BraceRoundClose     Line:      27    Column:      15
+Token Integer             Line:      27    Column:      18    Value: 33
+Token BraceRoundOpen      Line:      27    Column:      22
+Token Integer             Line:      27    Column:      23    Value: 27
+Token BraceRoundClose     Line:      27    Column:      27
+Token Integer             Line:      27    Column:      32    Value: 11011
+Token BraceSquareOpen     Line:      27    Column:      42
+Token Integer             Line:      28    Column:       2    Value: 28
+Token Identifier          Line:      28    Column:       6    Lexem: x1C
+Token BraceRoundOpen      Line:      28    Column:      10
+Token Integer             Line:      28    Column:      11    Value: 0
+Token Identifier          Line:      28    Column:      12    Lexem: x1C
+Token BraceRoundClose     Line:      28    Column:      15
+Token Integer             Line:      28    Column:      18    Value: 34
+Token BraceRoundOpen      Line:      28    Column:      22
+Token Integer             Line:      28    Column:      23    Value: 28
+Token BraceRoundClose     Line:      28    Column:      27
+Token Integer             Line:      28    Column:      32    Value: 11100
+Token Integer             Line:      29    Column:       2    Value: 29
+Token Identifier          Line:      29    Column:       6    Lexem: x1D
+Token BraceRoundOpen      Line:      29    Column:      10
+Token Integer             Line:      29    Column:      11    Value: 0
+Token Identifier          Line:      29    Column:      12    Lexem: x1D
+Token BraceRoundClose     Line:      29    Column:      15
+Token Integer             Line:      29    Column:      18    Value: 35
+Token BraceRoundOpen      Line:      29    Column:      22
+Token Integer             Line:      29    Column:      23    Value: 29
+Token BraceRoundClose     Line:      29    Column:      27
+Token Integer             Line:      29    Column:      32    Value: 11101
+Token BraceSquareClose    Line:      29    Column:      42
+Token Integer             Line:      30    Column:       2    Value: 30
+Token Identifier          Line:      30    Column:       6    Lexem: x1E
+Token BraceRoundOpen      Line:      30    Column:      10
+Token Integer             Line:      30    Column:      11    Value: 0
+Token Identifier          Line:      30    Column:      12    Lexem: x1E
+Token BraceRoundClose     Line:      30    Column:      15
+Token Integer             Line:      30    Column:      18    Value: 36
+Token BraceRoundOpen      Line:      30    Column:      22
+Token Integer             Line:      30    Column:      23    Value: 30
+Token BraceRoundClose     Line:      30    Column:      27
+Token Integer             Line:      30    Column:      32    Value: 11110
+Token Integer             Line:      31    Column:       2    Value: 31
+Token Identifier          Line:      31    Column:       6    Lexem: x1F
+Token BraceRoundOpen      Line:      31    Column:      10
+Token Integer             Line:      31    Column:      11    Value: 0
+Token Identifier          Line:      31    Column:      12    Lexem: x1F
+Token BraceRoundClose     Line:      31    Column:      15
+Token Integer             Line:      31    Column:      18    Value: 37
+Token BraceRoundOpen      Line:      31    Column:      22
+Token Integer             Line:      31    Column:      23    Value: 31
+Token BraceRoundClose     Line:      31    Column:      27
+Token Integer             Line:      31    Column:      32    Value: 11111
+Token Integer             Line:      32    Column:       2    Value: 32
+Token Identifier          Line:      32    Column:       6    Lexem: x20
+Token BraceRoundOpen      Line:      32    Column:      10
+Token Integer             Line:      32    Column:      11    Value: 0
+Token Identifier          Line:      32    Column:      12    Lexem: x20
+Token BraceRoundClose     Line:      32    Column:      15
+Token Integer             Line:      32    Column:      18    Value: 40
+Token BraceRoundOpen      Line:      32    Column:      22
+Token Integer             Line:      32    Column:      23    Value: 32
+Token BraceRoundClose     Line:      32    Column:      27
+Token Integer             Line:      32    Column:      31    Value: 100000
+Token Identifier          Line:      32    Column:      44    Lexem: SPACE
+Token Integer             Line:      33    Column:       2    Value: 33
+Token Identifier          Line:      33    Column:       6    Lexem: x21
+Token BraceRoundOpen      Line:      33    Column:      10
+Token Integer             Line:      33    Column:      11    Value: 0
+Token Identifier          Line:      33    Column:      12    Lexem: x21
+Token BraceRoundClose     Line:      33    Column:      15
+Token Integer             Line:      33    Column:      18    Value: 41
+Token BraceRoundOpen      Line:      33    Column:      22
+Token Integer             Line:      33    Column:      23    Value: 33
+Token BraceRoundClose     Line:      33    Column:      27
+Token Integer             Line:      33    Column:      31    Value: 100001
+Token ExclamationMark     Line:      33    Column:      44
+Token Integer             Line:      34    Column:       2    Value: 34
+Token Identifier          Line:      34    Column:       6    Lexem: x22
+Token BraceRoundOpen      Line:      34    Column:      10
+Token Integer             Line:      34    Column:      11    Value: 0
+Token Identifier          Line:      34    Column:      12    Lexem: x22
+Token BraceRoundClose     Line:      34    Column:      15
+Token Integer             Line:      34    Column:      18    Value: 42
+Token BraceRoundOpen      Line:      34    Column:      22
+Token Integer             Line:      34    Column:      23    Value: 34
+Token BraceRoundClose     Line:      34    Column:      27
+Token Integer             Line:      34    Column:      31    Value: 100010
+Token Integer             Line:      35    Column:       2    Value: 35
+Token Identifier          Line:      35    Column:       6    Lexem: x23
+Token BraceRoundOpen      Line:      35    Column:      10
+Token Integer             Line:      35    Column:      11    Value: 0
+Token Identifier          Line:      35    Column:      12    Lexem: x23
+Token BraceRoundClose     Line:      35    Column:      15
+Token Integer             Line:      35    Column:      18    Value: 43
+Token BraceRoundOpen      Line:      35    Column:      22
+Token Integer             Line:      35    Column:      23    Value: 35
+Token BraceRoundClose     Line:      35    Column:      27
+Token Integer             Line:      35    Column:      31    Value: 100011
+Token Integer             Line:      36    Column:       2    Value: 36
+Token Identifier          Line:      36    Column:       6    Lexem: x24
+Token BraceRoundOpen      Line:      36    Column:      10
+Token Integer             Line:      36    Column:      11    Value: 0
+Token Identifier          Line:      36    Column:      12    Lexem: x24
+Token BraceRoundClose     Line:      36    Column:      15
+Token Integer             Line:      36    Column:      18    Value: 44
+Token BraceRoundOpen      Line:      36    Column:      22
+Token Integer             Line:      36    Column:      23    Value: 36
+Token BraceRoundClose     Line:      36    Column:      27
+Token Integer             Line:      36    Column:      31    Value: 100100
+Token Integer             Line:      37    Column:       2    Value: 37
+Token Identifier          Line:      37    Column:       6    Lexem: x25
+Token BraceRoundOpen      Line:      37    Column:      10
+Token Integer             Line:      37    Column:      11    Value: 0
+Token Identifier          Line:      37    Column:      12    Lexem: x25
+Token BraceRoundClose     Line:      37    Column:      15
+Token Integer             Line:      37    Column:      18    Value: 45
+Token BraceRoundOpen      Line:      37    Column:      22
+Token Integer             Line:      37    Column:      23    Value: 37
+Token BraceRoundClose     Line:      37    Column:      27
+Token Integer             Line:      37    Column:      31    Value: 100101
+Token Integer             Line:      38    Column:       2    Value: 38
+Token Identifier          Line:      38    Column:       6    Lexem: x26
+Token BraceRoundOpen      Line:      38    Column:      10
+Token Integer             Line:      38    Column:      11    Value: 0
+Token Identifier          Line:      38    Column:      12    Lexem: x26
+Token BraceRoundClose     Line:      38    Column:      15
+Token Integer             Line:      38    Column:      18    Value: 46
+Token BraceRoundOpen      Line:      38    Column:      22
+Token Integer             Line:      38    Column:      23    Value: 38
+Token BraceRoundClose     Line:      38    Column:      27
+Token Integer             Line:      38    Column:      31    Value: 100110
+Token Ampersand           Line:      38    Column:      44
+Token Integer             Line:      39    Column:       2    Value: 39
+Token Identifier          Line:      39    Column:       6    Lexem: x27
+Token BraceRoundOpen      Line:      39    Column:      10
+Token Integer             Line:      39    Column:      11    Value: 0
+Token Identifier          Line:      39    Column:      12    Lexem: x27
+Token BraceRoundClose     Line:      39    Column:      15
+Token Integer             Line:      39    Column:      18    Value: 47
+Token BraceRoundOpen      Line:      39    Column:      22
+Token Integer             Line:      39    Column:      23    Value: 39
+Token BraceRoundClose     Line:      39    Column:      27
+Token Integer             Line:      39    Column:      31    Value: 100111
+Token Integer             Line:      40    Column:       2    Value: 40
+Token Identifier          Line:      40    Column:       6    Lexem: x28
+Token BraceRoundOpen      Line:      40    Column:      10
+Token Integer             Line:      40    Column:      11    Value: 0
+Token Identifier          Line:      40    Column:      12    Lexem: x28
+Token BraceRoundClose     Line:      40    Column:      15
+Token Integer             Line:      40    Column:      18    Value: 50
+Token BraceRoundOpen      Line:      40    Column:      22
+Token Integer             Line:      40    Column:      23    Value: 40
+Token BraceRoundClose     Line:      40    Column:      27
+Token Integer             Line:      40    Column:      31    Value: 101000
+Token BraceRoundOpen      Line:      40    Column:      44
+Token Integer             Line:      41    Column:       2    Value: 41
+Token Identifier          Line:      41    Column:       6    Lexem: x29
+Token BraceRoundOpen      Line:      41    Column:      10
+Token Integer             Line:      41    Column:      11    Value: 0
+Token Identifier          Line:      41    Column:      12    Lexem: x29
+Token BraceRoundClose     Line:      41    Column:      15
+Token Integer             Line:      41    Column:      18    Value: 51
+Token BraceRoundOpen      Line:      41    Column:      22
+Token Integer             Line:      41    Column:      23    Value: 41
+Token BraceRoundClose     Line:      41    Column:      27
+Token Integer             Line:      41    Column:      31    Value: 101001
+Token BraceRoundClose     Line:      41    Column:      44
+Token Integer             Line:      42    Column:       2    Value: 42
+Token Identifier          Line:      42    Column:       6    Lexem: x2A
+Token BraceRoundOpen      Line:      42    Column:      10
+Token Integer             Line:      42    Column:      11    Value: 0
+Token Identifier          Line:      42    Column:      12    Lexem: x2A
+Token BraceRoundClose     Line:      42    Column:      15
+Token Integer             Line:      42    Column:      18    Value: 52
+Token BraceRoundOpen      Line:      42    Column:      22
+Token Integer             Line:      42    Column:      23    Value: 42
+Token BraceRoundClose     Line:      42    Column:      27
+Token Integer             Line:      42    Column:      31    Value: 101010
+Token Multiplication      Line:      42    Column:      44
+Token Integer             Line:      43    Column:       2    Value: 43
+Token Identifier          Line:      43    Column:       6    Lexem: x2B
+Token BraceRoundOpen      Line:      43    Column:      10
+Token Integer             Line:      43    Column:      11    Value: 0
+Token Identifier          Line:      43    Column:      12    Lexem: x2B
+Token BraceRoundClose     Line:      43    Column:      15
+Token Integer             Line:      43    Column:      18    Value: 53
+Token BraceRoundOpen      Line:      43    Column:      22
+Token Integer             Line:      43    Column:      23    Value: 43
+Token BraceRoundClose     Line:      43    Column:      27
+Token Integer             Line:      43    Column:      31    Value: 101011
+Token Plus                Line:      43    Column:      44
+Token Integer             Line:      44    Column:       2    Value: 44
+Token Identifier          Line:      44    Column:       6    Lexem: x2C
+Token BraceRoundOpen      Line:      44    Column:      10
+Token Integer             Line:      44    Column:      11    Value: 0
+Token Identifier          Line:      44    Column:      12    Lexem: x2C
+Token BraceRoundClose     Line:      44    Column:      15
+Token Integer             Line:      44    Column:      18    Value: 54
+Token BraceRoundOpen      Line:      44    Column:      22
+Token Integer             Line:      44    Column:      23    Value: 44
+Token BraceRoundClose     Line:      44    Column:      27
+Token Integer             Line:      44    Column:      31    Value: 101100
+Token Integer             Line:      45    Column:       2    Value: 45
+Token Identifier          Line:      45    Column:       6    Lexem: x2D
+Token BraceRoundOpen      Line:      45    Column:      10
+Token Integer             Line:      45    Column:      11    Value: 0
+Token Identifier          Line:      45    Column:      12    Lexem: x2D
+Token BraceRoundClose     Line:      45    Column:      15
+Token Integer             Line:      45    Column:      18    Value: 55
+Token BraceRoundOpen      Line:      45    Column:      22
+Token Integer             Line:      45    Column:      23    Value: 45
+Token BraceRoundClose     Line:      45    Column:      27
+Token Integer             Line:      45    Column:      31    Value: 101101
+Token Minus               Line:      45    Column:      44
+Token Integer             Line:      46    Column:       2    Value: 46
+Token Identifier          Line:      46    Column:       6    Lexem: x2E
+Token BraceRoundOpen      Line:      46    Column:      10
+Token Integer             Line:      46    Column:      11    Value: 0
+Token Identifier          Line:      46    Column:      12    Lexem: x2E
+Token BraceRoundClose     Line:      46    Column:      15
+Token Integer             Line:      46    Column:      18    Value: 56
+Token BraceRoundOpen      Line:      46    Column:      22
+Token Integer             Line:      46    Column:      23    Value: 46
+Token BraceRoundClose     Line:      46    Column:      27
+Token Integer             Line:      46    Column:      31    Value: 101110
+Token Integer             Line:      47    Column:       2    Value: 47
+Token Identifier          Line:      47    Column:       6    Lexem: x2F
+Token BraceRoundOpen      Line:      47    Column:      10
+Token Integer             Line:      47    Column:      11    Value: 0
+Token Identifier          Line:      47    Column:      12    Lexem: x2F
+Token BraceRoundClose     Line:      47    Column:      15
+Token Integer             Line:      47    Column:      18    Value: 57
+Token BraceRoundOpen      Line:      47    Column:      22
+Token Integer             Line:      47    Column:      23    Value: 47
+Token BraceRoundClose     Line:      47    Column:      27
+Token Integer             Line:      47    Column:      31    Value: 101111
+Token Integer             Line:      48    Column:       2    Value: 48
+Token Identifier          Line:      48    Column:       6    Lexem: x30
+Token BraceRoundOpen      Line:      48    Column:      10
+Token Integer             Line:      48    Column:      11    Value: 0
+Token Identifier          Line:      48    Column:      12    Lexem: x30
+Token BraceRoundClose     Line:      48    Column:      15
+Token Integer             Line:      48    Column:      18    Value: 60
+Token BraceRoundOpen      Line:      48    Column:      22
+Token Integer             Line:      48    Column:      23    Value: 48
+Token BraceRoundClose     Line:      48    Column:      27
+Token Integer             Line:      48    Column:      31    Value: 110000
+Token Integer             Line:      48    Column:      44    Value: 0
+Token Integer             Line:      49    Column:       2    Value: 49
+Token Identifier          Line:      49    Column:       6    Lexem: x31
+Token BraceRoundOpen      Line:      49    Column:      10
+Token Integer             Line:      49    Column:      11    Value: 0
+Token Identifier          Line:      49    Column:      12    Lexem: x31
+Token BraceRoundClose     Line:      49    Column:      15
+Token Integer             Line:      49    Column:      18    Value: 61
+Token BraceRoundOpen      Line:      49    Column:      22
+Token Integer             Line:      49    Column:      23    Value: 49
+Token BraceRoundClose     Line:      49    Column:      27
+Token Integer             Line:      49    Column:      31    Value: 110001
+Token Integer             Line:      49    Column:      44    Value: 1
+Token Integer             Line:      50    Column:       2    Value: 50
+Token Identifier          Line:      50    Column:       6    Lexem: x32
+Token BraceRoundOpen      Line:      50    Column:      10
+Token Integer             Line:      50    Column:      11    Value: 0
+Token Identifier          Line:      50    Column:      12    Lexem: x32
+Token BraceRoundClose     Line:      50    Column:      15
+Token Integer             Line:      50    Column:      18    Value: 62
+Token BraceRoundOpen      Line:      50    Column:      22
+Token Integer             Line:      50    Column:      23    Value: 50
+Token BraceRoundClose     Line:      50    Column:      27
+Token Integer             Line:      50    Column:      31    Value: 110010
+Token Integer             Line:      50    Column:      44    Value: 2
+Token Integer             Line:      51    Column:       2    Value: 51
+Token Identifier          Line:      51    Column:       6    Lexem: x33
+Token BraceRoundOpen      Line:      51    Column:      10
+Token Integer             Line:      51    Column:      11    Value: 0
+Token Identifier          Line:      51    Column:      12    Lexem: x33
+Token BraceRoundClose     Line:      51    Column:      15
+Token Integer             Line:      51    Column:      18    Value: 63
+Token BraceRoundOpen      Line:      51    Column:      22
+Token Integer             Line:      51    Column:      23    Value: 51
+Token BraceRoundClose     Line:      51    Column:      27
+Token Integer             Line:      51    Column:      31    Value: 110011
+Token Integer             Line:      51    Column:      44    Value: 3
+Token Integer             Line:      52    Column:       2    Value: 52
+Token Identifier          Line:      52    Column:       6    Lexem: x34
+Token BraceRoundOpen      Line:      52    Column:      10
+Token Integer             Line:      52    Column:      11    Value: 0
+Token Identifier          Line:      52    Column:      12    Lexem: x34
+Token BraceRoundClose     Line:      52    Column:      15
+Token Integer             Line:      52    Column:      18    Value: 64
+Token BraceRoundOpen      Line:      52    Column:      22
+Token Integer             Line:      52    Column:      23    Value: 52
+Token BraceRoundClose     Line:      52    Column:      27
+Token Integer             Line:      52    Column:      31    Value: 110100
+Token Integer             Line:      52    Column:      44    Value: 4
+Token Integer             Line:      53    Column:       2    Value: 53
+Token Identifier          Line:      53    Column:       6    Lexem: x35
+Token BraceRoundOpen      Line:      53    Column:      10
+Token Integer             Line:      53    Column:      11    Value: 0
+Token Identifier          Line:      53    Column:      12    Lexem: x35
+Token BraceRoundClose     Line:      53    Column:      15
+Token Integer             Line:      53    Column:      18    Value: 65
+Token BraceRoundOpen      Line:      53    Column:      22
+Token Integer             Line:      53    Column:      23    Value: 53
+Token BraceRoundClose     Line:      53    Column:      27
+Token Integer             Line:      53    Column:      31    Value: 110101
+Token Integer             Line:      53    Column:      44    Value: 5
+Token Integer             Line:      54    Column:       2    Value: 54
+Token Identifier          Line:      54    Column:       6    Lexem: x36
+Token BraceRoundOpen      Line:      54    Column:      10
+Token Integer             Line:      54    Column:      11    Value: 0
+Token Identifier          Line:      54    Column:      12    Lexem: x36
+Token BraceRoundClose     Line:      54    Column:      15
+Token Integer             Line:      54    Column:      18    Value: 66
+Token BraceRoundOpen      Line:      54    Column:      22
+Token Integer             Line:      54    Column:      23    Value: 54
+Token BraceRoundClose     Line:      54    Column:      27
+Token Integer             Line:      54    Column:      31    Value: 110110
+Token Integer             Line:      54    Column:      44    Value: 6
+Token Integer             Line:      55    Column:       2    Value: 55
+Token Identifier          Line:      55    Column:       6    Lexem: x37
+Token BraceRoundOpen      Line:      55    Column:      10
+Token Integer             Line:      55    Column:      11    Value: 0
+Token Identifier          Line:      55    Column:      12    Lexem: x37
+Token BraceRoundClose     Line:      55    Column:      15
+Token Integer             Line:      55    Column:      18    Value: 67
+Token BraceRoundOpen      Line:      55    Column:      22
+Token Integer             Line:      55    Column:      23    Value: 55
+Token BraceRoundClose     Line:      55    Column:      27
+Token Integer             Line:      55    Column:      31    Value: 110111
+Token Integer             Line:      55    Column:      44    Value: 7
+Token Integer             Line:      56    Column:       2    Value: 56
+Token Identifier          Line:      56    Column:       6    Lexem: x38
+Token BraceRoundOpen      Line:      56    Column:      10
+Token Integer             Line:      56    Column:      11    Value: 0
+Token Identifier          Line:      56    Column:      12    Lexem: x38
+Token BraceRoundClose     Line:      56    Column:      15
+Token Integer             Line:      56    Column:      18    Value: 70
+Token BraceRoundOpen      Line:      56    Column:      22
+Token Integer             Line:      56    Column:      23    Value: 56
+Token BraceRoundClose     Line:      56    Column:      27
+Token Integer             Line:      56    Column:      31    Value: 111000
+Token Integer             Line:      56    Column:      44    Value: 8
+Token Integer             Line:      57    Column:       2    Value: 57
+Token Identifier          Line:      57    Column:       6    Lexem: x39
+Token BraceRoundOpen      Line:      57    Column:      10
+Token Integer             Line:      57    Column:      11    Value: 0
+Token Identifier          Line:      57    Column:      12    Lexem: x39
+Token BraceRoundClose     Line:      57    Column:      15
+Token Integer             Line:      57    Column:      18    Value: 71
+Token BraceRoundOpen      Line:      57    Column:      22
+Token Integer             Line:      57    Column:      23    Value: 57
+Token BraceRoundClose     Line:      57    Column:      27
+Token Integer             Line:      57    Column:      31    Value: 111001
+Token Integer             Line:      57    Column:      44    Value: 9
+Token Integer             Line:      58    Column:       2    Value: 58
+Token Identifier          Line:      58    Column:       6    Lexem: x3A
+Token BraceRoundOpen      Line:      58    Column:      10
+Token Integer             Line:      58    Column:      11    Value: 0
+Token Identifier          Line:      58    Column:      12    Lexem: x3A
+Token BraceRoundClose     Line:      58    Column:      15
+Token Integer             Line:      58    Column:      18    Value: 72
+Token BraceRoundOpen      Line:      58    Column:      22
+Token Integer             Line:      58    Column:      23    Value: 58
+Token BraceRoundClose     Line:      58    Column:      27
+Token Integer             Line:      58    Column:      31    Value: 111010
+Token Colon               Line:      58    Column:      44
+Token Integer             Line:      59    Column:       2    Value: 59
+Token Identifier          Line:      59    Column:       6    Lexem: x3B
+Token BraceRoundOpen      Line:      59    Column:      10
+Token Integer             Line:      59    Column:      11    Value: 0
+Token Identifier          Line:      59    Column:      12    Lexem: x3B
+Token BraceRoundClose     Line:      59    Column:      15
+Token Integer             Line:      59    Column:      18    Value: 73
+Token BraceRoundOpen      Line:      59    Column:      22
+Token Integer             Line:      59    Column:      23    Value: 59
+Token BraceRoundClose     Line:      59    Column:      27
+Token Integer             Line:      59    Column:      31    Value: 111011
+Token Semicolon           Line:      59    Column:      44
+Token Integer             Line:      60    Column:       2    Value: 60
+Token Identifier          Line:      60    Column:       6    Lexem: x3C
+Token BraceRoundOpen      Line:      60    Column:      10
+Token Integer             Line:      60    Column:      11    Value: 0
+Token Identifier          Line:      60    Column:      12    Lexem: x3C
+Token BraceRoundClose     Line:      60    Column:      15
+Token Integer             Line:      60    Column:      18    Value: 74
+Token BraceRoundOpen      Line:      60    Column:      22
+Token Integer             Line:      60    Column:      23    Value: 60
+Token BraceRoundClose     Line:      60    Column:      27
+Token Integer             Line:      60    Column:      31    Value: 111100
+Token Lower               Line:      60    Column:      44
+Token Integer             Line:      61    Column:       2    Value: 61
+Token Identifier          Line:      61    Column:       6    Lexem: x3D
+Token BraceRoundOpen      Line:      61    Column:      10
+Token Integer             Line:      61    Column:      11    Value: 0
+Token Identifier          Line:      61    Column:      12    Lexem: x3D
+Token BraceRoundClose     Line:      61    Column:      15
+Token Integer             Line:      61    Column:      18    Value: 75
+Token BraceRoundOpen      Line:      61    Column:      22
+Token Integer             Line:      61    Column:      23    Value: 61
+Token BraceRoundClose     Line:      61    Column:      27
+Token Integer             Line:      61    Column:      31    Value: 111101
+Token Equals              Line:      61    Column:      44
+Token Integer             Line:      62    Column:       2    Value: 62
+Token Identifier          Line:      62    Column:       6    Lexem: x3E
+Token BraceRoundOpen      Line:      62    Column:      10
+Token Integer             Line:      62    Column:      11    Value: 0
+Token Identifier          Line:      62    Column:      12    Lexem: x3E
+Token BraceRoundClose     Line:      62    Column:      15
+Token Integer             Line:      62    Column:      18    Value: 76
+Token BraceRoundOpen      Line:      62    Column:      22
+Token Integer             Line:      62    Column:      23    Value: 62
+Token BraceRoundClose     Line:      62    Column:      27
+Token Integer             Line:      62    Column:      31    Value: 111110
+Token Greater             Line:      62    Column:      44
+Token Integer             Line:      63    Column:       2    Value: 63
+Token Identifier          Line:      63    Column:       6    Lexem: x3F
+Token BraceRoundOpen      Line:      63    Column:      10
+Token Integer             Line:      63    Column:      11    Value: 0
+Token Identifier          Line:      63    Column:      12    Lexem: x3F
+Token BraceRoundClose     Line:      63    Column:      15
+Token Integer             Line:      63    Column:      18    Value: 77
+Token BraceRoundOpen      Line:      63    Column:      22
+Token Integer             Line:      63    Column:      23    Value: 63
+Token BraceRoundClose     Line:      63    Column:      27
+Token Integer             Line:      63    Column:      31    Value: 111111
+Token Integer             Line:      64    Column:       2    Value: 64
+Token Identifier          Line:      64    Column:       6    Lexem: x40
+Token BraceRoundOpen      Line:      64    Column:      10
+Token Integer             Line:      64    Column:      11    Value: 0
+Token Identifier          Line:      64    Column:      12    Lexem: x40
+Token BraceRoundClose     Line:      64    Column:      15
+Token Integer             Line:      64    Column:      18    Value: 100
+Token BraceRoundOpen      Line:      64    Column:      22
+Token Integer             Line:      64    Column:      23    Value: 64
+Token BraceRoundClose     Line:      64    Column:      27
+Token Integer             Line:      64    Column:      30    Value: 1000000
+Token Integer             Line:      65    Column:       2    Value: 65
+Token Identifier          Line:      65    Column:       6    Lexem: x41
+Token BraceRoundOpen      Line:      65    Column:      10
+Token Integer             Line:      65    Column:      11    Value: 0
+Token Identifier          Line:      65    Column:      12    Lexem: x41
+Token BraceRoundClose     Line:      65    Column:      15
+Token Integer             Line:      65    Column:      18    Value: 101
+Token BraceRoundOpen      Line:      65    Column:      22
+Token Integer             Line:      65    Column:      23    Value: 65
+Token BraceRoundClose     Line:      65    Column:      27
+Token Integer             Line:      65    Column:      30    Value: 1000001
+Token Identifier          Line:      65    Column:      44    Lexem: A
+Token Integer             Line:      66    Column:       2    Value: 66
+Token Identifier          Line:      66    Column:       6    Lexem: x42
+Token BraceRoundOpen      Line:      66    Column:      10
+Token Integer             Line:      66    Column:      11    Value: 0
+Token Identifier          Line:      66    Column:      12    Lexem: x42
+Token BraceRoundClose     Line:      66    Column:      15
+Token Integer             Line:      66    Column:      18    Value: 102
+Token BraceRoundOpen      Line:      66    Column:      22
+Token Integer             Line:      66    Column:      23    Value: 66
+Token BraceRoundClose     Line:      66    Column:      27
+Token Integer             Line:      66    Column:      30    Value: 1000010
+Token Identifier          Line:      66    Column:      44    Lexem: B
+Token Integer             Line:      67    Column:       2    Value: 67
+Token Identifier          Line:      67    Column:       6    Lexem: x43
+Token BraceRoundOpen      Line:      67    Column:      10
+Token Integer             Line:      67    Column:      11    Value: 0
+Token Identifier          Line:      67    Column:      12    Lexem: x43
+Token BraceRoundClose     Line:      67    Column:      15
+Token Integer             Line:      67    Column:      18    Value: 103
+Token BraceRoundOpen      Line:      67    Column:      22
+Token Integer             Line:      67    Column:      23    Value: 67
+Token BraceRoundClose     Line:      67    Column:      27
+Token Integer             Line:      67    Column:      30    Value: 1000011
+Token Identifier          Line:      67    Column:      44    Lexem: C
+Token Integer             Line:      68    Column:       2    Value: 68
+Token Identifier          Line:      68    Column:       6    Lexem: x44
+Token BraceRoundOpen      Line:      68    Column:      10
+Token Integer             Line:      68    Column:      11    Value: 0
+Token Identifier          Line:      68    Column:      12    Lexem: x44
+Token BraceRoundClose     Line:      68    Column:      15
+Token Integer             Line:      68    Column:      18    Value: 104
+Token BraceRoundOpen      Line:      68    Column:      22
+Token Integer             Line:      68    Column:      23    Value: 68
+Token BraceRoundClose     Line:      68    Column:      27
+Token Integer             Line:      68    Column:      30    Value: 1000100
+Token Identifier          Line:      68    Column:      44    Lexem: D
+Token Integer             Line:      69    Column:       2    Value: 69
+Token Identifier          Line:      69    Column:       6    Lexem: x45
+Token BraceRoundOpen      Line:      69    Column:      10
+Token Integer             Line:      69    Column:      11    Value: 0
+Token Identifier          Line:      69    Column:      12    Lexem: x45
+Token BraceRoundClose     Line:      69    Column:      15
+Token Integer             Line:      69    Column:      18    Value: 105
+Token BraceRoundOpen      Line:      69    Column:      22
+Token Integer             Line:      69    Column:      23    Value: 69
+Token BraceRoundClose     Line:      69    Column:      27
+Token Integer             Line:      69    Column:      30    Value: 1000101
+Token Identifier          Line:      69    Column:      44    Lexem: E
+Token Integer             Line:      70    Column:       2    Value: 70
+Token Identifier          Line:      70    Column:       6    Lexem: x46
+Token BraceRoundOpen      Line:      70    Column:      10
+Token Integer             Line:      70    Column:      11    Value: 0
+Token Identifier          Line:      70    Column:      12    Lexem: x46
+Token BraceRoundClose     Line:      70    Column:      15
+Token Integer             Line:      70    Column:      18    Value: 106
+Token BraceRoundOpen      Line:      70    Column:      22
+Token Integer             Line:      70    Column:      23    Value: 70
+Token BraceRoundClose     Line:      70    Column:      27
+Token Integer             Line:      70    Column:      30    Value: 1000110
+Token Identifier          Line:      70    Column:      44    Lexem: F
+Token Integer             Line:      71    Column:       2    Value: 71
+Token Identifier          Line:      71    Column:       6    Lexem: x47
+Token BraceRoundOpen      Line:      71    Column:      10
+Token Integer             Line:      71    Column:      11    Value: 0
+Token Identifier          Line:      71    Column:      12    Lexem: x47
+Token BraceRoundClose     Line:      71    Column:      15
+Token Integer             Line:      71    Column:      18    Value: 107
+Token BraceRoundOpen      Line:      71    Column:      22
+Token Integer             Line:      71    Column:      23    Value: 71
+Token BraceRoundClose     Line:      71    Column:      27
+Token Integer             Line:      71    Column:      30    Value: 1000111
+Token Identifier          Line:      71    Column:      44    Lexem: G
+Token Integer             Line:      72    Column:       2    Value: 72
+Token Identifier          Line:      72    Column:       6    Lexem: x48
+Token BraceRoundOpen      Line:      72    Column:      10
+Token Integer             Line:      72    Column:      11    Value: 0
+Token Identifier          Line:      72    Column:      12    Lexem: x48
+Token BraceRoundClose     Line:      72    Column:      15
+Token Integer             Line:      72    Column:      18    Value: 110
+Token BraceRoundOpen      Line:      72    Column:      22
+Token Integer             Line:      72    Column:      23    Value: 72
+Token BraceRoundClose     Line:      72    Column:      27
+Token Integer             Line:      72    Column:      30    Value: 1001000
+Token Identifier          Line:      72    Column:      44    Lexem: H
+Token Integer             Line:      73    Column:       2    Value: 73
+Token Identifier          Line:      73    Column:       6    Lexem: x49
+Token BraceRoundOpen      Line:      73    Column:      10
+Token Integer             Line:      73    Column:      11    Value: 0
+Token Identifier          Line:      73    Column:      12    Lexem: x49
+Token BraceRoundClose     Line:      73    Column:      15
+Token Integer             Line:      73    Column:      18    Value: 111
+Token BraceRoundOpen      Line:      73    Column:      22
+Token Integer             Line:      73    Column:      23    Value: 73
+Token BraceRoundClose     Line:      73    Column:      27
+Token Integer             Line:      73    Column:      30    Value: 1001001
+Token Identifier          Line:      73    Column:      44    Lexem: I
+Token Integer             Line:      74    Column:       2    Value: 74
+Token Identifier          Line:      74    Column:       6    Lexem: x4A
+Token BraceRoundOpen      Line:      74    Column:      10
+Token Integer             Line:      74    Column:      11    Value: 0
+Token Identifier          Line:      74    Column:      12    Lexem: x4A
+Token BraceRoundClose     Line:      74    Column:      15
+Token Integer             Line:      74    Column:      18    Value: 112
+Token BraceRoundOpen      Line:      74    Column:      22
+Token Integer             Line:      74    Column:      23    Value: 74
+Token BraceRoundClose     Line:      74    Column:      27
+Token Integer             Line:      74    Column:      30    Value: 1001010
+Token Identifier          Line:      74    Column:      44    Lexem: J
+Token Integer             Line:      75    Column:       2    Value: 75
+Token Identifier          Line:      75    Column:       6    Lexem: x4B
+Token BraceRoundOpen      Line:      75    Column:      10
+Token Integer             Line:      75    Column:      11    Value: 0
+Token Identifier          Line:      75    Column:      12    Lexem: x4B
+Token BraceRoundClose     Line:      75    Column:      15
+Token Integer             Line:      75    Column:      18    Value: 113
+Token BraceRoundOpen      Line:      75    Column:      22
+Token Integer             Line:      75    Column:      23    Value: 75
+Token BraceRoundClose     Line:      75    Column:      27
+Token Integer             Line:      75    Column:      30    Value: 1001011
+Token Identifier          Line:      75    Column:      44    Lexem: K
+Token Integer             Line:      76    Column:       2    Value: 76
+Token Identifier          Line:      76    Column:       6    Lexem: x4C
+Token BraceRoundOpen      Line:      76    Column:      10
+Token Integer             Line:      76    Column:      11    Value: 0
+Token Identifier          Line:      76    Column:      12    Lexem: x4C
+Token BraceRoundClose     Line:      76    Column:      15
+Token Integer             Line:      76    Column:      18    Value: 114
+Token BraceRoundOpen      Line:      76    Column:      22
+Token Integer             Line:      76    Column:      23    Value: 76
+Token BraceRoundClose     Line:      76    Column:      27
+Token Integer             Line:      76    Column:      30    Value: 1001100
+Token Identifier          Line:      76    Column:      44    Lexem: L
+Token Integer             Line:      77    Column:       2    Value: 77
+Token Identifier          Line:      77    Column:       6    Lexem: x4D
+Token BraceRoundOpen      Line:      77    Column:      10
+Token Integer             Line:      77    Column:      11    Value: 0
+Token Identifier          Line:      77    Column:      12    Lexem: x4D
+Token BraceRoundClose     Line:      77    Column:      15
+Token Integer             Line:      77    Column:      18    Value: 115
+Token BraceRoundOpen      Line:      77    Column:      22
+Token Integer             Line:      77    Column:      23    Value: 77
+Token BraceRoundClose     Line:      77    Column:      27
+Token Integer             Line:      77    Column:      30    Value: 1001101
+Token Identifier          Line:      77    Column:      44    Lexem: M
+Token Integer             Line:      78    Column:       2    Value: 78
+Token Identifier          Line:      78    Column:       6    Lexem: x4E
+Token BraceRoundOpen      Line:      78    Column:      10
+Token Integer             Line:      78    Column:      11    Value: 0
+Token Identifier          Line:      78    Column:      12    Lexem: x4E
+Token BraceRoundClose     Line:      78    Column:      15
+Token Integer             Line:      78    Column:      18    Value: 116
+Token BraceRoundOpen      Line:      78    Column:      22
+Token Integer             Line:      78    Column:      23    Value: 78
+Token BraceRoundClose     Line:      78    Column:      27
+Token Integer             Line:      78    Column:      30    Value: 1001110
+Token Identifier          Line:      78    Column:      44    Lexem: N
+Token Integer             Line:      79    Column:       2    Value: 79
+Token Identifier          Line:      79    Column:       6    Lexem: x4F
+Token BraceRoundOpen      Line:      79    Column:      10
+Token Integer             Line:      79    Column:      11    Value: 0
+Token Identifier          Line:      79    Column:      12    Lexem: x4F
+Token BraceRoundClose     Line:      79    Column:      15
+Token Integer             Line:      79    Column:      18    Value: 117
+Token BraceRoundOpen      Line:      79    Column:      22
+Token Integer             Line:      79    Column:      23    Value: 79
+Token BraceRoundClose     Line:      79    Column:      27
+Token Integer             Line:      79    Column:      30    Value: 1001111
+Token Identifier          Line:      79    Column:      44    Lexem: O
+Token Integer             Line:      80    Column:       2    Value: 80
+Token Identifier          Line:      80    Column:       6    Lexem: x50
+Token BraceRoundOpen      Line:      80    Column:      10
+Token Integer             Line:      80    Column:      11    Value: 0
+Token Identifier          Line:      80    Column:      12    Lexem: x50
+Token BraceRoundClose     Line:      80    Column:      15
+Token Integer             Line:      80    Column:      18    Value: 120
+Token BraceRoundOpen      Line:      80    Column:      22
+Token Integer             Line:      80    Column:      23    Value: 80
+Token BraceRoundClose     Line:      80    Column:      27
+Token Integer             Line:      80    Column:      30    Value: 1010000
+Token Identifier          Line:      80    Column:      44    Lexem: P
+Token Integer             Line:      81    Column:       2    Value: 81
+Token Identifier          Line:      81    Column:       6    Lexem: x51
+Token BraceRoundOpen      Line:      81    Column:      10
+Token Integer             Line:      81    Column:      11    Value: 0
+Token Identifier          Line:      81    Column:      12    Lexem: x51
+Token BraceRoundClose     Line:      81    Column:      15
+Token Integer             Line:      81    Column:      18    Value: 121
+Token BraceRoundOpen      Line:      81    Column:      22
+Token Integer             Line:      81    Column:      23    Value: 81
+Token BraceRoundClose     Line:      81    Column:      27
+Token Integer             Line:      81    Column:      30    Value: 1010001
+Token Identifier          Line:      81    Column:      44    Lexem: Q
+Token Integer             Line:      82    Column:       2    Value: 82
+Token Identifier          Line:      82    Column:       6    Lexem: x52
+Token BraceRoundOpen      Line:      82    Column:      10
+Token Integer             Line:      82    Column:      11    Value: 0
+Token Identifier          Line:      82    Column:      12    Lexem: x52
+Token BraceRoundClose     Line:      82    Column:      15
+Token Integer             Line:      82    Column:      18    Value: 122
+Token BraceRoundOpen      Line:      82    Column:      22
+Token Integer             Line:      82    Column:      23    Value: 82
+Token BraceRoundClose     Line:      82    Column:      27
+Token Integer             Line:      82    Column:      30    Value: 1010010
+Token Identifier          Line:      82    Column:      44    Lexem: R
+Token Integer             Line:      83    Column:       2    Value: 83
+Token Identifier          Line:      83    Column:       6    Lexem: x53
+Token BraceRoundOpen      Line:      83    Column:      10
+Token Integer             Line:      83    Column:      11    Value: 0
+Token Identifier          Line:      83    Column:      12    Lexem: x53
+Token BraceRoundClose     Line:      83    Column:      15
+Token Integer             Line:      83    Column:      18    Value: 123
+Token BraceRoundOpen      Line:      83    Column:      22
+Token Integer             Line:      83    Column:      23    Value: 83
+Token BraceRoundClose     Line:      83    Column:      27
+Token Integer             Line:      83    Column:      30    Value: 1010011
+Token Identifier          Line:      83    Column:      44    Lexem: S
+Token Integer             Line:      84    Column:       2    Value: 84
+Token Identifier          Line:      84    Column:       6    Lexem: x54
+Token BraceRoundOpen      Line:      84    Column:      10
+Token Integer             Line:      84    Column:      11    Value: 0
+Token Identifier          Line:      84    Column:      12    Lexem: x54
+Token BraceRoundClose     Line:      84    Column:      15
+Token Integer             Line:      84    Column:      18    Value: 124
+Token BraceRoundOpen      Line:      84    Column:      22
+Token Integer             Line:      84    Column:      23    Value: 84
+Token BraceRoundClose     Line:      84    Column:      27
+Token Integer             Line:      84    Column:      30    Value: 1010100
+Token Identifier          Line:      84    Column:      44    Lexem: T
+Token Integer             Line:      85    Column:       2    Value: 85
+Token Identifier          Line:      85    Column:       6    Lexem: x55
+Token BraceRoundOpen      Line:      85    Column:      10
+Token Integer             Line:      85    Column:      11    Value: 0
+Token Identifier          Line:      85    Column:      12    Lexem: x55
+Token BraceRoundClose     Line:      85    Column:      15
+Token Integer             Line:      85    Column:      18    Value: 125
+Token BraceRoundOpen      Line:      85    Column:      22
+Token Integer             Line:      85    Column:      23    Value: 85
+Token BraceRoundClose     Line:      85    Column:      27
+Token Integer             Line:      85    Column:      30    Value: 1010101
+Token Identifier          Line:      85    Column:      44    Lexem: U
+Token Integer             Line:      86    Column:       2    Value: 86
+Token Identifier          Line:      86    Column:       6    Lexem: x56
+Token BraceRoundOpen      Line:      86    Column:      10
+Token Integer             Line:      86    Column:      11    Value: 0
+Token Identifier          Line:      86    Column:      12    Lexem: x56
+Token BraceRoundClose     Line:      86    Column:      15
+Token Integer             Line:      86    Column:      18    Value: 126
+Token BraceRoundOpen      Line:      86    Column:      22
+Token Integer             Line:      86    Column:      23    Value: 86
+Token BraceRoundClose     Line:      86    Column:      27
+Token Integer             Line:      86    Column:      30    Value: 1010110
+Token Identifier          Line:      86    Column:      44    Lexem: V
+Token Integer             Line:      87    Column:       2    Value: 87
+Token Identifier          Line:      87    Column:       6    Lexem: x57
+Token BraceRoundOpen      Line:      87    Column:      10
+Token Integer             Line:      87    Column:      11    Value: 0
+Token Identifier          Line:      87    Column:      12    Lexem: x57
+Token BraceRoundClose     Line:      87    Column:      15
+Token Integer             Line:      87    Column:      18    Value: 127
+Token BraceRoundOpen      Line:      87    Column:      22
+Token Integer             Line:      87    Column:      23    Value: 87
+Token BraceRoundClose     Line:      87    Column:      27
+Token Integer             Line:      87    Column:      30    Value: 1010111
+Token Identifier          Line:      87    Column:      44    Lexem: W
+Token Integer             Line:      88    Column:       2    Value: 88
+Token Identifier          Line:      88    Column:       6    Lexem: x58
+Token BraceRoundOpen      Line:      88    Column:      10
+Token Integer             Line:      88    Column:      11    Value: 0
+Token Identifier          Line:      88    Column:      12    Lexem: x58
+Token BraceRoundClose     Line:      88    Column:      15
+Token Integer             Line:      88    Column:      18    Value: 130
+Token BraceRoundOpen      Line:      88    Column:      22
+Token Integer             Line:      88    Column:      23    Value: 88
+Token BraceRoundClose     Line:      88    Column:      27
+Token Integer             Line:      88    Column:      30    Value: 1011000
+Token Identifier          Line:      88    Column:      44    Lexem: X
+Token Integer             Line:      89    Column:       2    Value: 89
+Token Identifier          Line:      89    Column:       6    Lexem: x59
+Token BraceRoundOpen      Line:      89    Column:      10
+Token Integer             Line:      89    Column:      11    Value: 0
+Token Identifier          Line:      89    Column:      12    Lexem: x59
+Token BraceRoundClose     Line:      89    Column:      15
+Token Integer             Line:      89    Column:      18    Value: 131
+Token BraceRoundOpen      Line:      89    Column:      22
+Token Integer             Line:      89    Column:      23    Value: 89
+Token BraceRoundClose     Line:      89    Column:      27
+Token Integer             Line:      89    Column:      30    Value: 1011001
+Token Identifier          Line:      89    Column:      44    Lexem: Y
+Token Integer             Line:      90    Column:       2    Value: 90
+Token Identifier          Line:      90    Column:       6    Lexem: x5A
+Token BraceRoundOpen      Line:      90    Column:      10
+Token Integer             Line:      90    Column:      11    Value: 0
+Token Identifier          Line:      90    Column:      12    Lexem: x5A
+Token BraceRoundClose     Line:      90    Column:      15
+Token Integer             Line:      90    Column:      18    Value: 132
+Token BraceRoundOpen      Line:      90    Column:      22
+Token Integer             Line:      90    Column:      23    Value: 90
+Token BraceRoundClose     Line:      90    Column:      27
+Token Integer             Line:      90    Column:      30    Value: 1011010
+Token Identifier          Line:      90    Column:      44    Lexem: Z
+Token Integer             Line:      91    Column:       2    Value: 91
+Token Identifier          Line:      91    Column:       6    Lexem: x5B
+Token BraceRoundOpen      Line:      91    Column:      10
+Token Integer             Line:      91    Column:      11    Value: 0
+Token Identifier          Line:      91    Column:      12    Lexem: x5B
+Token BraceRoundClose     Line:      91    Column:      15
+Token Integer             Line:      91    Column:      18    Value: 133
+Token BraceRoundOpen      Line:      91    Column:      22
+Token Integer             Line:      91    Column:      23    Value: 91
+Token BraceRoundClose     Line:      91    Column:      27
+Token Integer             Line:      91    Column:      30    Value: 1011011
+Token BraceSquareOpen     Line:      91    Column:      44
+Token Integer             Line:      92    Column:       2    Value: 92
+Token Identifier          Line:      92    Column:       6    Lexem: x5C
+Token BraceRoundOpen      Line:      92    Column:      10
+Token Integer             Line:      92    Column:      11    Value: 0
+Token Identifier          Line:      92    Column:      12    Lexem: x5C
+Token BraceRoundClose     Line:      92    Column:      15
+Token Integer             Line:      92    Column:      18    Value: 134
+Token BraceRoundOpen      Line:      92    Column:      22
+Token Integer             Line:      92    Column:      23    Value: 92
+Token BraceRoundClose     Line:      92    Column:      27
+Token Integer             Line:      92    Column:      30    Value: 1011100
+Token Integer             Line:      93    Column:       2    Value: 93
+Token Identifier          Line:      93    Column:       6    Lexem: x5D
+Token BraceRoundOpen      Line:      93    Column:      10
+Token Integer             Line:      93    Column:      11    Value: 0
+Token Identifier          Line:      93    Column:      12    Lexem: x5D
+Token BraceRoundClose     Line:      93    Column:      15
+Token Integer             Line:      93    Column:      18    Value: 135
+Token BraceRoundOpen      Line:      93    Column:      22
+Token Integer             Line:      93    Column:      23    Value: 93
+Token BraceRoundClose     Line:      93    Column:      27
+Token Integer             Line:      93    Column:      30    Value: 1011101
+Token BraceSquareClose    Line:      93    Column:      44
+Token Integer             Line:      94    Column:       2    Value: 94
+Token Identifier          Line:      94    Column:       6    Lexem: x5E
+Token BraceRoundOpen      Line:      94    Column:      10
+Token Integer             Line:      94    Column:      11    Value: 0
+Token Identifier          Line:      94    Column:      12    Lexem: x5E
+Token BraceRoundClose     Line:      94    Column:      15
+Token Integer             Line:      94    Column:      18    Value: 136
+Token BraceRoundOpen      Line:      94    Column:      22
+Token Integer             Line:      94    Column:      23    Value: 94
+Token BraceRoundClose     Line:      94    Column:      27
+Token Integer             Line:      94    Column:      30    Value: 1011110
+Token Integer             Line:      95    Column:       2    Value: 95
+Token Identifier          Line:      95    Column:       6    Lexem: x5F
+Token BraceRoundOpen      Line:      95    Column:      10
+Token Integer             Line:      95    Column:      11    Value: 0
+Token Identifier          Line:      95    Column:      12    Lexem: x5F
+Token BraceRoundClose     Line:      95    Column:      15
+Token Integer             Line:      95    Column:      18    Value: 137
+Token BraceRoundOpen      Line:      95    Column:      22
+Token Integer             Line:      95    Column:      23    Value: 95
+Token BraceRoundClose     Line:      95    Column:      27
+Token Integer             Line:      95    Column:      30    Value: 1011111
+Token Integer             Line:      96    Column:       2    Value: 96
+Token Identifier          Line:      96    Column:       6    Lexem: x60
+Token BraceRoundOpen      Line:      96    Column:      10
+Token Integer             Line:      96    Column:      11    Value: 0
+Token Identifier          Line:      96    Column:      12    Lexem: x60
+Token BraceRoundClose     Line:      96    Column:      15
+Token Integer             Line:      96    Column:      18    Value: 140
+Token BraceRoundOpen      Line:      96    Column:      22
+Token Integer             Line:      96    Column:      23    Value: 96
+Token BraceRoundClose     Line:      96    Column:      27
+Token Integer             Line:      96    Column:      30    Value: 1100000
+Token Integer             Line:      97    Column:       2    Value: 97
+Token Identifier          Line:      97    Column:       6    Lexem: x61
+Token BraceRoundOpen      Line:      97    Column:      10
+Token Integer             Line:      97    Column:      11    Value: 0
+Token Identifier          Line:      97    Column:      12    Lexem: x61
+Token BraceRoundClose     Line:      97    Column:      15
+Token Integer             Line:      97    Column:      18    Value: 141
+Token BraceRoundOpen      Line:      97    Column:      22
+Token Integer             Line:      97    Column:      23    Value: 97
+Token BraceRoundClose     Line:      97    Column:      27
+Token Integer             Line:      97    Column:      30    Value: 1100001
+Token Identifier          Line:      97    Column:      44    Lexem: a
+Token Integer             Line:      98    Column:       2    Value: 98
+Token Identifier          Line:      98    Column:       6    Lexem: x62
+Token BraceRoundOpen      Line:      98    Column:      10
+Token Integer             Line:      98    Column:      11    Value: 0
+Token Identifier          Line:      98    Column:      12    Lexem: x62
+Token BraceRoundClose     Line:      98    Column:      15
+Token Integer             Line:      98    Column:      18    Value: 142
+Token BraceRoundOpen      Line:      98    Column:      22
+Token Integer             Line:      98    Column:      23    Value: 98
+Token BraceRoundClose     Line:      98    Column:      27
+Token Integer             Line:      98    Column:      30    Value: 1100010
+Token Identifier          Line:      98    Column:      44    Lexem: b
+Token Integer             Line:      99    Column:       2    Value: 99
+Token Identifier          Line:      99    Column:       6    Lexem: x63
+Token BraceRoundOpen      Line:      99    Column:      10
+Token Integer             Line:      99    Column:      11    Value: 0
+Token Identifier          Line:      99    Column:      12    Lexem: x63
+Token BraceRoundClose     Line:      99    Column:      15
+Token Integer             Line:      99    Column:      18    Value: 143
+Token BraceRoundOpen      Line:      99    Column:      22
+Token Integer             Line:      99    Column:      23    Value: 99
+Token BraceRoundClose     Line:      99    Column:      27
+Token Integer             Line:      99    Column:      30    Value: 1100011
+Token Identifier          Line:      99    Column:      44    Lexem: c
+Token Integer             Line:     100    Column:       1    Value: 100
+Token Identifier          Line:     100    Column:       6    Lexem: x64
+Token BraceRoundOpen      Line:     100    Column:      10
+Token Integer             Line:     100    Column:      11    Value: 0
+Token Identifier          Line:     100    Column:      12    Lexem: x64
+Token BraceRoundClose     Line:     100    Column:      15
+Token Integer             Line:     100    Column:      18    Value: 144
+Token BraceRoundOpen      Line:     100    Column:      22
+Token Integer             Line:     100    Column:      23    Value: 100
+Token BraceRoundClose     Line:     100    Column:      27
+Token Integer             Line:     100    Column:      30    Value: 1100100
+Token Identifier          Line:     100    Column:      44    Lexem: d
+Token Integer             Line:     101    Column:       1    Value: 101
+Token Identifier          Line:     101    Column:       6    Lexem: x65
+Token BraceRoundOpen      Line:     101    Column:      10
+Token Integer             Line:     101    Column:      11    Value: 0
+Token Identifier          Line:     101    Column:      12    Lexem: x65
+Token BraceRoundClose     Line:     101    Column:      15
+Token Integer             Line:     101    Column:      18    Value: 145
+Token BraceRoundOpen      Line:     101    Column:      22
+Token Integer             Line:     101    Column:      23    Value: 101
+Token BraceRoundClose     Line:     101    Column:      27
+Token Integer             Line:     101    Column:      30    Value: 1100101
+Token Identifier          Line:     101    Column:      44    Lexem: e
+Token Integer             Line:     102    Column:       1    Value: 102
+Token Identifier          Line:     102    Column:       6    Lexem: x66
+Token BraceRoundOpen      Line:     102    Column:      10
+Token Integer             Line:     102    Column:      11    Value: 0
+Token Identifier          Line:     102    Column:      12    Lexem: x66
+Token BraceRoundClose     Line:     102    Column:      15
+Token Integer             Line:     102    Column:      18    Value: 146
+Token BraceRoundOpen      Line:     102    Column:      22
+Token Integer             Line:     102    Column:      23    Value: 102
+Token BraceRoundClose     Line:     102    Column:      27
+Token Integer             Line:     102    Column:      30    Value: 1100110
+Token Identifier          Line:     102    Column:      44    Lexem: f
+Token Integer             Line:     103    Column:       1    Value: 103
+Token Identifier          Line:     103    Column:       6    Lexem: x67
+Token BraceRoundOpen      Line:     103    Column:      10
+Token Integer             Line:     103    Column:      11    Value: 0
+Token Identifier          Line:     103    Column:      12    Lexem: x67
+Token BraceRoundClose     Line:     103    Column:      15
+Token Integer             Line:     103    Column:      18    Value: 147
+Token BraceRoundOpen      Line:     103    Column:      22
+Token Integer             Line:     103    Column:      23    Value: 103
+Token BraceRoundClose     Line:     103    Column:      27
+Token Integer             Line:     103    Column:      30    Value: 1100111
+Token Identifier          Line:     103    Column:      44    Lexem: g
+Token Integer             Line:     104    Column:       1    Value: 104
+Token Identifier          Line:     104    Column:       6    Lexem: x68
+Token BraceRoundOpen      Line:     104    Column:      10
+Token Integer             Line:     104    Column:      11    Value: 0
+Token Identifier          Line:     104    Column:      12    Lexem: x68
+Token BraceRoundClose     Line:     104    Column:      15
+Token Integer             Line:     104    Column:      18    Value: 150
+Token BraceRoundOpen      Line:     104    Column:      22
+Token Integer             Line:     104    Column:      23    Value: 104
+Token BraceRoundClose     Line:     104    Column:      27
+Token Integer             Line:     104    Column:      30    Value: 1101000
+Token Identifier          Line:     104    Column:      44    Lexem: h
+Token Integer             Line:     105    Column:       1    Value: 105
+Token Identifier          Line:     105    Column:       6    Lexem: x69
+Token BraceRoundOpen      Line:     105    Column:      10
+Token Integer             Line:     105    Column:      11    Value: 0
+Token Identifier          Line:     105    Column:      12    Lexem: x69
+Token BraceRoundClose     Line:     105    Column:      15
+Token Integer             Line:     105    Column:      18    Value: 151
+Token BraceRoundOpen      Line:     105    Column:      22
+Token Integer             Line:     105    Column:      23    Value: 105
+Token BraceRoundClose     Line:     105    Column:      27
+Token Integer             Line:     105    Column:      30    Value: 1101001
+Token Identifier          Line:     105    Column:      44    Lexem: i
+Token Integer             Line:     106    Column:       1    Value: 106
+Token Identifier          Line:     106    Column:       6    Lexem: x6A
+Token BraceRoundOpen      Line:     106    Column:      10
+Token Integer             Line:     106    Column:      11    Value: 0
+Token Identifier          Line:     106    Column:      12    Lexem: x6A
+Token BraceRoundClose     Line:     106    Column:      15
+Token Integer             Line:     106    Column:      18    Value: 152
+Token BraceRoundOpen      Line:     106    Column:      22
+Token Integer             Line:     106    Column:      23    Value: 106
+Token BraceRoundClose     Line:     106    Column:      27
+Token Integer             Line:     106    Column:      30    Value: 1101010
+Token Identifier          Line:     106    Column:      44    Lexem: j
+Token Integer             Line:     107    Column:       1    Value: 107
+Token Identifier          Line:     107    Column:       6    Lexem: x6B
+Token BraceRoundOpen      Line:     107    Column:      10
+Token Integer             Line:     107    Column:      11    Value: 0
+Token Identifier          Line:     107    Column:      12    Lexem: x6B
+Token BraceRoundClose     Line:     107    Column:      15
+Token Integer             Line:     107    Column:      18    Value: 153
+Token BraceRoundOpen      Line:     107    Column:      22
+Token Integer             Line:     107    Column:      23    Value: 107
+Token BraceRoundClose     Line:     107    Column:      27
+Token Integer             Line:     107    Column:      30    Value: 1101011
+Token Identifier          Line:     107    Column:      44    Lexem: k
+Token Integer             Line:     108    Column:       1    Value: 108
+Token Identifier          Line:     108    Column:       6    Lexem: x6C
+Token BraceRoundOpen      Line:     108    Column:      10
+Token Integer             Line:     108    Column:      11    Value: 0
+Token Identifier          Line:     108    Column:      12    Lexem: x6C
+Token BraceRoundClose     Line:     108    Column:      15
+Token Integer             Line:     108    Column:      18    Value: 154
+Token BraceRoundOpen      Line:     108    Column:      22
+Token Integer             Line:     108    Column:      23    Value: 108
+Token BraceRoundClose     Line:     108    Column:      27
+Token Integer             Line:     108    Column:      30    Value: 1101100
+Token Identifier          Line:     108    Column:      44    Lexem: l
+Token Integer             Line:     109    Column:       1    Value: 109
+Token Identifier          Line:     109    Column:       6    Lexem: x6D
+Token BraceRoundOpen      Line:     109    Column:      10
+Token Integer             Line:     109    Column:      11    Value: 0
+Token Identifier          Line:     109    Column:      12    Lexem: x6D
+Token BraceRoundClose     Line:     109    Column:      15
+Token Integer             Line:     109    Column:      18    Value: 155
+Token BraceRoundOpen      Line:     109    Column:      22
+Token Integer             Line:     109    Column:      23    Value: 109
+Token BraceRoundClose     Line:     109    Column:      27
+Token Integer             Line:     109    Column:      30    Value: 1101101
+Token Identifier          Line:     109    Column:      44    Lexem: m
+Token Integer             Line:     110    Column:       1    Value: 110
+Token Identifier          Line:     110    Column:       6    Lexem: x6E
+Token BraceRoundOpen      Line:     110    Column:      10
+Token Integer             Line:     110    Column:      11    Value: 0
+Token Identifier          Line:     110    Column:      12    Lexem: x6E
+Token BraceRoundClose     Line:     110    Column:      15
+Token Integer             Line:     110    Column:      18    Value: 156
+Token BraceRoundOpen      Line:     110    Column:      22
+Token Integer             Line:     110    Column:      23    Value: 110
+Token BraceRoundClose     Line:     110    Column:      27
+Token Integer             Line:     110    Column:      30    Value: 1101110
+Token Identifier          Line:     110    Column:      44    Lexem: n
+Token Integer             Line:     111    Column:       1    Value: 111
+Token Identifier          Line:     111    Column:       6    Lexem: x6F
+Token BraceRoundOpen      Line:     111    Column:      10
+Token Integer             Line:     111    Column:      11    Value: 0
+Token Identifier          Line:     111    Column:      12    Lexem: x6F
+Token BraceRoundClose     Line:     111    Column:      15
+Token Integer             Line:     111    Column:      18    Value: 157
+Token BraceRoundOpen      Line:     111    Column:      22
+Token Integer             Line:     111    Column:      23    Value: 111
+Token BraceRoundClose     Line:     111    Column:      27
+Token Integer             Line:     111    Column:      30    Value: 1101111
+Token Identifier          Line:     111    Column:      44    Lexem: o
+Token Integer             Line:     112    Column:       1    Value: 112
+Token Identifier          Line:     112    Column:       6    Lexem: x70
+Token BraceRoundOpen      Line:     112    Column:      10
+Token Integer             Line:     112    Column:      11    Value: 0
+Token Identifier          Line:     112    Column:      12    Lexem: x70
+Token BraceRoundClose     Line:     112    Column:      15
+Token Integer             Line:     112    Column:      18    Value: 160
+Token BraceRoundOpen      Line:     112    Column:      22
+Token Integer             Line:     112    Column:      23    Value: 112
+Token BraceRoundClose     Line:     112    Column:      27
+Token Integer             Line:     112    Column:      30    Value: 1110000
+Token Identifier          Line:     112    Column:      44    Lexem: p
+Token Integer             Line:     113    Column:       1    Value: 113
+Token Identifier          Line:     113    Column:       6    Lexem: x71
+Token BraceRoundOpen      Line:     113    Column:      10
+Token Integer             Line:     113    Column:      11    Value: 0
+Token Identifier          Line:     113    Column:      12    Lexem: x71
+Token BraceRoundClose     Line:     113    Column:      15
+Token Integer             Line:     113    Column:      18    Value: 161
+Token BraceRoundOpen      Line:     113    Column:      22
+Token Integer             Line:     113    Column:      23    Value: 113
+Token BraceRoundClose     Line:     113    Column:      27
+Token Integer             Line:     113    Column:      30    Value: 1110001
+Token Identifier          Line:     113    Column:      44    Lexem: q
+Token Integer             Line:     114    Column:       1    Value: 114
+Token Identifier          Line:     114    Column:       6    Lexem: x72
+Token BraceRoundOpen      Line:     114    Column:      10
+Token Integer             Line:     114    Column:      11    Value: 0
+Token Identifier          Line:     114    Column:      12    Lexem: x72
+Token BraceRoundClose     Line:     114    Column:      15
+Token Integer             Line:     114    Column:      18    Value: 162
+Token BraceRoundOpen      Line:     114    Column:      22
+Token Integer             Line:     114    Column:      23    Value: 114
+Token BraceRoundClose     Line:     114    Column:      27
+Token Integer             Line:     114    Column:      30    Value: 1110010
+Token Identifier          Line:     114    Column:      44    Lexem: r
+Token Integer             Line:     115    Column:       1    Value: 115
+Token Identifier          Line:     115    Column:       6    Lexem: x73
+Token BraceRoundOpen      Line:     115    Column:      10
+Token Integer             Line:     115    Column:      11    Value: 0
+Token Identifier          Line:     115    Column:      12    Lexem: x73
+Token BraceRoundClose     Line:     115    Column:      15
+Token Integer             Line:     115    Column:      18    Value: 163
+Token BraceRoundOpen      Line:     115    Column:      22
+Token Integer             Line:     115    Column:      23    Value: 115
+Token BraceRoundClose     Line:     115    Column:      27
+Token Integer             Line:     115    Column:      30    Value: 1110011
+Token Identifier          Line:     115    Column:      44    Lexem: s
+Token Integer             Line:     116    Column:       1    Value: 116
+Token Identifier          Line:     116    Column:       6    Lexem: x74
+Token BraceRoundOpen      Line:     116    Column:      10
+Token Integer             Line:     116    Column:      11    Value: 0
+Token Identifier          Line:     116    Column:      12    Lexem: x74
+Token BraceRoundClose     Line:     116    Column:      15
+Token Integer             Line:     116    Column:      18    Value: 164
+Token BraceRoundOpen      Line:     116    Column:      22
+Token Integer             Line:     116    Column:      23    Value: 116
+Token BraceRoundClose     Line:     116    Column:      27
+Token Integer             Line:     116    Column:      30    Value: 1110100
+Token Identifier          Line:     116    Column:      44    Lexem: t
+Token Integer             Line:     117    Column:       1    Value: 117
+Token Identifier          Line:     117    Column:       6    Lexem: x75
+Token BraceRoundOpen      Line:     117    Column:      10
+Token Integer             Line:     117    Column:      11    Value: 0
+Token Identifier          Line:     117    Column:      12    Lexem: x75
+Token BraceRoundClose     Line:     117    Column:      15
+Token Integer             Line:     117    Column:      18    Value: 165
+Token BraceRoundOpen      Line:     117    Column:      22
+Token Integer             Line:     117    Column:      23    Value: 117
+Token BraceRoundClose     Line:     117    Column:      27
+Token Integer             Line:     117    Column:      30    Value: 1110101
+Token Identifier          Line:     117    Column:      44    Lexem: u
+Token Integer             Line:     118    Column:       1    Value: 118
+Token Identifier          Line:     118    Column:       6    Lexem: x76
+Token BraceRoundOpen      Line:     118    Column:      10
+Token Integer             Line:     118    Column:      11    Value: 0
+Token Identifier          Line:     118    Column:      12    Lexem: x76
+Token BraceRoundClose     Line:     118    Column:      15
+Token Integer             Line:     118    Column:      18    Value: 166
+Token BraceRoundOpen      Line:     118    Column:      22
+Token Integer             Line:     118    Column:      23    Value: 118
+Token BraceRoundClose     Line:     118    Column:      27
+Token Integer             Line:     118    Column:      30    Value: 1110110
+Token Identifier          Line:     118    Column:      44    Lexem: v
+Token Integer             Line:     119    Column:       1    Value: 119
+Token Identifier          Line:     119    Column:       6    Lexem: x77
+Token BraceRoundOpen      Line:     119    Column:      10
+Token Integer             Line:     119    Column:      11    Value: 0
+Token Identifier          Line:     119    Column:      12    Lexem: x77
+Token BraceRoundClose     Line:     119    Column:      15
+Token Integer             Line:     119    Column:      18    Value: 167
+Token BraceRoundOpen      Line:     119    Column:      22
+Token Integer             Line:     119    Column:      23    Value: 119
+Token BraceRoundClose     Line:     119    Column:      27
+Token Integer             Line:     119    Column:      30    Value: 1110111
+Token Identifier          Line:     119    Column:      44    Lexem: w
+Token Integer             Line:     120    Column:       1    Value: 120
+Token Identifier          Line:     120    Column:       6    Lexem: x78
+Token BraceRoundOpen      Line:     120    Column:      10
+Token Integer             Line:     120    Column:      11    Value: 0
+Token Identifier          Line:     120    Column:      12    Lexem: x78
+Token BraceRoundClose     Line:     120    Column:      15
+Token Integer             Line:     120    Column:      18    Value: 170
+Token BraceRoundOpen      Line:     120    Column:      22
+Token Integer             Line:     120    Column:      23    Value: 120
+Token BraceRoundClose     Line:     120    Column:      27
+Token Integer             Line:     120    Column:      30    Value: 1111000
+Token Identifier          Line:     120    Column:      44    Lexem: x
+Token Integer             Line:     121    Column:       1    Value: 121
+Token Identifier          Line:     121    Column:       6    Lexem: x79
+Token BraceRoundOpen      Line:     121    Column:      10
+Token Integer             Line:     121    Column:      11    Value: 0
+Token Identifier          Line:     121    Column:      12    Lexem: x79
+Token BraceRoundClose     Line:     121    Column:      15
+Token Integer             Line:     121    Column:      18    Value: 171
+Token BraceRoundOpen      Line:     121    Column:      22
+Token Integer             Line:     121    Column:      23    Value: 121
+Token BraceRoundClose     Line:     121    Column:      27
+Token Integer             Line:     121    Column:      30    Value: 1111001
+Token Identifier          Line:     121    Column:      44    Lexem: y
+Token Integer             Line:     122    Column:       1    Value: 122
+Token Identifier          Line:     122    Column:       6    Lexem: x7A
+Token BraceRoundOpen      Line:     122    Column:      10
+Token Integer             Line:     122    Column:      11    Value: 0
+Token Identifier          Line:     122    Column:      12    Lexem: x7A
+Token BraceRoundClose     Line:     122    Column:      15
+Token Integer             Line:     122    Column:      18    Value: 172
+Token BraceRoundOpen      Line:     122    Column:      22
+Token Integer             Line:     122    Column:      23    Value: 122
+Token BraceRoundClose     Line:     122    Column:      27
+Token Integer             Line:     122    Column:      30    Value: 1111010
+Token Identifier          Line:     122    Column:      44    Lexem: z
+Token Integer             Line:     123    Column:       1    Value: 123
+Token Identifier          Line:     123    Column:       6    Lexem: x7B
+Token BraceRoundOpen      Line:     123    Column:      10
+Token Integer             Line:     123    Column:      11    Value: 0
+Token Identifier          Line:     123    Column:      12    Lexem: x7B
+Token BraceRoundClose     Line:     123    Column:      15
+Token Integer             Line:     123    Column:      18    Value: 173
+Token BraceRoundOpen      Line:     123    Column:      22
+Token Integer             Line:     123    Column:      23    Value: 123
+Token BraceRoundClose     Line:     123    Column:      27
+Token Integer             Line:     123    Column:      30    Value: 1111011
+Token BraceCurlyOpen      Line:     123    Column:      44
+Token Integer             Line:     124    Column:       1    Value: 124
+Token Identifier          Line:     124    Column:       6    Lexem: x7C
+Token BraceRoundOpen      Line:     124    Column:      10
+Token Integer             Line:     124    Column:      11    Value: 0
+Token Identifier          Line:     124    Column:      12    Lexem: x7C
+Token BraceRoundClose     Line:     124    Column:      15
+Token Integer             Line:     124    Column:      18    Value: 174
+Token BraceRoundOpen      Line:     124    Column:      22
+Token Integer             Line:     124    Column:      23    Value: 124
+Token BraceRoundClose     Line:     124    Column:      27
+Token Integer             Line:     124    Column:      30    Value: 1111100
+Token Integer             Line:     125    Column:       1    Value: 125
+Token Identifier          Line:     125    Column:       6    Lexem: x7D
+Token BraceRoundOpen      Line:     125    Column:      10
+Token Integer             Line:     125    Column:      11    Value: 0
+Token Identifier          Line:     125    Column:      12    Lexem: x7D
+Token BraceRoundClose     Line:     125    Column:      15
+Token Integer             Line:     125    Column:      18    Value: 175
+Token BraceRoundOpen      Line:     125    Column:      22
+Token Integer             Line:     125    Column:      23    Value: 125
+Token BraceRoundClose     Line:     125    Column:      27
+Token Integer             Line:     125    Column:      30    Value: 1111101
+Token BraceCurlyClose     Line:     125    Column:      44
+Token Integer             Line:     126    Column:       1    Value: 126
+Token Identifier          Line:     126    Column:       6    Lexem: x7E
+Token BraceRoundOpen      Line:     126    Column:      10
+Token Integer             Line:     126    Column:      11    Value: 0
+Token Identifier          Line:     126    Column:      12    Lexem: x7E
+Token BraceRoundClose     Line:     126    Column:      15
+Token Integer             Line:     126    Column:      18    Value: 176
+Token BraceRoundOpen      Line:     126    Column:      22
+Token Integer             Line:     126    Column:      23    Value: 126
+Token BraceRoundClose     Line:     126    Column:      27
+Token Integer             Line:     126    Column:      30    Value: 1111110
+Token Integer             Line:     127    Column:       1    Value: 127
+Token Identifier          Line:     127    Column:       6    Lexem: x7F
+Token BraceRoundOpen      Line:     127    Column:      10
+Token Integer             Line:     127    Column:      11    Value: 0
+Token Identifier          Line:     127    Column:      12    Lexem: x7F
+Token BraceRoundClose     Line:     127    Column:      15
+Token Integer             Line:     127    Column:      18    Value: 177
+Token BraceRoundOpen      Line:     127    Column:      22
+Token Integer             Line:     127    Column:      23    Value: 127
+Token BraceRoundClose     Line:     127    Column:      27
+Token Integer             Line:     127    Column:      30    Value: 1111111

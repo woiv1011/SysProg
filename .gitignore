@@ -1,0 +1,8 @@
+*.d
+*.o
+*_lib
+*.out
+NEU/docs/html
+NEU/docs/latex
+NEU/docs/man
+*.tmp

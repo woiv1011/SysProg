@@ -1,0 +1,21 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+
+    "files.exclude": {
+        "**/*.opensdf": true,
+        "**/*.sdf": true,
+        "**/*.sln": true,
+        "**/*.suo": true,
+        "**/*.vcxproj*": true,
+        "**/*.cd": true,
+        
+        "**/Debug*": true,
+        "**/ALT*": true,
+        "**/docs*": true,
+        "**/build/testFiles/": true,
+        "**/build/*.txt": true,
+        "**/*.out": true
+    }
+}

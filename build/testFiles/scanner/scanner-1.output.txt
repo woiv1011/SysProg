@@ -1,0 +1,34 @@
+Token Integer            Line:     1    Column:     1    Value: 12345
+Token Lower              Line:     2    Column:     2
+Token Identifier         Line:     3    Column:     1    Lexem: ABCDEFGHIJKLMNOPQRSTUVWXYZ
+Token Identifier         Line:     4    Column:     1    Lexem: abcdefghijklmnopqrstuvwxyz
+Token Plus               Line:     5    Column:     1
+Token Minus              Line:     5    Column:     4
+Token Multiplication     Line:     5    Column:     7
+Token Lower              Line:     5    Column:    13
+Token Greater            Line:     5    Column:    15
+Token Equals             Line:     5    Column:    17
+Token Assign             Line:     5    Column:    19
+Token Different          Line:     5    Column:    22
+Token ExclamationMark    Line:     5    Column:    26
+Token Ampersand          Line:     5    Column:    29
+Token Semicolon          Line:     5    Column:    32
+Token BraceRoundOpen     Line:     5    Column:    36
+Token BraceRoundClose    Line:     5    Column:    39
+Token BraceCurlyOpen     Line:     5    Column:    42
+Token BraceCurlyClose    Line:     5    Column:    45
+Token BraceSquareOpen    Line:     5    Column:    48
+Token BraceSquareClose   Line:     5    Column:    51
+Token Identifier         Line:     7    Column:     1    Lexem: dies
+Token Identifier         Line:     7    Column:     6    Lexem: ist
+Token Identifier         Line:     7    Column:    10    Lexem: ein
+Token Identifier         Line:     7    Column:    43    Lexem: Kommentar
+Token KeywordIf          Line:     9    Column:     1
+Token KeywordWhile       Line:    10    Column:     1
+Token KeywordIf          Line:    11    Column:     1
+Token KeywordWhile       Line:    12    Column:     1
+Token Identifier         Line:    13    Column:     1    Lexem: iF
+Token Identifier         Line:    14    Column:     1    Lexem: WhIle
+Token Identifier         Line:    15    Column:     1    Lexem: IFWHILE
+Token Identifier         Line:    16    Column:     1    Lexem: ABCDEFGHIJK
+Token Identifier         Line:    16    Column:    13    Lexem: LMNOPQRSTUVWXYZ

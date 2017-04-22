@@ -1,0 +1,876 @@
+﻿Project Gutenberg's Amusements in Mathematics, by Henry Ernest Dudeney
+
+This eBook is for the use of anyone anywhere at no cost and with
+almost no restrictions whatsoever.  You may copy it, give it away or
+re-use it under the terms of the Project Gutenberg License included
+with this eBook or online at www.gutenberg.net
+
+
+Title: Amusements in Mathematics
+
+Author: Henry Ernest Dudeney
+
+Release Date: September 17, 2005 [EBook #16713]
+
+Language: English
+
+
+*** START OF THIS PROJECT GUTENBERG EBOOK AMUSEMENTS IN MATHEMATICS ***
+
+
+
+
+Produced by Stephen Schulze, Jonathan Ingram and the Online
+Distributed Proofreading Team at http://www.pgdp.net
+
+
+
+
+
+[Transcribers note: Many of the puzzles in this book assume a
+familiarity with the currency of Great Britain in the early 1900s. As
+this is likely not common knowledge for those outside Britain (and
+possibly many within,) I am including a chart of relative values.
+
+The most common units used were:
+
+    the Penny,    abbreviated: d. (from the Roman penny, denarius)
+    the Shilling, abbreviated: s.
+    the Pound,    abbreviated: £
+
+There was 12 Pennies to a Shilling and 20 Shillings to a Pound, so there
+was 240 Pennies in a Pound.
+
+To further complicate things, there were many coins which were various
+fractional values of Pennies, Shillings or Pounds.
+
+    Farthing                           ¼d.
+
+    Half-penny                         ½d.
+
+    Penny                              1d.
+
+    Three-penny                        3d.
+
+    Sixpence (or tanner)               6d.
+
+    Shilling (or bob)                  1s.
+
+    Florin or two shilling piece       2s.
+
+    Half-crown (or half-dollar)    2s. 6d.
+
+    Double-florin                      4s.
+
+    Crown (or dollar)                  5s.
+
+    Half-Sovereign                    10s.
+
+    Sovereign (or Pound)        £1 or 20s.
+
+This is by no means a comprehensive list, but it should be adequate to
+solve the puzzles in this book.
+
+Exponents are represented in this text by ^, e.g. '3 squared' is 3^2.
+
+Numbers with fractional components (other than ¼, ½ and ¾) have a +
+symbol separating the whole number component from the fraction. It makes
+the fraction look odd, but yeilds correct solutions no matter how it is
+interpreted. E.G., 4 and eleven twenty-thirds is 4+11/23, not 411/23 or
+4-11/23.
+
+]
+
+
+
+
+AMUSEMENTS IN MATHEMATICS
+
+         by
+
+HENRY ERNEST DUDENEY
+
+
+    In Mathematicks he was greater
+    Than Tycho Brahe or Erra Pater:
+    For he, by geometrick scale,
+    Could take the size of pots of ale;
+    Resolve, by sines and tangents, straight,
+    If bread or butter wanted weight;
+    And wisely tell what hour o' th' day
+    The clock does strike by algebra.
+
+                  BUTLER'S _Hudibras_.
+
+
+1917
+
+
+
+
+PREFACE
+
+
+In issuing this volume of my Mathematical Puzzles, of which some have
+appeared in periodicals and others are given here for the first time, I
+must acknowledge the encouragement that I have received from many
+unknown correspondents, at home and abroad, who have expressed a desire
+to have the problems in a collected form, with some of the solutions
+given at greater length than is possible in magazines and newspapers.
+Though I have included a few old puzzles that have interested the world
+for generations, where I felt that there was something new to be said
+about them, the problems are in the main original. It is true that some
+of these have become widely known through the press, and it is possible
+that the reader may be glad to know their source.
+
+On the question of Mathematical Puzzles in general there is, perhaps,
+little more to be said than I have written elsewhere. The history of the
+subject entails nothing short of the actual story of the beginnings and
+development of exact thinking in man. The historian must start from the
+time when man first succeeded in counting his ten fingers and in
+dividing an apple into two approximately equal parts. Every puzzle that
+is worthy of consideration can be referred to mathematics and logic.
+Every man, woman, and child who tries to "reason out" the answer to the
+simplest puzzle is working, though not of necessity consciously, on
+mathematical lines. Even those puzzles that we have no way of attacking
+except by haphazard attempts can be brought under a method of what has
+been called "glorified trial"--a system of shortening our labours by
+avoiding or eliminating what our reason tells us is useless. It is, in
+fact, not easy to say sometimes where the "empirical" begins and where
+it ends.
+
+When a man says, "I have never solved a puzzle in my life," it is
+difficult to know exactly what he means, for every intelligent
+individual is doing it every day. The unfortunate inmates of our lunatic
+asylums are sent there expressly because they cannot solve
+puzzles--because they have lost their powers of reason. If there were no
+puzzles to solve, there would be no questions to ask; and if there were
+no questions to be asked, what a world it would be! We should all be
+equally omniscient, and conversation would be useless and idle.
+
+It is possible that some few exceedingly sober-minded mathematicians,
+who are impatient of any terminology in their favourite science but the
+academic, and who object to the elusive x and y appearing under any
+other names, will have wished that various problems had been presented
+in a less popular dress and introduced with a less flippant phraseology.
+I can only refer them to the first word of my title and remind them that
+we are primarily out to be amused--not, it is true, without some hope of
+picking up morsels of knowledge by the way. If the manner is light, I
+can only say, in the words of Touchstone, that it is "an ill-favoured
+thing, sir, but my own; a poor humour of mine, sir."
+
+As for the question of difficulty, some of the puzzles, especially in
+the Arithmetical and Algebraical category, are quite easy. Yet some of
+those examples that look the simplest should not be passed over without
+a little consideration, for now and again it will be found that there is
+some more or less subtle pitfall or trap into which the reader may be
+apt to fall. It is good exercise to cultivate the habit of being very
+wary over the exact wording of a puzzle. It teaches exactitude and
+caution. But some of the problems are very hard nuts indeed, and not
+unworthy of the attention of the advanced mathematician. Readers will
+doubtless select according to their individual tastes.
+
+In many cases only the mere answers are given. This leaves the beginner
+something to do on his own behalf in working out the method of solution,
+and saves space that would be wasted from the point of view of the
+advanced student. On the other hand, in particular cases where it seemed
+likely to interest, I have given rather extensive solutions and treated
+problems in a general manner. It will often be found that the notes on
+one problem will serve to elucidate a good many others in the book; so
+that the reader's difficulties will sometimes be found cleared up as he
+advances. Where it is possible to say a thing in a manner that may be
+"understanded of the people" generally, I prefer to use this simple
+phraseology, and so engage the attention and interest of a larger
+public. The mathematician will in such cases have no difficulty in
+expressing the matter under consideration in terms of his familiar
+symbols.
+
+I have taken the greatest care in reading the proofs, and trust that any
+errors that may have crept in are very few. If any such should occur, I
+can only plead, in the words of Horace, that "good Homer sometimes
+nods," or, as the bishop put it, "Not even the youngest curate in my
+diocese is infallible."
+
+I have to express my thanks in particular to the proprietors of _The
+Strand Magazine_, _Cassell's Magazine_, _The Queen_, _Tit-Bits_, and
+_The Weekly Dispatch_ for their courtesy in allowing me to reprint some
+of the puzzles that have appeared in their pages.
+
+THE AUTHORS' CLUB _March_ 25, 1917
+
+
+
+
+CONTENTS
+
+
+    PREFACE                                                v
+    ARITHMETICAL AND ALGEBRAICAL PROBLEMS                  1
+      Money Puzzles                                        1
+      Age and Kinship Puzzles                              6
+      Clock Puzzles                                        9
+      Locomotion and Speed Puzzles                        11
+      Digital Puzzles                                     13
+      Various Arithmetical and Algebraical Problems       17
+    GEOMETRICAL PROBLEMS                                  27
+      Dissection Puzzles                                  27
+      Greek Cross Puzzles                                 28
+      Various Dissection Puzzles                          35
+      Patchwork Puzzles                                   46
+      Various Geometrical Puzzles                         49
+    POINTS AND LINES PROBLEMS                             56
+    MOVING COUNTER PROBLEMS                               58
+    UNICURSAL AND ROUTE PROBLEMS                          68
+    COMBINATION AND GROUP PROBLEMS                        76
+    CHESSBOARD PROBLEMS                                   85
+      The Chessboard                                      85
+      Statical Chess Puzzles                              88
+      The Guarded Chessboard                              95
+      Dynamical Chess Puzzles                             96
+      Various Chess Puzzles                              105
+    MEASURING, WEIGHING, AND PACKING PUZZLES             109
+    CROSSING RIVER PROBLEMS                              112
+    PROBLEMS CONCERNING GAMES                            114
+    PUZZLE GAMES                                         117
+    MAGIC SQUARE PROBLEMS                                119
+      Subtracting, Multiplying, and Dividing Magics      124
+      Magic Squares of Primes                            125
+    MAZES AND HOW TO THREAD THEM                         127
+    THE PARADOX PARTY                                    137
+    UNCLASSIFIED PROBLEMS                                142
+    SOLUTIONS                                            148
+    INDEX                                                253
+
+
+
+
+
+
+AMUSEMENTS IN MATHEMATICS.
+
+
+
+
+ARITHMETICAL AND ALGEBRAICAL PROBLEMS.
+
+                   "And what was he?
+    Forsooth, a great arithmetician."
+                              _Othello_, I. i.
+
+
+The puzzles in this department are roughly thrown together in classes
+for the convenience of the reader. Some are very easy, others quite
+difficult. But they are not arranged in any order of difficulty--and
+this is intentional, for it is well that the solver should not be warned
+that a puzzle is just what it seems to be. It may, therefore, prove to
+be quite as simple as it looks, or it may contain some pitfall into
+which, through want of care or over-confidence, we may stumble.
+
+Also, the arithmetical and algebraical puzzles are not separated in the
+manner adopted by some authors, who arbitrarily require certain problems
+to be solved by one method or the other. The reader is left to make his
+own choice and determine which puzzles are capable of being solved by
+him on purely arithmetical lines.
+
+
+
+
+
+
+MONEY PUZZLES.
+
+    "Put not your trust in money, but put your money in trust."
+
+    OLIVER WENDELL HOLMES.
+
+
+1.--A POST-OFFICE PERPLEXITY.
+
+In every business of life we are occasionally perplexed by some chance
+question that for the moment staggers us. I quite pitied a young lady in
+a branch post-office when a gentleman entered and deposited a crown on
+the counter with this request: "Please give me some twopenny stamps, six
+times as many penny stamps, and make up the rest of the money in
+twopence-halfpenny stamps." For a moment she seemed bewildered, then her
+brain cleared, and with a smile she handed over stamps in exact
+fulfilment of the order. How long would it have taken you to think it
+out?
+
+
+2.--YOUTHFUL PRECOCITY.
+
+The precocity of some youths is surprising. One is disposed to say on
+occasion, "That boy of yours is a genius, and he is certain to do great
+things when he grows up;" but past experience has taught us that he
+invariably becomes quite an ordinary citizen. It is so often the case,
+on the contrary, that the dull boy becomes a great man. You never can
+tell. Nature loves to present to us these queer paradoxes. It is well
+known that those wonderful "lightning calculators," who now and again
+surprise the world by their feats, lose all their mysterious powers
+directly they are taught the elementary rules of arithmetic.
+
+A boy who was demolishing a choice banana was approached by a young
+friend, who, regarding him with envious eyes, asked, "How much did you
+pay for that banana, Fred?" The prompt answer was quite remarkable in
+its way: "The man what I bought it of receives just half as many
+sixpences for sixteen dozen dozen bananas as he gives bananas for a
+fiver."
+
+Now, how long will it take the reader to say correctly just how much
+Fred paid for his rare and refreshing fruit?
+
+
+3.--AT A CATTLE MARKET.
+
+Three countrymen met at a cattle market. "Look here," said Hodge to
+Jakes, "I'll give you six of my pigs for one of your horses, and then
+you'll have twice as many animals here as I've got." "If that's your
+way of doing business," said Durrant to Hodge, "I'll give you fourteen
+of my sheep for a horse, and then you'll have three times as many
+animals as I." "Well, I'll go better than that," said Jakes to Durrant;
+"I'll give you four cows for a horse, and then you'll have six times as
+many animals as I've got here."
+
+No doubt this was a very primitive way of bartering animals, but it is
+an interesting little puzzle to discover just how many animals Jakes,
+Hodge, and Durrant must have taken to the cattle market.
+
+
+4.--THE BEANFEAST PUZZLE.
+
+A number of men went out together on a bean-feast. There were four
+parties invited--namely, 25 cobblers, 20 tailors, 18 hatters, and 12
+glovers. They spent altogether £6, 13s. It was found that five cobblers
+spent as much as four tailors; that twelve tailors spent as much as nine
+hatters; and that six hatters spent as much as eight glovers. The puzzle
+is to find out how much each of the four parties spent.
+
+
+5.--A QUEER COINCIDENCE.
+
+Seven men, whose names were Adams, Baker, Carter, Dobson, Edwards,
+Francis, and Gudgeon, were recently engaged in play. The name of the
+particular game is of no consequence. They had agreed that whenever a
+player won a game he should double the money of each of the other
+players--that is, he was to give the players just as much money as they
+had already in their pockets. They played seven games, and, strange to
+say, each won a game in turn, in the order in which their names are
+given. But a more curious coincidence is this--that when they had
+finished play each of the seven men had exactly the same amount--two
+shillings and eightpence--in his pocket. The puzzle is to find out how
+much money each man had with him before he sat down to play.
+
+
+6.--A CHARITABLE BEQUEST.
+
+A man left instructions to his executors to distribute once a year
+exactly fifty-five shillings among the poor of his parish; but they were
+only to continue the gift so long as they could make it in different
+ways, always giving eighteenpence each to a number of women and half a
+crown each to men. During how many years could the charity be
+administered? Of course, by "different ways" is meant a different number
+of men and women every time.
+
+
+7.--THE WIDOW'S LEGACY.
+
+A gentleman who recently died left the sum of £8,000 to be divided among
+his widow, five sons, and four daughters. He directed that every son
+should receive three times as much as a daughter, and that every
+daughter should have twice as much as their mother. What was the widow's
+share?
+
+
+8.--INDISCRIMINATE CHARITY.
+
+A charitable gentleman, on his way home one night, was appealed to by
+three needy persons in succession for assistance. To the first person he
+gave one penny more than half the money he had in his pocket; to the
+second person he gave twopence more than half the money he then had in
+his pocket; and to the third person he handed over threepence more than
+half of what he had left. On entering his house he had only one penny in
+his pocket. Now, can you say exactly how much money that gentleman had
+on him when he started for home?
+
+
+9.--THE TWO AEROPLANES.
+
+A man recently bought two aeroplanes, but afterwards found that they
+would not answer the purpose for which he wanted them. So he sold them
+for £600 each, making a loss of 20 per cent. on one machine and a profit
+of 20 per cent. on the other. Did he make a profit on the whole
+transaction, or a loss? And how much?
+
+
+10.--BUYING PRESENTS.
+
+"Whom do you think I met in town last week, Brother William?" said Uncle
+Benjamin. "That old skinflint Jorkins. His family had been taking him
+around buying Christmas presents. He said to me, 'Why cannot the
+government abolish Christmas, and make the giving of presents punishable
+by law? I came out this morning with a certain amount of money in my
+pocket, and I find I have spent just half of it. In fact, if you will
+believe me, I take home just as many shillings as I had pounds, and half
+as many pounds as I had shillings. It is monstrous!'" Can you say
+exactly how much money Jorkins had spent on those presents?
+
+
+11.--THE CYCLISTS' FEAST.
+
+    'Twas last Bank Holiday, so I've been told,
+      Some cyclists rode abroad in glorious weather.
+    Resting at noon within a tavern old,
+      They all agreed to have a feast together.
+    "Put it all in one bill, mine host," they said,
+      "For every man an equal share will pay."
+    The bill was promptly on the table laid,
+      And four pounds was the reckoning that day.
+    But, sad to state, when they prepared to square,
+      'Twas found that two had sneaked outside and fled.
+    So, for two shillings more than his due share
+      Each honest man who had remained was bled.
+    They settled later with those rogues, no doubt.
+      How many were they when they first set out?
+
+
+12.--A QUEER THING IN MONEY.
+
+It will be found that £66, 6s. 6d. equals 15,918 pence. Now, the four
+6's added together make 24, and the figures in 15,918 also add to 24. It
+is a curious fact that there is only one other sum of money, in pounds,
+shillings, and pence (all similarly repetitions of one figure), of which
+the digits shall add up the same as the digits of the amount in pence.
+What is the other sum of money?
+
+
+13.--A NEW MONEY PUZZLE.
+
+The largest sum of money that can be written in pounds, shillings,
+pence, and farthings, using each of the nine digits once and only once,
+is £98,765, 4s. 3½d. Now, try to discover the smallest sum of money
+that can be written down under precisely the same conditions. There must
+be some value given for each denomination--pounds, shillings, pence,
+and farthings--and the nought may not be used. It requires just a little
+judgment and thought.
+
+
+14.--SQUARE MONEY.
+
+"This is queer," said McCrank to his friend. "Twopence added to twopence
+is fourpence, and twopence multiplied by twopence is also fourpence." Of
+course, he was wrong in thinking you can multiply money by money. The
+multiplier must be regarded as an abstract number. It is true that two
+feet multiplied by two feet will make four square feet. Similarly, two
+pence multiplied by two pence will produce four square pence! And it
+will perplex the reader to say what a "square penny" is. But we will
+assume for the purposes of our puzzle that twopence multiplied by
+twopence is fourpence. Now, what two amounts of money will produce the
+next smallest possible result, the same in both cases, when added or
+multiplied in this manner? The two amounts need not be alike, but they
+must be those that can be paid in current coins of the realm.
+
+
+15.--POCKET MONEY.
+
+What is the largest sum of money--all in current silver coins and no
+four-shilling piece--that I could have in my pocket without being able
+to give change for a half-sovereign?
+
+16.--THE MILLIONAIRE'S PERPLEXITY.
+
+Mr. Morgan G. Bloomgarten, the millionaire, known in the States as the
+Clam King, had, for his sins, more money than he knew what to do with.
+It bored him. So he determined to persecute some of his poor but happy
+friends with it. They had never done him any harm, but he resolved to
+inoculate them with the "source of all evil." He therefore proposed to
+distribute a million dollars among them and watch them go rapidly to the
+bad. But he was a man of strange fancies and superstitions, and it was
+an inviolable rule with him never to make a gift that was not either one
+dollar or some power of seven--such as 7, 49, 343, 2,401, which numbers
+of dollars are produced by simply multiplying sevens together. Another
+rule of his was that he would never give more than six persons exactly
+the same sum. Now, how was he to distribute the 1,000,000 dollars? You
+may distribute the money among as many people as you like, under the
+conditions given.
+
+17.--THE PUZZLING MONEY-BOXES.
+
+Four brothers--named John, William, Charles, and Thomas--had each a
+money-box. The boxes were all given to them on the same day, and they at
+once put what money they had into them; only, as the boxes were not very
+large, they first changed the money into as few coins as possible. After
+they had done this, they told one another how much money they had saved,
+and it was found that if John had had 2s. more in his box than at
+present, if William had had 2s. less, if Charles had had twice as much,
+and if Thomas had had half as much, they would all have had exactly the
+same amount.
+
+Now, when I add that all four boxes together contained 45s., and that
+there were only six coins in all in them, it becomes an entertaining
+puzzle to discover just what coins were in each box.
+
+
+18.--THE MARKET WOMEN.
+
+A number of market women sold their various products at a certain price
+per pound (different in every case), and each received the same
+amount--2s. 2½d. What is the greatest number of women there could
+have been? The price per pound in every case must be such as could be
+paid in current money.
+
+
+19.--THE NEW YEAR'S EVE SUPPERS.
+
+The proprietor of a small London café has given me some interesting
+figures. He says that the ladies who come alone to his place for
+refreshment spend each on an average eighteenpence, that the
+unaccompanied men spend half a crown each, and that when a gentleman
+brings in a lady he spends half a guinea. On New Year's Eve he supplied
+suppers to twenty-five persons, and took five pounds in all. Now,
+assuming his averages to have held good in every case, how was his
+company made up on that occasion? Of course, only single gentlemen,
+single ladies, and pairs (a lady and gentleman) can be supposed to have
+been present, as we are not considering larger parties.
+
+
+20.--BEEF AND SAUSAGES.
+
+"A neighbour of mine," said Aunt Jane, "bought a certain quantity of
+beef at two shillings a pound, and the same quantity of sausages at
+eighteenpence a pound. I pointed out to her that if she had divided the
+same money equally between beef and sausages she would have gained two
+pounds in the total weight. Can you tell me exactly how much she spent?"
+
+"Of course, it is no business of mine," said Mrs. Sunniborne; "but a
+lady who could pay such prices must be somewhat inexperienced in
+domestic economy."
+
+"I quite agree, my dear," Aunt Jane replied, "but you see that is not
+the precise point under discussion, any more than the name and morals of
+the tradesman."
+
+
+21.--A DEAL IN APPLES.
+
+I paid a man a shilling for some apples, but they were so small that I
+made him throw in two extra apples. I find that made them cost just a
+penny a dozen less than the first price he asked. How many apples did I
+get for my shilling?
+
+
+22.--A DEAL IN EGGS.
+
+A man went recently into a dairyman's shop to buy eggs. He wanted them
+of various qualities. The salesman had new-laid eggs at the high price
+of fivepence each, fresh eggs at one penny each, eggs at a halfpenny
+each, and eggs for electioneering purposes at a greatly reduced figure,
+but as there was no election on at the time the buyer had no use for the
+last. However, he bought some of each of the three other kinds and
+obtained exactly one hundred eggs for eight and fourpence. Now, as he
+brought away exactly the same number of eggs of two of the three
+qualities, it is an interesting puzzle to determine just how many he
+bought at each price.
+
+
+23.--THE CHRISTMAS-BOXES.
+
+Some years ago a man told me he had spent one hundred English silver
+coins in Christmas-boxes, giving every person the same amount, and it
+cost him exactly £1, 10s. 1d. Can you tell just how many persons
+received the present, and how he could have managed the distribution?
+That odd penny looks queer, but it is all right.
+
+
+24.--A SHOPPING PERPLEXITY.
+
+Two ladies went into a shop where, through some curious eccentricity, no
+change was given, and made purchases amounting together to less than
+five shillings. "Do you know," said one lady, "I find I shall require no
+fewer than six current coins of the realm to pay for what I have
+bought." The other lady considered a moment, and then exclaimed: "By a
+peculiar coincidence, I am exactly in the same dilemma." "Then we will
+pay the two bills together." But, to their astonishment, they still
+required six coins. What is the smallest possible amount of their
+purchases--both different?
+
+
+25.--CHINESE MONEY.
+
+The Chinese are a curious people, and have strange inverted ways of
+doing things. It is said that they use a saw with an upward pressure
+instead of a downward one, that they plane a deal board by pulling the
+tool toward them instead of pushing it, and that in building a house
+they first construct the roof and, having raised that into position,
+proceed to work downwards. In money the currency of the country consists
+of taels of fluctuating value. The tael became thinner and thinner until
+2,000 of them piled together made less than three inches in height. The
+common cash consists of brass coins of varying thicknesses, with a
+round, square, or triangular hole in the centre, as in our illustration.
+
+[Illustration]
+
+These are strung on wires like buttons. Supposing that eleven coins with
+round holes are worth fifteen ching-changs, that eleven with square
+holes are worth sixteen ching-changs, and that eleven with triangular
+holes are worth seventeen ching-changs, how can a Chinaman give me
+change for half a crown, using no coins other than the three mentioned?
+A ching-chang is worth exactly twopence and four-fifteenths of a
+ching-chang.
+
+
+26.--THE JUNIOR CLERK'S PUZZLE.
+
+Two youths, bearing the pleasant names of Moggs and Snoggs, were
+employed as junior clerks by a merchant in Mincing Lane. They were both
+engaged at the same salary--that is, commencing at the rate of £50 a
+year, payable half-yearly. Moggs had a yearly rise of £10, and Snoggs
+was offered the same, only he asked, for reasons that do not concern our
+puzzle, that he might take his rise at £2, 10s. half-yearly, to which
+his employer (not, perhaps, unnaturally!) had no objection.
+
+Now we come to the real point of the puzzle. Moggs put regularly into
+the Post Office Savings Bank a certain proportion of his salary, while
+Snoggs saved twice as great a proportion of his, and at the end of five
+years they had together saved £268, 15s. How much had each saved? The
+question of interest can be ignored.
+
+
+27.--GIVING CHANGE.
+
+Every one is familiar with the difficulties that frequently arise over
+the giving of change, and how the assistance of a third person with a
+few coins in his pocket will sometimes help us to set the matter right.
+Here is an example. An Englishman went into a shop in New York and
+bought goods at a cost of thirty-four cents. The only money he had was a
+dollar, a three-cent piece, and a two-cent piece. The tradesman had only
+a half-dollar and a quarter-dollar. But another customer happened to be
+present, and when asked to help produced two dimes, a five-cent piece, a
+two-cent piece, and a one-cent piece. How did the tradesman manage to
+give change? For the benefit of those readers who are not familiar with
+the American coinage, it is only necessary to say that a dollar is a
+hundred cents and a dime ten cents. A puzzle of this kind should rarely
+cause any difficulty if attacked in a proper manner.
+
+
+28.--DEFECTIVE OBSERVATION.
+
+Our observation of little things is frequently defective, and our
+memories very liable to lapse. A certain judge recently remarked in a
+case that he had no recollection whatever of putting the wedding-ring on
+his wife's finger. Can you correctly answer these questions without
+having the coins in sight? On which side of a penny is the date given?
+Some people are so unobservant that, although they are handling the coin
+nearly every day of their lives, they are at a loss to answer this
+simple question. If I lay a penny flat on the table, how many other
+pennies can I place around it, every one also lying flat on the table,
+so that they all touch the first one? The geometrician will, of course,
+give the answer at once, and not need to make any experiment. He will
+also know that, since all circles are similar, the same answer will
+necessarily apply to any coin. The next question is a most interesting
+one to ask a company, each person writing down his answer on a slip of
+paper, so that no one shall be helped by the answers of others. What is
+the greatest number of three-penny-pieces that may be laid flat on the
+surface of a half-crown, so that no piece lies on another or overlaps
+the surface of the half-crown? It is amazing what a variety of different
+answers one gets to this question. Very few people will be found to give
+the correct number. Of course the answer must be given without looking
+at the coins.
+
+
+29.--THE BROKEN COINS.
+
+A man had three coins--a sovereign, a shilling, and a penny--and he
+found that exactly the same fraction of each coin had been broken away.
+Now, assuming that the original intrinsic value of these coins was the
+same as their nominal value--that is, that the sovereign was worth a
+pound, the shilling worth a shilling, and the penny worth a penny--what
+proportion of each coin has been lost if the value of the three
+remaining fragments is exactly one pound?
+
+
+30.--TWO QUESTIONS IN PROBABILITIES.
+
+There is perhaps no class of puzzle over which people so frequently
+blunder as that which involves what is called the theory of
+probabilities. I will give two simple examples of the sort of puzzle I
+mean. They are really quite easy, and yet many persons are tripped up by
+them. A friend recently produced five pennies and said to me: "In
+throwing these five pennies at the same time, what are the chances that
+at least four of the coins will turn up either all heads or all tails?"
+His own solution was quite wrong, but the correct answer ought not to be
+hard to discover. Another person got a wrong answer to the following
+little puzzle which I heard him propound: "A man placed three sovereigns
+and one shilling in a bag. How much should be paid for permission to
+draw one coin from it?" It is, of course, understood that you are as
+likely to draw any one of the four coins as another.
+
+
+31.--DOMESTIC ECONOMY.
+
+Young Mrs. Perkins, of Putney, writes to me as follows: "I should be
+very glad if you could give me the answer to a little sum that has been
+worrying me a good deal lately. Here it is: We have only been married a
+short time, and now, at the end of two years from the time when we set
+up housekeeping, my husband tells me that he finds we have spent a third
+of his yearly income in rent, rates, and taxes, one-half in domestic
+expenses, and one-ninth in other ways. He has a balance of £190
+remaining in the bank. I know this last, because he accidentally left
+out his pass-book the other day, and I peeped into it. Don't you think
+that a husband ought to give his wife his entire confidence in his money
+matters? Well, I do; and--will you believe it?--he has never told me
+what his income really is, and I want, very naturally, to find out. Can
+you tell me what it is from the figures I have given you?"
+
+Yes; the answer can certainly be given from the figures contained in
+Mrs. Perkins's letter. And my readers, if not warned, will be
+practically unanimous in declaring the income to be--something absurdly
+in excess of the correct answer!
+
+
+32.--THE EXCURSION TICKET PUZZLE.
+
+When the big flaming placards were exhibited at the little provincial
+railway station, announcing that the Great ---- Company would run cheap
+excursion trains to London for the Christmas holidays, the inhabitants
+of Mudley-cum-Turmits were in quite a flutter of excitement. Half an
+hour before the train came in the little booking office was crowded with
+country passengers, all bent on visiting their friends in the great
+Metropolis. The booking clerk was unaccustomed to dealing with crowds of
+such a dimension, and he told me afterwards, while wiping his manly
+brow, that what caused him so much trouble was the fact that these
+rustics paid their fares in such a lot of small money.
+
+He said that he had enough farthings to supply a West End draper with
+change for a week, and a sufficient number of threepenny pieces for the
+congregations of three parish churches. "That excursion fare," said he,
+"is nineteen shillings and ninepence, and I should like to know in just
+how many different ways it is possible for such an amount to be paid in
+the current coin of this realm."
+
+Here, then, is a puzzle: In how many different ways may nineteen
+shillings and ninepence be paid in our current coin? Remember that the
+fourpenny-piece is not now current.
+
+
+33.--PUZZLE IN REVERSALS.
+
+Most people know that if you take any sum of money in pounds, shillings,
+and pence, in which the number of pounds (less than £12) exceeds that of
+the pence, reverse it (calling the pounds pence and the pence pounds),
+find the difference, then reverse and add this difference, the result is
+always £12, 18s. 11d. But if we omit the condition, "less than £12," and
+allow nought to represent shillings or pence--(1) What is the lowest
+amount to which the rule will not apply? (2) What is the highest amount
+to which it will apply? Of course, when reversing such a sum as £14,
+15s. 3d. it may be written £3, 16s. 2d., which is the same as £3, 15s.
+14d.
+
+
+34.--THE GROCER AND DRAPER.
+
+A country "grocer and draper" had two rival assistants, who prided
+themselves on their rapidity in serving customers. The young man on the
+grocery side could weigh up two one-pound parcels of sugar per minute,
+while the drapery assistant could cut three one-yard lengths of cloth in
+the same time. Their employer, one slack day, set them a race, giving
+the grocer a barrel of sugar and telling him to weigh up forty-eight
+one-pound parcels of sugar While the draper divided a roll of
+forty-eight yards of cloth into yard pieces. The two men were
+interrupted together by customers for nine minutes, but the draper was
+disturbed seventeen times as long as the grocer. What was the result of
+the race?
+
+35.--JUDKINS'S CATTLE.
+
+Hiram B. Judkins, a cattle-dealer of Texas, had five droves of animals,
+consisting of oxen, pigs, and sheep, with the same number of animals in
+each drove. One morning he sold all that he had to eight dealers. Each
+dealer bought the same number of animals, paying seventeen dollars for
+each ox, four dollars for each pig, and two dollars for each sheep; and
+Hiram received in all three hundred and one dollars. What is the
+greatest number of animals he could have had? And how many would there
+be of each kind?
+
+36.--BUYING APPLES.
+
+As the purchase of apples in small quantities has always presented
+considerable difficulties, I think it well to offer a few remarks on
+this subject. We all know the story of the smart boy who, on being told
+by the old woman that she was selling her apples at four for threepence,
+said: "Let me see! Four for threepence; that's three for twopence, two
+for a penny, one for nothing--I'll take _one_!"
+
+There are similar cases of perplexity. For example, a boy once picked up
+a penny apple from a stall, but when he learnt that the woman's pears
+were the same price he exchanged it, and was about to walk off. "Stop!"
+said the woman. "You haven't paid me for the pear!" "No," said the boy,
+"of course not. I gave you the apple for it." "But you didn't pay for
+the apple!" "Bless the woman! You don't expect me to pay for the apple
+and the pear too!" And before the poor creature could get out of the
+tangle the boy had disappeared.
+
+Then, again, we have the case of the man who gave a boy sixpence and
+promised to repeat the gift as soon as the youngster had made it into
+ninepence. Five minutes later the boy returned. "I have made it into
+ninepence," he said, at the same time handing his benefactor threepence.
+"How do you make that out?" he was asked. "I bought threepennyworth of
+apples." "But that does not make it into ninepence!" "I should rather
+think it did," was the boy's reply. "The apple woman has threepence,
+hasn't she? Very well, I have threepennyworth of apples, and I have just
+given you the other threepence. What's that but ninepence?"
+
+I cite these cases just to show that the small boy really stands in need
+of a little instruction in the art of buying apples. So I will give a
+simple poser dealing with this branch of commerce.
+
+An old woman had apples of three sizes for sale--one a penny, two a
+penny, and three a penny. Of course two of the second size and three of
+the third size were respectively equal to one apple of the largest size.
+Now, a gentleman who had an equal number of boys and girls gave his
+children sevenpence to be spent amongst them all on these apples. The
+puzzle is to give each child an equal distribution of apples. How was
+the sevenpence spent, and how many children were there?
+
+
+37.--BUYING CHESTNUTS.
+
+Though the following little puzzle deals with the purchase of chestnuts,
+it is not itself of the "chestnut" type. It is quite new. At first sight
+it has certainly the appearance of being of the "nonsense puzzle"
+character, but it is all right when properly considered.
+
+A man went to a shop to buy chestnuts. He said he wanted a pennyworth,
+and was given five chestnuts. "It is not enough; I ought to have a
+sixth," he remarked! "But if I give you one chestnut more." the shopman
+replied, "you will have five too many." Now, strange to say, they were
+both right. How many chestnuts should the buyer receive for half a
+crown?
+
+
+38.--THE BICYCLE THIEF.
+
+Here is a little tangle that is perpetually cropping up in various
+guises. A cyclist bought a bicycle for £15 and gave in payment a cheque
+for £25. The seller went to a neighbouring shopkeeper and got him to
+change the cheque for him, and the cyclist, having received his £10
+change, mounted the machine and disappeared. The cheque proved to be
+valueless, and the salesman was requested by his neighbour to refund the
+amount he had received. To do this, he was compelled to borrow the £25
+from a friend, as the cyclist forgot to leave his address, and could not
+be found. Now, as the bicycle cost the salesman £11, how much money did
+he lose altogether?
+
+
+39.--THE COSTERMONGER'S PUZZLE.
+
+"How much did yer pay for them oranges, Bill?"
+
+"I ain't a-goin' to tell yer, Jim. But I beat the old cove down
+fourpence a hundred."
+
+"What good did that do yer?"
+
+"Well, it meant five more oranges on every ten shillin's-worth."
+
+Now, what price did Bill actually pay for the oranges? There is only one
+rate that will fit in with his statements.
