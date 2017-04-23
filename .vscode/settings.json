@@ -13,7 +13,7 @@
         
         "**/Debug*": true,
         "**/ALT*": true,
-        "**/docs*": true,
+        //"**/docs*": true,
         "**/build/testFiles/": true,
         "**/build/*.txt": true,
         "**/*.out": true
