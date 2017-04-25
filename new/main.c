@@ -1,4 +1,4 @@
-
+#include <stdio.h>
 
 int main() {
   //1. parse command line parameters / main parameters (mainly filename)
@@ -18,5 +18,10 @@ das	für	einen	Bezeichner	steht,	gefunden	wurde.
 Informationen	über	einen	existierenden	Bezeichner	gefunden	werden.*/
 
   //4. (???) check the order of that list for correctness
+  int i = 0;
+  for (i=0; i<=255; i++) {
+    printf("i: %d char: %c\n", i, i);
+  }
+
   return 0;
 }
