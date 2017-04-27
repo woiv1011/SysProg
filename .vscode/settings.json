@@ -16,6 +16,7 @@
         //"**/docs*": true,
         "**/build/testFiles/": true,
         "**/build/*.txt": true,
-        "**/*.out": true
+        "**/*.out": true,
+        "**/.vscode": true
     }
 }

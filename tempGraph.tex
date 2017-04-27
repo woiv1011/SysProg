@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage{tikz}
+
+\begin{document}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.2]
+\tikzstyle{every node}+=[inner sep=0pt]
+\draw [black] (4,-24.1) circle (3);
+\draw (4,-24.1) node {$START$};
+\draw [black] (19.1,-24.1) circle (3);
+\draw (19.1,-24.1) node {$Digit$};
+\draw [black] (33,-53.6) circle (3);
+\draw [black] (19.9,-9.3) circle (3);
+\draw (19.9,-9.3) node {$Special$};
+\draw [black] (64.1,-9.3) circle (3);
+\draw (64.1,-9.3) node {$Operator$};
+\draw [black] (5.9,-56.5) circle (3);
+\draw (5.9,-56.5) node {$IdentifierEnd$};
+\draw [black] (19.1,-31.8) circle (3);
+\draw (19.1,-31.8) node {$Letter$};
+\draw [black] (66.4,-25.7) circle (3);
+\draw (66.4,-25.7) node {$keywordWhile$};
+\draw [black] (61.3,-35.7) circle (3);
+\draw (61.3,-35.7) node {$keywordIf$};
+\draw [black] (7,-24.1) -- (16.1,-24.1);
+\fill [black] (16.1,-24.1) -- (15.3,-23.6) -- (15.3,-24.6);
+\draw (11.55,-24.6) node [below] {$0-9$};
+\draw [black] (6.2,-22.06) -- (17.7,-11.34);
+\fill [black] (17.7,-11.34) -- (16.78,-11.52) -- (17.46,-12.26);
+\draw (14.61,-17.18) node [below] {${,\mbox{ }[,\mbox{ }($};
+\draw [black] (30.02,-53.92) -- (8.88,-56.18);
+\fill [black] (8.88,-56.18) -- (9.73,-56.59) -- (9.63,-55.6);
+\draw (18.4,-54.13) node [above] {$whitespace$};
+\draw [black] (16.156,-32.337) arc (-86.75665:-147.28049:12.098);
+\fill [black] (16.16,-32.34) -- (15.33,-31.88) -- (15.39,-32.88);
+\draw (5.84,-31.55) node [below] {$a-z\mbox{ }/\mbox{ }A-Z$};
+\end{tikzpicture}
+\end{center}
+
+\end{document}
