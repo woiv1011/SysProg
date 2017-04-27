@@ -10,14 +10,19 @@
 
 BASE=.
 
-CXX = $(shell which g++)
-CXXFLAGS = -Wall -O2 -g -m64
+#CXX = $(shell which g++)
+#CXXFLAGS = -Wall -O2 -g -m64
+
+CC = $(shell which gcc)
+CFLAGS = -Wall -O2 -g -m64
 #-Wall -fstack-arrays -pipe -m64 -fexceptions -fbuiltin -ffast-math -funroll-loops -fno-math-errno -std=c11
 #CXXFLAGS += $(INCLUDES)
 
-all: main.cpp
+all: main.c
+	@$(CC) $(CFLAGS) main.c -o main.out
 #rm main
-	@$(CXX) $(CXXFLAGS) main.c -o main.out
+#	@$(CXX) $(CXXFLAGS) main.c -o main.out
+
 
 #hellomake: hellomake.c hellofunc.c
 #	gcc -o hellomake hellomake.c hellofunc.c -I.

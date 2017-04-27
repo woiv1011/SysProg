@@ -1,5 +1,0 @@
-int n; 
-int[3] m; 
-n := 3 ) 4; :* unexpected Token Line: 3 Column: 8 TokenRightParenthesis *:
-n := 3*n--5; 
-write(n);
