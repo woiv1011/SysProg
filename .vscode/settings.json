@@ -10,6 +10,8 @@
         "**/*.suo": true,
         "**/*.vcxproj*": true,
         "**/*.cd": true,
+
+        "**/*.gitignore": true,
         
         "**/Debug*": true,
         "**/ALT*": true,
