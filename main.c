@@ -23,5 +23,12 @@ Informationen	über	einen	existierenden	Bezeichner	gefunden	werden.*/
     printf("i: %d char: %c\n", i, i);
   }
 
+//1. Tokenize: read chars from buffer into statemachine and output tokens, generate tokenlist
+//2. check order of tokens with regular grammar
+//3. build syntax tree
+//4. generate code
+
+
+
   return 0;
 }

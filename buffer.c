@@ -24,7 +24,9 @@ char getNextChar() {
 goToNext()
 
 next()      //move 1 char to the right
-next(int i) //move i chars to the right
+//next(int i) //move i chars to the right, calls next() i times
 
 previous() //move 1 char to the left
-previous(int i) //move i chars to the left
+//previous(int i) //move i chars to the left, calls previous() i times
+
+getCurrentChar()

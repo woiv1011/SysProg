@@ -20,5 +20,10 @@
         "**/build/*.txt": true,
         "**/*.out": true,
         "**/.vscode": true
+    },
+    "files.associations": {
+      "array": "cpp",
+      "system_error": "cpp",
+      "type_traits": "cpp"
     }
-}
+  }

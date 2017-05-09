@@ -16,7 +16,7 @@ bool isLetter(char c) {
 
 bool isWhitespace(char c) {
   if (c ==' ' || c =='\n' || c =='\t') {
-  //if (c == 32 || c ==XX || c== YY) {
+  //if (c == 32 || c ==XX || c== YY) { //falls oberes nicht funktioniert
     return true;
   }
   else  {
@@ -41,18 +41,8 @@ bool isSignSingle(char c) {
   }
 }
 
-+, -, *, :, <, >, =, :=, =:=, !, &&, ;, (, ), {, }, [, ]
+//+, -, *, :, <, >, =, :=, =:=, !, &&, ;, (, ), {, }, [, ]
 
-
-
-bool isSign(char c) {
-  if (c == '+' || c == '-' || c == '*' || c == ':' || c == '<' || c == '>' || c == '9') {
-    return true;
-  }
-  else {
-    return false;
-  }
-}
 
 bool isSignSingle(char c) {
   if (c == '+' || c == '-' || c == '*' || c == '<' || c == '>' || c == '9') {
@@ -68,34 +58,7 @@ bool isSignString() {
 }
 
 
-+, -, *, :, <, >, =, :=, =:=, !, &&, ;, (, ), {, }, [, ]
-
-
-
-bool isKeywordIF(char c*, int length) {
- //TODO erst rauskopieren in eigenten String damit es \0 gibt und strcmp nicht endlos weiterläuft
-  strcmp(c)
-
-
-
-  if ((c[0] == 'i' || c[0] == 'I') &&
-      (c[1] == 'f' || c[0] == 'F') &&
-      (isWhitespace(c[2])        )
-     ) {
-    return true;
-  }
-  else {
-    return false;
-  }
-
-  //TODO stattdessen mit strcmp oder so
-}
-
-tokenType identifyKeyword() {
-  
-}
-
-
+//+, -, *, :, <, >, =, :=, =:=, !, &&, ;, (, ), {, }, [, ]
 
 
 //TODO string compare end
@@ -105,16 +68,23 @@ isEqualString(const char* s1, const char * s2) {
   return (temp == 1); 
 }
 
-tokenType identifyString(int length, char *c) {
+/**
+*   when the string token is terminated by a new token, whitespace, etc
+*   this function determines whether it is an identifier with only letters or a keyword and returns the corresponding token/ tokenType?
+*/
+tokentype_t identifyString(int length, char *c) {
   //"fOr", "FoR", etc nicht erlaubt, upper lowercase muss gleichbleiben
   //mixed upper-/lowercase is not allowed -> no fOr, FOr, whilE, etc
   //TODO warning bzw compilerfehler ausgeben wenn gemischt upper-lower oder write/read uppercase ?
   //TODO strcmp rückgabewert und, gibt strcmp die Anzahl der ungleichheiten bzw fehler zurück ?
-  if (length == 2 && (strcmp(string, "if") || strcmp(string, "IF"))) {
+  tokentype_t result = 0; //tokentype_t = short
 
+  //TODO replace with strNcmp
+  if (length == 2 && (strcmp(string, "if") || strcmp(string, "IF"))) {
+    result = KEYWORD & KW_IF;
   }
   if (length == 4 && (strcmp(string, "else") || strcmp(string, "ELSE"))) {
-
+    result = KEYWORD & KW_IF;
   }
   if (length == 5 && (strcmp(string, "while") || strcmp(string, "WHILE"))) {
 
