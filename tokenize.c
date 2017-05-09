@@ -1,16 +1,9 @@
-#include "macros.h"
-#include "types.h"
-
-
+#include "globals.h"
+#include "stringinfo.c"
 
 
 //return the next token from the char-array / c-string given though the parameters
 //token_t contains token length (in characters / bytes) and token type
-
-
-tokentype_t getSingleSignTokenType(c) {
-  
-}
 
 
 token_t getNextToken3() {
@@ -25,7 +18,7 @@ token_t getNextToken3() {
 
   if(isSingleSignToken(c)) { //automat nicht notwendig
     resultToken.type = getSingleSignTokenType(c);
-
+    resultToken.length = 1;
     return resultToken;
   }
 

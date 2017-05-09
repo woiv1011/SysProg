@@ -44,6 +44,7 @@ zurückgeliefert.*/
 #define S_NOT         0xF   // !
 #define S_AND         0x10  // &&
 #define S_SEMICOLON   0x11  // ;
+//TODO rename SEMICOLON to SEMI ?
 
 //Brackets B_*
 //TODO einzelnen bits Bedeutungen zuweisen ? opening vs closing oder so
@@ -55,14 +56,13 @@ zurückgeliefert.*/
 #define B_ROUND_C   0x17    // ) round brackets; closing
 #define B_ANGLE_O   0x18    // < angle brackets; opening
 #define B_ANGLE_C   0x19    // < angle brackets; closing
+//TODO angle brackets <> stattdessen als compare größer kleineR ?
 
 
-typedef tokennode_t struct {
-  long         index;
-  tokennode_t *next;
-  tokennode_t *previous;
-  token_t      content;
-}
+
+/*typedef bool unsigned char;
+#define true 1
+#define false 0*/
 
 typedef tokentype_t short;
 
@@ -72,6 +72,18 @@ typedef token_t struct {
   char        *value; //string bei identifier / int
 }
 
-/*typedef bool unsigned char;
-#define true 1
-#define false 0*/
+typedef tokennode_t struct {
+  //long         index;
+  tokennode_t *next;
+  tokennode_t *previous;
+  token_t      data;
+}
+
+
+
+
+
+
+void appendTokenToList(token_t tok) {
+
+}
