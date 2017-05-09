@@ -19,24 +19,22 @@ bool isWhitespace(char c) {
   //return (c == 32 || c ==XX || c== YY); //falls oberes nicht funktioniert
 }
 
+//+, -, *, :, <, >, =, :=, =:=, !, &&, ;, (, ), {, }, [, ]
 bool isSign(char c) {
   //TODO als Intervall abfragen möglich ?, macht compiler evtl automatisch
   return (c == '+' || c == '-' || c == '*' || c == ':' || c == '=' || c == '!' || c == '&' || c == ';' ||
           c == '(' || c == ')' || c == '{' || c == '}' || c == '<' || c == '>' || c == '[' || c == ']');
 }
 
-/** c is a sign that is guaranteed to be its own, single-char token
+/** returns true if c is a sign that is guaranteed to be its own, single-char token
 */
 bool isSingleSignToken(char c) {
   return (c == '+' || c == '-' || c == '*' || c == '!' || c == ';' ||
           c == '(' || c == ')' || c == '{' || c == '}' || c == '<' || c == '>' || c == '[' || c == ']');
 }
 
-//+, -, *, :, <, >, =, :=, =:=, !, &&, ;, (, ), {, }, [, ]
-
-
-bool isSignString() {
-  //
+bool isAmbiguousSignToken(char c) {
+  return (c == ':' || c == '&' || c == '='); //: kann zu := werden; & muss zu && werden; = kann zu =:= werden
 }
 
 
@@ -63,29 +61,25 @@ tokentype_t identifyString(int length, char *c) {
 
   //TODO replace with strNcmp
   if (length == 2 && (strcmp(string, "if") || strcmp(string, "IF"))) {
-    result = KEYWORD & KW_IF;
+    return KW_IF;
   }
   if (length == 4 && (strcmp(string, "else") || strcmp(string, "ELSE"))) {
-    result = KEYWORD & KW_IF;
+    return KW_ELSE;
   }
   if (length == 5 && (strcmp(string, "while") || strcmp(string, "WHILE"))) {
-
+    return KW_WHILE;
   }
   if (length == 3 && (strcmp(string, "int")) {
-
+    return KW_INT;
   }
   if (length == 4 && (strcmp(string, "read")) {
-
+    return KW_READ;
   }
   if (length == 5 && (strcmp(string, "write")) {
-
+    return KW_WRITE;
   }
 
-  else {
-    tokenType = identifier
-  }
-  
-
+  return IDENTIFIER;
 }
 
 /**
@@ -93,40 +87,23 @@ tokentype_t identifyString(int length, char *c) {
 *   this function determines whether it is an identifier with only letters or a keyword and returns the corresponding token/ tokenType?
 */
 tokentype_t getSingleSignTokenType(char c) {
-  tokentype_t result = 0; //tokentype_t = short
   switch(c) {
-    case '+': result = S_ADD;
-              break;
-    case '-': result = S_SUB;
-              break;
-    case '*': result = S_MUL;
-              break;
-
-    case '!': result = S_NOT;
-              break;
-    case ';': result = S_SEMICOLON;
-              break;
-
-    case '(': result = B_ROUND_O;
-              break;
-    case ')': result = B_ROUND_C;
-              break;
-    case '{': result = B_CURLY_O;
-              break;                           
-    case '}': result = B_CURLY_C;
-              break;    
-    case '<': result = B_ANGLE_O;
-              break;    
-    case '>': result = B_ANGLE_C;
-              break;                                    
-    case '[': result = B_SQUARE_O;
-              break;         
-    case ']': result = B_SQUARE_C;
-              break;
+    case '+': return S_ADD;
+    case '-': return S_SUB;
+    case '*': return S_MUL;
+    case '!': return S_NOT;
+    case ';': return S_SEMICOLON;
+    case '(': return B_ROUND_O;
+    case ')': return B_ROUND_C;
+    case '{': return B_CURLY_O;               
+    case '}': return B_CURLY_C;
+    case '<': return B_ANGLE_O;
+    case '>': return B_ANGLE_C;                      
+    case '[': return B_SQUARE_O;
+    case ']': return B_SQUARE_C;
     default:  //TODO print warning ? ist result 0 erlaubt, ohne schaden möglich ?
+              return NOTHING;
   }
-  
-  return result;
 }
 
 bool isSingleSignToken(char c) {

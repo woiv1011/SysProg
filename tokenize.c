@@ -15,7 +15,7 @@ token_t getNextToken() {
   nextState = 0;
   char temp[512];
   char c = 0;
-  int currentLine   = 0; //aufspalten ?
+  int currentLine   = 0; //line at the beginning / 0th char of the token
   int currentColumn = 0;
   char *tempValue;
   short length = 1;
@@ -36,21 +36,52 @@ token_t getNextToken() {
   currentColumn = getCurrentColumn();
 
   if(isSingleSignToken(c)) { //automat nicht notwendig
-    resultToken.type = getSingleSignTokenType(c);
-    resultToken.length = length; //length muss 1 sein
-    tempValue = malloc(length); //TODO bei anderen Token  length +1 wegen stringende, damit strcpy usw benutzt werden kann ?
-    tempValue[0] = c;
-    resultToken.value = tempValue;
-    resultToken.line = currentLine;
-    resultToken.column = currentColumn;
+    //resultToken.type = getSingleSignTokenType(c);
+    resultToken = createToken(getSingleSignTokenType(c), length, currentLine, currentColumn, value*);
     return resultToken;
   }
 
+  // : = &
+  if(isAmbiguousSign(c)) { 
+    // & must become &&
+    if(c == '&') { 
+      if(getCharByOffset(1) == '&') { //2 mal & -> korrektes AND-Token
+        createToken(S_AND, 2, currentLine, currentColumn, "&&");
+        return token;
+      }
+      else {
+        //& darf nicht einzeln vorkommen -> Fehler ausgeben, weiter tokenizen
+        printf("Single & on line %d, column %d\n", currentLine, currentColumn);
+        createToken(ERROR, 0, currentLine, currentColumn, "&_Error"); //TODO errortoken ?
+      }
+    }
 
+    // : can become :=
+    if(c == ':') {
+      if(getCharByOffset(1) == '=') {
+        createToken(S_EQ_DIV_EQ, 3, currentLine, currentColumn, ":=");
+      }
+      else {
+        createToken(S_EQ_DIV_EQ, 3, currentLine, currentColumn, ":");
+      }
+    }
 
-  while(isWhitespace(c)) {
-    c = getNextChar();
+    // = can become =:=
+    if(c == '=') { 
+      if(getCharByOffset(1) == ':' && getCharByOffset(2) == '=') {
+        createToken(S_EQ_DIV_EQ, 3, currentLine, currentColumn, "=:=");
+        return token;
+      }
+      else {
+        createToken(S_EQ, 1, currentLine, currentColumn, "=");
+        //createToken(S_EQ_DIV_EQ, 3, currentLine, currentColumn, "=:="); ???
+        // kein kombiniertes Token, sondern einzelne SignTokens
+      }
+    } 
   }
+
+
+
 
   if(currentState == ST_START) {
     nextState = ST_IGIT;

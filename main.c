@@ -30,6 +30,13 @@ Informationen	über	einen	existierenden	Bezeichner	gefunden	werden.*/
 //4. generate code
 
 
+//1. Tokenize; schleife bis EOF, getNextToken in Token-Linked List einfügen
+while(EOFnotReached) {
+    
+    //chars einlesen und entscheiden welcher tokentyp es ist, early out abbrechen wenn typ erkannt ist
+    TokenList.append(getNextToken()); //TODO c++ stil abändern
+}
+
 
   return 0;
 }
