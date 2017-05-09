@@ -70,6 +70,9 @@ typedef token_t struct {
   tokentype_t  type; //16 bit; oberes/linkes byte für Kategorie, unteres/rechtes byte für Wert innerhalb Kategorie
   short        length; //aus wievielen chars besteht das token, fängt bei 1 an, kein "Stringende-Zeichen" notwendig, max 65536 tokenLength //TODO warnung und fehler ausgeben wenn tokenlength > MAX (beim lesen in getNextToken)
   char        *value; //string bei identifier / int
+  int          line; //position des ersten chars des tokens
+  int          column;
+  //int          position; //notwendig ?
 }
 
 typedef tokennode_t struct {

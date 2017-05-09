@@ -3,7 +3,7 @@ bool isNothing(char c) {
   //if (c >= 128) {
   //  return false;
   //}
-  return (!isDigit() && !isLetter() && !isSign()); //muss alle optionen beinhalten, digit, letter, sign, whitespace
+  return (!isWhitespace() && !isSign() && !isDigit() && !isLetter()); //muss alle optionen beinhalten, digit, letter, sign, whitespace
 }
 
 bool isDigit(char c) {
@@ -15,16 +15,11 @@ bool isLetter(char c) {
 }
 
 bool isWhitespace(char c) {
-  if (c ==' ' || c =='\n' || c =='\t') {
-  //if (c == 32 || c ==XX || c== YY) { //falls oberes nicht funktioniert
-    return true;
-  }
-  else  {
-    return false;
-  }
+  return (c ==' ' || c =='\n' || c =='\t');
+  //return (c == 32 || c ==XX || c== YY); //falls oberes nicht funktioniert
 }
 
-bool isSignChar(char c) {
+bool isSign(char c) {
   //TODO als Intervall abfragen möglich ?, macht compiler evtl automatisch
   return (c == '+' || c == '-' || c == '*' || c == ':' || c == '=' || c == '!' || c == '&' || c == ';' ||
           c == '(' || c == ')' || c == '{' || c == '}' || c == '<' || c == '>' || c == '[' || c == ']');
@@ -39,15 +34,6 @@ bool isSingleSignToken(char c) {
 
 //+, -, *, :, <, >, =, :=, =:=, !, &&, ;, (, ), {, }, [, ]
 
-
-bool isSignSingle(char c) {
-  if (c == '+' || c == '-' || c == '*' || c == '<' || c == '>' || c == '9') {
-    return true;
-  }
-  else {
-    return false;
-  }
-}
 
 bool isSignString() {
   //

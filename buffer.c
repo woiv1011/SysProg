@@ -30,3 +30,8 @@ previous() //move 1 char to the left
 //previous(int i) //move i chars to the left, calls previous() i times
 
 getCurrentChar()
+getCurrentChar(int i)
+oder
+getCurrentCharOffset(int i)
+
+//TODO auf Chars 1 und 2 rechts vom currentChar zugreifen können

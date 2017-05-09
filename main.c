@@ -1,4 +1,5 @@
 #include <stdio.h>
+//maximale token-länge = short_MAX bzw. 65 535
 
 int main() {
   //1. parse command line parameters / main parameters (mainly filename)
