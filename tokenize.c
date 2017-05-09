@@ -1,4 +1,5 @@
 #include "macros.h"
+#include "types.h"
 
 
 
@@ -7,7 +8,9 @@
 //token_t contains token length (in characters / bytes) and token type
 
 
-
+tokentype_t getSingleSignTokenType(c) {
+  
+}
 
 
 token_t getNextToken3() {
@@ -15,20 +18,25 @@ token_t getNextToken3() {
   token_t resultToken;
   currentState = ST_START;
   nextState = 0;
-  char c = 0;
+  char c = getCurrentChar();
   int line   = getCurrentLine(); //aufspalten ?
   int column = getCurrentColumn();
 
 
+  if(isSingleSignToken(c)) { //automat nicht notwendig
+    resultToken.type = getSingleSignTokenType(c);
 
-  c = getCurrentChar();
+    return resultToken;
+  }
+
+
 
   while(isWhitespace(c)) {
     c = getNextChar();
   }
 
   if(currentState == ST_START) {
-    nextState = ST_SIGIT;
+    nextState = ST_IGIT;
   }
 
 }
