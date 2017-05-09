@@ -18,6 +18,7 @@ zurückgeliefert.*/
 #define NOTHING 0x0
 
 //tokentype Kategorien, jeweils 1 Bit gesetzt
+//prefix hinzufügen ?
 #define INTEGER    0x100
 #define IDENTIFIER 0x200
 //#define KEYWORD    0x400
@@ -82,7 +83,18 @@ typedef tokennode_t struct {
   token_t      data;
 }
 
+token_t createToken(tokentype_t ttype, short len, int line, int column, char *val) {
+  token_t result;
+  result.type = ttype;
+  result.length = len;
+  result.line = line;
+  result.column = column;
 
+  result.value = malloc(len);
+  strncpy(result.value, val, len);
+
+  return result;
+}
 
 
 
