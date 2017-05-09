@@ -32,13 +32,9 @@ bool isSignChar(char c) {
 
 /** c is a sign that is guaranteed to be its own, single-char token
 */
-bool isSignSingle(char c) {
-  if (c == '+' || c == '-' || c == '*' || c == '<' || c == '>' || c == '9') {
-    return true;
-  }
-  else {
-    return false;
-  }
+bool isSingleSignToken(char c) {
+  return (c == '+' || c == '-' || c == '*' || c == '!' || c == ';' ||
+          c == '(' || c == ')' || c == '{' || c == '}' || c == '<' || c == '>' || c == '[' || c == ']');
 }
 
 //+, -, *, :, <, >, =, :=, =:=, !, &&, ;, (, ), {, }, [, ]
@@ -104,4 +100,53 @@ tokentype_t identifyString(int length, char *c) {
   }
   
 
+}
+
+/**
+*   when the string token is terminated by a new token, whitespace, etc
+*   this function determines whether it is an identifier with only letters or a keyword and returns the corresponding token/ tokenType?
+*/
+tokentype_t getSingleSignTokenType(char c) {
+  tokentype_t result = 0; //tokentype_t = short
+  switch(c) {
+    case '+': result = S_ADD;
+              break;
+    case '-': result = S_SUB;
+              break;
+    case '*': result = S_MUL;
+              break;
+
+    case '!': result = S_NOT;
+              break;
+    case ';': result = S_SEMICOLON;
+              break;
+
+    case '(': result = B_ROUND_O;
+              break;
+    case ')': result = B_ROUND_C;
+              break;
+    case '{': result = B_CURLY_O;
+              break;                           
+    case '}': result = B_CURLY_C;
+              break;    
+    case '<': result = B_ANGLE_O;
+              break;    
+    case '>': result = B_ANGLE_C;
+              break;                                    
+    case '[': result = B_SQUARE_O;
+              break;         
+    case ']': result = B_SQUARE_C;
+              break;
+    default:  //TODO print warning ? ist result 0 erlaubt, ohne schaden möglich ?
+  }
+  
+  return result;
+}
+
+bool isSingleSignToken(char c) {
+  return (c == '+' || c == '-' || c == '*' || c == '!' || c == ';' ||
+          c == '(' || c == ')' || 
+          c == '{' || c == '}' || 
+          c == '<' || c == '>' || 
+          c == '[' || c == ']');
 }
