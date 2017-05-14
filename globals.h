@@ -1,11 +1,11 @@
 
 //STATES for tokenizer->getNextToken() state machine
-#define ST_NONE        0
-#define ST_START       1
-#define ST_INTEGER     2
-#define ST_IDENTIFIER  3
-#define ST_STRING  4
-#define ST_SIGN 5
+//#define ST_NONE        0
+//#define ST_START       1
+//#define ST_INTEGER     2
+//#define ST_IDENTIFIER  3
+//#define ST_STRING  4
+//#define ST_SIGN 5
 
 /*Nochmals zur Aufgabe: Der Scanner liest nach der Aufforderung nextToken() solange mittels
 getChar() das nächste Zeichen, bis er ein Zeichen oder einen Bezeichner erkannt hat. Ist
@@ -15,10 +15,12 @@ wird dieses erzeugt und mit dem Bezeichner verknüpft; ansonsten lediglich desse
 zurückgeliefert.*/
 
 //TODO kategorien und einzelwerte mergen ?
-#define NOTHING 0x0
+#define ERROR 0xFFFF //max value of unsigned short int, bzw -1 bei signed
+#define TOKENMAXLENGTH 0xFFFF
 
 //tokentype Kategorien, jeweils 1 Bit gesetzt
 //prefix hinzufügen ?
+#define ERROR 0xFFFF
 #define INTEGER    0x100
 #define IDENTIFIER 0x200
 //#define KEYWORD    0x400
@@ -65,38 +67,17 @@ zurückgeliefert.*/
 #define true 1
 #define false 0*/
 
-typedef tokentype_t short;
 
-typedef token_t struct {
-  tokentype_t  type; //16 bit; oberes/linkes byte für Kategorie, unteres/rechtes byte für Wert innerhalb Kategorie
-  short        length; //aus wievielen chars besteht das token, fängt bei 1 an, kein "Stringende-Zeichen" notwendig, max 65536 tokenLength //TODO warnung und fehler ausgeben wenn tokenlength > MAX (beim lesen in getNextToken)
-  char        *value; //string bei identifier / int
-  int          line; //position des ersten chars des tokens
-  int          column;
-  //int          position; //notwendig ?
+
+void tokenize() {
+  long position = 0;
+  token_t temp;
+  while(!EOF) {
+    temp = getNextToken()
+    appendTokenToList(temp)
+    //position = position + temp.length;
+  }
 }
-
-typedef tokennode_t struct {
-  //long         index;
-  tokennode_t *next;
-  tokennode_t *previous;
-  token_t      data;
-}
-
-token_t createToken(tokentype_t ttype, short len, int line, int column, char *val) {
-  token_t result;
-  result.type = ttype;
-  result.length = len;
-  result.line = line;
-  result.column = column;
-
-  result.value = malloc(len);
-  strncpy(result.value, val, len);
-
-  return result;
-}
-
-
 
 
 void appendTokenToList(token_t tok) {

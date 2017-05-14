@@ -8,83 +8,123 @@
 
 #include "memory.h"
 
-
+//creates and returns the single next token
 token_t getNextToken() {
 //INIT
-  currentState = ST_START;
-  nextState = 0;
-  char temp[512];
+  //currentState = ST_START;
+  //nextState = 0;
+  char temp[TOKENMAXLENGTH]; //direkt auf max length setzen ?
   char c = 0;
   int currentLine   = 0; //line at the beginning / 0th char of the token
   int currentColumn = 0;
   char *tempValue;
   short length = 1;
-  token_t resultToken;
+  //token_t resultToken;
+  char active = 0;
 
-  c = getCurrentChar();
-
-  if(isInvalidCharacter(c)) {
-    //print error and exit
-    //oder als whitespace betrachten und überspringen ?
-  }
-  while(isWhitespace(c)) {
-    next();
+  while(true) { //überspringt alle whitespaces, generiert tokens für invalid chars(error) und signs
     c = getCurrentChar();
-  }
+    currentLine   = getCurrentLine();
+    currentColumn = getCurrentColumn();
 
-  currentLine   = getCurrentLine();
-  currentColumn = getCurrentColumn();
+    //TODO  EOF ?
 
-  if(isSingleSignToken(c)) { //automat nicht notwendig
-    //resultToken.type = getSingleSignTokenType(c);
-    resultToken = createToken(getSingleSignTokenType(c), length, currentLine, currentColumn, value*);
-    return resultToken;
-  }
+    //skip whitespace chars
+    if(isWhitespace(c)) {
+      continue;
+    }
 
-  // : = &
-  if(isAmbiguousSign(c)) { 
-    // & must become &&
-    if(c == '&') { 
-      if(getCharByOffset(1) == '&') { //2 mal & -> korrektes AND-Token
-        createToken(S_AND, 2, currentLine, currentColumn, "&&");
-        return token;
+    //if char is invalid, print error message and create error token
+    if(isInvalid(c)) {
+      currentLine   = getCurrentLine();
+      currentColumn = getCurrentColumn();
+      printf("Invalid character (%c) on line %d, column %d\n", c, currentLine, currentColumn);
+      return createToken(ERROR, 5, currentLine, currentColumn, "ERROR");
+      //continue; //TODO einfach überspringen und das nächste korrekte Token zurückgeben ?
+    }
+
+    if(isSign(c)) {
+      //if char is a sign that is guaranteed to be its own token
+      if(isSingleSignToken(c)) {
+        return createToken(getSingleSignTokenType(c), length, currentLine, currentColumn, value*);
       }
-      else {
-        //& darf nicht einzeln vorkommen -> Fehler ausgeben, weiter tokenizen
-        printf("Single & on line %d, column %d\n", currentLine, currentColumn);
-        createToken(ERROR, 0, currentLine, currentColumn, "&_Error"); //TODO errortoken ?
+
+      // 3 cases of ambiguity, tokenlengths for the different cases are known in advance
+      // : = &
+      if(isAmbiguousSign(c)) {
+        // & must become &&
+        if(c == '&') { 
+          if(getCharByOffset(1) == '&') { //2 mal & -> korrektes AND-Token
+            return createToken(S_AND, 2, currentLine, currentColumn, "&&");
+          }
+          else {
+            //& darf nicht einzeln vorkommen -> Fehler ausgeben, weiter tokenizen
+            printf("Single & on line %d, column %d\n", currentLine, currentColumn);
+            return createToken(ERROR, 5, currentLine, currentColumn, "ERROR"); //TODO errortoken ?
+          }
+        }
+
+        // : can become :=
+        if(c == ':') {
+          if(getCharByOffset(1) == '=') {
+            return createToken(S_DIV_EQ, 3, currentLine, currentColumn, ":=");
+          }
+          else {
+            return createToken(S_DIV, 3, currentLine, currentColumn, ":");
+          }
+        }
+
+        // = can become =:=
+        if(c == '=') { 
+          if(getCharByOffset(1) == ':' && getCharByOffset(2) == '=') {
+            return createToken(S_EQ_DIV_EQ, 3, currentLine, currentColumn, "=:=");
+          }
+          else {
+            return createToken(S_EQ, 1, currentLine, currentColumn, "=");
+          }
+        }
       }
     }
 
-    // : can become :=
-    if(c == ':') {
-      if(getCharByOffset(1) == '=') {
-        createToken(S_EQ_DIV_EQ, 3, currentLine, currentColumn, ":=");
-      }
-      else {
-        createToken(S_EQ_DIV_EQ, 3, currentLine, currentColumn, ":");
-      }
+    //if char is a letter, start string token 
+    if(isLetter(c)) {
+      break;
     }
 
-    // = can become =:=
-    if(c == '=') { 
-      if(getCharByOffset(1) == ':' && getCharByOffset(2) == '=') {
-        createToken(S_EQ_DIV_EQ, 3, currentLine, currentColumn, "=:=");
-        return token;
-      }
-      else {
-        createToken(S_EQ, 1, currentLine, currentColumn, "=");
-        //createToken(S_EQ_DIV_EQ, 3, currentLine, currentColumn, "=:="); ???
-        // kein kombiniertes Token, sondern einzelne SignTokens
-      }
-    } 
+    //if char is a digit, start integer token
+    if(isDigit(c)) {
+      break;
+    }
+
+    next();
+  } //end for
+
+//string token, at the end determin whether keyword or identifier
+if(isLetter(c)) {
+  temp[0] = c; //first char is c
+  for(length=1; length<=TOKENMAXLENGTH; length++) {
+    next();
+    c = getCurrentChar(); //c = next char
+    if(isLetter(c) || isDigit(c)) { //first char can be followed by either letters or digits
+      temp[length] = c;
+    }
+    else { //neither letter nor digit -> string token is terminated
+      //TODO determine whether keyword or identifier
+      tokentype = identifyString(length, temp);
+      return createToken(type, length, currentLine, currentColumn, temp);
+    }
+    if(length == TOKENMAXLENGTH) {
+      printf("TOKENMAXLENGTH reached. \n"); //TODO line column etc ausgeben
+      tokentype = identifyString(length, temp);
+      return createToken(type, length, currentLine, currentColumn, temp);
+    }
   }
+}
 
+//integer token
+if(isDigit(c)) {
+  break;
+}
 
-
-
-  if(currentState == ST_START) {
-    nextState = ST_IGIT;
-  }
 
 }
