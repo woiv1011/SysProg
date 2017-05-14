@@ -4,18 +4,18 @@
  *  Created on: Sep 26, 2012
  *      Author: knad0001
  */
-#include "../includes/Buffer.h"
+#include "bufferTemp.h"
 
 //TODO line und column count optimieren
 //TODO printToFIle
-void Buffer::resetBlockPosition() {
+static void resetBlockPosition() {
 	currentBlock = 0;
 	currentBlockPosition = 0;
 	isNew = 1;
 }
 
 //STANDARD ACCESS
-char Buffer::next() {
+static char next() {
 	if (isNew) {
 		isNew = 0;
 	} else {
@@ -31,7 +31,7 @@ char Buffer::next() {
 	return getCurrent();
 }
 
-char Buffer::previous() {
+/*static char previous() {
 	if (isNew) {
 		isNew = 0;
 	} else {
@@ -46,33 +46,33 @@ char Buffer::previous() {
 	return getCurrent();
 }
 
-char Buffer::previous(int a) {
+static char previous(int a) {
 	for (int i = 0; i < a; i++) {
 		previous();
 	}
 
 	return getCurrent();
-}
+}*/
 
 //GETTER / SETTER
-unsigned int Buffer::getLength() {
+static unsigned int getLength() {
 	return length;
 }
 
-unsigned int Buffer::getCurrentLine() { //Performance schlecht; erster Block wird immer neu durchgegangen etc
+static unsigned int getCurrentLine() { //Performance schlecht; erster Block wird immer neu durchgegangen etc
 	return line[currentBlock][currentBlockPosition];
 }
 
-unsigned int Buffer::getCurrentColumn() {
+static unsigned int getCurrentColumn() {
 	return column[currentBlock][currentBlockPosition];
 }
 
 //INTERNAL
-char Buffer::getCurrent() {
+static char getCurrent() {
 	return block[currentBlock][currentBlockPosition];
 }
 
-void Buffer::calculatePosition() {
+static void calculatePosition() {
 	unsigned int tempBlock = currentBlock; //Ursprungsposition zwischenspeichern um am Ende zur�ckzukehren
 	unsigned int tempBlockPosition = currentBlockPosition;
 
@@ -103,7 +103,7 @@ void Buffer::calculatePosition() {
 	currentBlockPosition = tempBlockPosition;
 }
 
-void Buffer::checkReload() {
+static void checkReload() {
 	if (currentBlock > 1) { // wenn zu klein, nachladen
 
 		// Swap blocks instead of reloading
@@ -126,7 +126,7 @@ void Buffer::checkReload() {
 	//block 1 mit line und cloumncount belegen
 }
 
-void Buffer::readBlockFromFile(unsigned int blockIndex) { //reads a BUFFER_SIZE -bytes sized block from the file and insert inserts it into block blockIndex
+static void readBlockFromFile(unsigned int blockIndex) { //reads a BUFFER_SIZE -bytes sized block from the file and insert inserts it into block blockIndex
 	void * ptr; //Ziel-Speicherbereich
 	void ** ptrptr = &ptr; //pointerpointer auf Zielspeicherbereich f�r posix_memalign
 
@@ -185,7 +185,8 @@ void Buffer::readBlockFromFile(unsigned int blockIndex) { //reads a BUFFER_SIZE 
 
 	if (sizeRead == -1 || err != 0) {
 		//Fehler
-		cout << endl << "Fehler!" << endl;
+		//cout << endl << "Fehler!" << endl;
+		printf("\nFehler in readBlockFromFile!\n");
 	}
 
 	/*cout << endl //Testausgabe
@@ -201,7 +202,7 @@ void Buffer::readBlockFromFile(unsigned int blockIndex) { //reads a BUFFER_SIZE 
 }
 
 //TESTING
-void Buffer::print() {
+/*void Buffer::print() {
 	cout << endl;
 
 	for (int i = 0; i <= 1; i++) {
@@ -261,14 +262,14 @@ void Buffer::printPosition() {
 					<< endl;
 		}
 	}
-}
+}*/
 
-bool Buffer::isValid() {
+static bool isValid() {
 	return !(inputFileDescriptor < 0);
 }
 
 //CONSTRUCTOR / DESTRUCTOR
-Buffer::Buffer(const char* filename) {
+static void initBuffer(const char* filename) {
 	length = 0;
 	counter = 0;
 	eof = 0;
@@ -321,13 +322,13 @@ Buffer::Buffer(const char* filename) {
 	//printPosition();
 }
 
-Buffer::~Buffer() {
+static void deinitBuffer() {
 	close(inputFileDescriptor);
 	free(block[0]);
 	free(block[1]);
 }
 
-bool Buffer::isEOF() {
+static bool isEOF() {
 	return ((eof == 1) && (getCurrent() == '\0'));
 }
 

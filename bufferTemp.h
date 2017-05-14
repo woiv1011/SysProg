@@ -7,18 +7,22 @@
 #ifndef BUFFER_H_
 #define BUFFER_H_
 
+#include "globals.h"
+
 //CUSTOM
-#include <iostream>
-#include <string.h>
-#include <cstdio> //fclose fopen etc; anscheinend nicht in iostream
-#include <fcntl.h> //open odirect bla
-#include <unistd.h> //close file descriptor
+//#include <iostream>
+#include <stdio.h>
 #include <stdlib.h> //posix memalign
+#include <unistd.h> //close file descriptor
+#include <fcntl.h> //open odirect bla
+
+#include <string.h>
+//#include <cstdio> //fclose fopen etc; anscheinend nicht in iostream
 
 //notwendig ???
 #include <sys/types.h>
 #include <sys/stat.h>
-using namespace std;
+//using namespace std;
 
 // O_DIRECT: The alignment of the user buffer and the file offset must all be multiples of the logical block size of the file system. Usually the logical block size are 512 Bytes.
 // posix_memalign: The address of the allocated memory will be a multiple of alignment, which must be a power of two and a multiple of sizeof(void *).
@@ -29,53 +33,53 @@ struct position {
 	unsigned int column;
 };
 
-class Buffer {
-private:
-	char* block[2];
+//class Buffer {
+//private:
+	static char* block[2];
 	//unsigned short line[BUFFER_SIZE + BUFFER_SIZE];
 	//unsigned short column[BUFFER_SIZE + BUFFER_SIZE];
 	//position pos[2][BUFFER_SIZE];
-	unsigned int length;
-	unsigned int line[2][BUFFER_SIZE];
-	unsigned int column[2][BUFFER_SIZE];
-	int currentBlock;
-	int currentBlockPosition;
-	int inputFileDescriptor;
-	unsigned int lineOffset;
-	unsigned int columnOffset;
-	int eof; //end of file reached=1
-	int counter;
-	int isNew;
+	static unsigned int length;
+	static unsigned int line[2][BUFFER_SIZE];
+	static unsigned int column[2][BUFFER_SIZE];
+	static int currentBlock;
+	static int currentBlockPosition;
+	static int inputFileDescriptor;
+	static unsigned int lineOffset;
+	static unsigned int columnOffset;
+	static int eof; //end of file reached=1
+	static int counter;
+	static int isNew;
 
-	char getCurrent();
-	void checkReload();
-	void readBlockFromFile(unsigned int blockIndex);
-	void resetBlockPosition();
-	void calculatePosition();
-	unsigned int currentLine;
-	unsigned int currentColumn;
+	static char getCurrent();
+	static void checkReload();
+	static void readBlockFromFile(unsigned int blockIndex);
+	static void resetBlockPosition();
+	static void calculatePosition();
+	static unsigned int currentLine;
+	static unsigned int currentColumn;
 
-public:
-	Buffer(const char* filename);
-	virtual ~Buffer();
+  //public:
+	static void initBuffer(const char* filename);
+	static void deinitBuffer();
 
 	//STANDARD ACCESS
-	char next();
-	char previous();
-	char previous(int a);
-	bool isEOF();
-	bool isValid();
+	static char next();
+	//static char previous();
+	//static char previous(int a);
+	static bool isEOF();
+	static bool isValid();
 
 	//für Token-Textausgabe
-	unsigned int getCurrentLine();
-	unsigned int getCurrentColumn();
+	static unsigned int getCurrentLine();
+	static unsigned int getCurrentColumn();
 
 	//TESTING (INTERN)
-	unsigned int getLength();
-	void print();
-	void printWithNext();
-	void testStuff();
-	void printPosition();
-};
+	static unsigned int getLength();
+	static void print();
+	static void printWithNext();
+	static void testStuff();
+	static void printPosition();
+//};
 
 #endif /* BUFFER_H_ */

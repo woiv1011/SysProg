@@ -1,4 +1,5 @@
-
+#ifndef GLOBALS_H
+#define GLOBALS_H
 //STATES for tokenizer->getNextToken() state machine
 //#define ST_NONE        0
 //#define ST_START       1
@@ -34,7 +35,7 @@ zurückgeliefert.*/
 #define KW_IF       0x4   // if/IF
 #define KW_ELSE     0x5   // else/ELSE
 #define KW_WHILE    0x6   // while/WHILE
-#define KW_INT      0x7   // int
+//#define KW_INT      0x7   // int
 
 //SIGN Werte
 #define S_ADD         0x8   // + Sign Add
@@ -63,12 +64,12 @@ zurückgeliefert.*/
 
 
 
-/*typedef bool unsigned char;
+typedef unsigned char bool;
 #define true 1
-#define false 0*/
+#define false 0
 
 
-
+/*
 void tokenize() {
   long position = 0;
   token_t temp;
@@ -82,4 +83,5 @@ void tokenize() {
 
 void appendTokenToList(token_t tok) {
 
-}
+}*/
+#endif /*end ifndef GLOBALS_H*/
