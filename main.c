@@ -19,10 +19,10 @@ das	für	einen	Bezeichner	steht,	gefunden	wurde.
 Informationen	über	einen	existierenden	Bezeichner	gefunden	werden.*/
 
   //4. (???) check the order of that list for correctness
-  int i = 0;
+  /*int i = 0;
   for (i=0; i<=255; i++) {
     printf("i: %d char: %c\n", i, i);
-  }
+  }*/
 
 //1. Tokenize: read chars from buffer into statemachine and output tokens, generate tokenlist
 //2. check order of tokens with regular grammar
@@ -31,10 +31,11 @@ Informationen	über	einen	existierenden	Bezeichner	gefunden	werden.*/
 
 
 //1. Tokenize; schleife bis EOF, getNextToken in Token-Linked List einfügen
-while(EOFnotReached) {
+while(!isEofReached()) {
     
     //chars einlesen und entscheiden welcher tokentyp es ist, early out abbrechen wenn typ erkannt ist
-    TokenList.append(getNextToken()); //TODO c++ stil abändern
+    //TokenList.append(getNextToken()); //TODO c++ stil abändern
+    appendTokenToList(getNextToken());
 }
 
 

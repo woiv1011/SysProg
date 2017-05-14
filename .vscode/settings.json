@@ -25,6 +25,8 @@
       "array": "cpp",
       "system_error": "cpp",
       "type_traits": "cpp",
-      "initializer_list": "cpp"
+      "initializer_list": "cpp",
+      "*.tcc": "cpp",
+      "fstream": "cpp"
     }
   }
