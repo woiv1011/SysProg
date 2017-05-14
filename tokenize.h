@@ -21,7 +21,7 @@ typedef tokennode_t struct {
   token_t      data;
 }
 
-isEofReached()
+
 
 
 token_t createToken(tokentype_t type, unsigned short length, int line, int column, char *value) {

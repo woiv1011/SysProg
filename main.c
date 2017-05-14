@@ -2,7 +2,7 @@
 //maximale token-länge = short_MAX bzw. 65 535
 #include "globals.h"
 
-#include "bufferTemp.c"
+#include "buffer.c"
 
 
 int main() {
@@ -18,7 +18,7 @@ int main() {
   initBuffer(filename);
 
 //1. Tokenize; schleife bis EOF, getNextToken in Token-Linked List einfügen
-while(!isEofReached()) {
+while(!isEOF()) {
     
     //chars einlesen und entscheiden welcher tokentyp es ist, early out abbrechen wenn typ erkannt ist
     //TokenList.append(getNextToken()); //TODO c++ stil abändern

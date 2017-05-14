@@ -9,19 +9,28 @@
 
 #include "globals.h"
 
+
+
 //CUSTOM
 //#include <iostream>
 #include <stdio.h>
 #include <stdlib.h> //posix memalign
 #include <unistd.h> //close file descriptor
-#include <fcntl.h> //open odirect bla
+
+
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>  //open odirect bla
 
 #include <string.h>
 //#include <cstdio> //fclose fopen etc; anscheinend nicht in iostream
 
+//copied from fnctl.h
+#ifndef O_DIRECT
+#define O_DIRECT	00040000	/* direct disk access hint */
+#endif
+
 //notwendig ???
-#include <sys/types.h>
-#include <sys/stat.h>
 //using namespace std;
 
 // O_DIRECT: The alignment of the user buffer and the file offset must all be multiples of the logical block size of the file system. Usually the logical block size are 512 Bytes.
