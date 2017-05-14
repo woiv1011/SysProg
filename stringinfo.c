@@ -1,5 +1,5 @@
 //SINGLE CHAR start
-bool isNothing(char c) {
+bool isInvalid(char c) {
   //if (c >= 128) {
   //  return false;
   //}
@@ -57,7 +57,7 @@ tokentype_t identifyString(int length, char *c) {
   //mixed upper-/lowercase is not allowed -> no fOr, FOr, whilE, etc
   //TODO warning bzw compilerfehler ausgeben wenn gemischt upper-lower oder write/read uppercase ?
   //TODO strcmp rückgabewert und, gibt strcmp die Anzahl der ungleichheiten bzw fehler zurück ?
-  tokentype_t result = 0; //tokentype_t = short
+  //tokentype_t result = 0; //tokentype_t = short
 
   //TODO replace with strNcmp
   if (length == 2 && (strcmp(string, "if") || strcmp(string, "IF"))) {
@@ -69,13 +69,13 @@ tokentype_t identifyString(int length, char *c) {
   if (length == 5 && (strcmp(string, "while") || strcmp(string, "WHILE"))) {
     return KW_WHILE;
   }
-  if (length == 3 && (strcmp(string, "int")) {
+  if (length == 3 && (strcmp(string, "int"))) {
     return KW_INT;
   }
-  if (length == 4 && (strcmp(string, "read")) {
+  if (length == 4 && (strcmp(string, "read"))) {
     return KW_READ;
   }
-  if (length == 5 && (strcmp(string, "write")) {
+  if (length == 5 && (strcmp(string, "write"))) {
     return KW_WRITE;
   }
 
@@ -101,9 +101,10 @@ tokentype_t getSingleSignTokenType(char c) {
     case '>': return B_ANGLE_C;                      
     case '[': return B_SQUARE_O;
     case ']': return B_SQUARE_C;
-    default:  //TODO print warning ? ist result 0 erlaubt, ohne schaden möglich ?
-              return NOTHING;
+    //default:  //TODO print warning ? ist result 0 erlaubt, ohne schaden möglich ?
+              //return NOTHING;
   }
+  //return ERROR;
 }
 
 bool isSingleSignToken(char c) {
