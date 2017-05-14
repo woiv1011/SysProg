@@ -102,28 +102,54 @@ token_t getNextToken() {
 //string token, at the end determin whether keyword or identifier
 if(isLetter(c)) {
   temp[0] = c; //first char is c
-  for(length=1; length<=TOKENMAXLENGTH; length++) {
-    next();
-    c = getCurrentChar(); //c = next char
+  for(length=1; length<TOKENMAXLENGTH;) {
+    //next(); //TODO stattdessen getCharByOffset benutzen ?
+    //c = getCurrentChar(); //c = next char
+    c = getCharByOffset(length); //n chars weiter
     if(isLetter(c) || isDigit(c)) { //first char can be followed by either letters or digits
       temp[length] = c;
+      length++;
     }
     else { //neither letter nor digit -> string token is terminated
       //TODO determine whether keyword or identifier
       tokentype = identifyString(length, temp);
       return createToken(type, length, currentLine, currentColumn, temp);
     }
-    if(length == TOKENMAXLENGTH) {
+    if(length == TOKENMAXLENGTH-1) { //if maxvalue of this loop is reached
       printf("TOKENMAXLENGTH reached. \n"); //TODO line column etc ausgeben
-      tokentype = identifyString(length, temp);
-      return createToken(type, length, currentLine, currentColumn, temp);
+      //tokentype = identifyString(length, temp);
+      //TODO return ERROR token or string token up to this point //identifier, so lange keywords gibts nicht
+      return createToken(ERROR, 5, currentLine, currentColumn, "ERROR");
+      //return createToken(type, length, currentLine, currentColumn, temp);
     }
   }
 }
 
 //integer token
 if(isDigit(c)) {
-  break;
+  temp[0] = c; //first char is c
+  for(length=1; length<TOKENMAXLENGTH;) {
+    //next(); //TODO stattdessen getCharByOffset benutzen ?
+    //c = getCurrentChar(); //c = next char
+    c = getCharByOffset(length); //n chars weiter
+    if(isDigit(c)) { //first char can be followed by either letters or digits
+      temp[length] = c;
+      length++;
+    }
+    else { //neither letter nor digit -> string token is terminated
+      //TODO determine whether keyword or identifier
+      //tokentype = identifyString(length, temp);
+      tokentype = INTEGER;
+      return createToken(type, length, currentLine, currentColumn, temp);
+    }
+    if(length == TOKENMAXLENGTH-1) { //if maxvalue of this loop is reached
+      printf("TOKENMAXLENGTH reached. \n"); //TODO line column etc ausgeben
+      //tokentype = identifyString(length, temp);
+      //TODO return ERROR token or string token up to this point //identifier, so lange keywords gibts nicht
+      return createToken(ERROR, 5, currentLine, currentColumn, "ERROR");
+      //return createToken(type, length, currentLine, currentColumn, temp);
+    }
+  }
 }
 
 
