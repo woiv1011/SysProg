@@ -52,6 +52,43 @@ bool isAmbiguousSign(char c) {
   return (c == ':' || c == '&' || c == '='); //: kann zu := werden; & muss zu && werden; = kann zu =:= werden
 }
 
+char* tokenTypeToString(tokentype_t toktype) {
+  switch(toktype) {
+    case ERROR: return "ERROR";
+    case INTEGER: return "INTEGER";
+    case IDENTIFIER: return "IDENTIFIER";
+
+    case KW_WRITE: return "KW_WRITE";
+    case KW_READ: return "KW_READ";
+    case KW_INT: return "KW_INT";
+    case KW_IF: return "KW_IF";
+    case KW_ELSE: return "KW_ELSE";
+    case KW_WHILE: return "KW_WHILE";
+
+    case S_ADD: return "S_ADD";
+    case S_SUB: return "S_SUB";               
+    case S_MUL: return "S_MUL";
+    case S_DIV: return "S_DIV";
+    case S_EQ: return "S_EQ";                      
+    case S_DIV_EQ: return "S_DIV_EQ";
+    case S_EQ_DIV_EQ: return "S_EQ_DIV_EQ";
+
+    case B_SQUARE_O: return "B_SQUARE_O";
+    case B_SQUARE_C: return "B_SQUARE_C";               
+    case B_CURLY_O: return "B_CURLY_O";
+    case B_CURLY_C: return "B_CURLY_C";
+
+    case B_ROUND_O: return "B_ROUND_O";                      
+    case B_ROUND_C: return "B_ROUND_C";
+    case B_ANGLE_O: return "B_ANGLE_O";
+    case B_ANGLE_C: return "B_ANGLE_C";
+
+    case EOFTYPE: return "EOFTYPE";
+
+    //default:  //TODO print warning ? ist result 0 erlaubt, ohne schaden möglich ?
+              //return NOTHING;
+  }
+}
 
 //+, -, *, :, <, >, =, :=, =:=, !, &&, ;, (, ), {, }, [, ]
 
