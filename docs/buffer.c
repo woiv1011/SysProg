@@ -2,23 +2,49 @@
  * Buffer.cpp
  *
  *  Created on: Sep 26, 2012
- *      Author: woiv1011
+ *      Author: knad0001
  */
 #include "buffer.h"
 
+//TODO line und column count optimieren
+//TODO printToFIle
+static void resetBlockPosition() {
+	currentBlock = 0;
+	currentBlockPosition = 0;
+	isNew = 1;
+}
 
 //STANDARD ACCESS
-
-static int currentPosition; //maximal buffer_size mal 2 
 static char next() {
-	currentPosition++;
-
-	if (currentPosition > BUFFER_SIZE - 1) { //currentBlockPosition >= 512 (0 bis 511 okay)
-		Load NEw BLock
-		update position
+	if (isNew) {
+		isNew = 0;
+	} else {
+		currentBlockPosition++;
 	}
 
-	return getCurrentChar();
+	if (currentBlockPosition > BUFFER_SIZE - 1) { //currentBlockPosition >= 512 (0 bis 511 okay)
+		currentBlock++;
+		checkReload();
+		currentBlockPosition = currentBlockPosition - BUFFER_SIZE;
+	}
+
+	return getCurrent();
+}
+
+
+static char previous() {
+	if (isNew) {
+		isNew = 0;
+	} else {
+		currentBlockPosition--;
+	}
+
+	if (currentBlockPosition <= -1) { //currentBlockPosition >= 512 (0 bis 511 okay)
+		currentBlock = 0;
+		currentBlockPosition = (BUFFER_SIZE - 1);
+	}
+
+	return getCurrent();
 }
 /*
 static char previous(int a) {
@@ -30,23 +56,27 @@ static char previous(int a) {
 }*/
 
 //GETTER / SETTER
-static unsigned int getLength() { //??
+static unsigned int getLength() {
 	return length;
 }
 
 static unsigned int getCurrentLine() { //Performance schlecht; erster Block wird immer neu durchgegangen etc
-	return currentLine;
+	return line[currentBlock][currentBlockPosition];
 }
 
 static unsigned int getCurrentColumn() {
-	return currentColumn;
+	return column[currentBlock][currentBlockPosition];
 }
 
 //INTERNAL
+static char getCurrent() {
+	return block[currentBlock][currentBlockPosition];
+}
 
 static char getCurrentChar() {
-	return block[currentBlock][currentBlockPosition];
-	//return currentChar;
+	next(); //init Buffer etc
+	return previous();
+	//return getCurrent();
 }
 
 //TODO optimize performance ?
@@ -79,24 +109,58 @@ static char getCharByOffset(unsigned char offset) {
 	return tempChar;
 }
 
+static void calculatePosition() {
+	unsigned int tempBlock = currentBlock; //Ursprungsposition zwischenspeichern um am Ende zur�ckzukehren
+	unsigned int tempBlockPosition = currentBlockPosition;
+
+	unsigned int lineCounter = lineOffset;
+	unsigned int columnCounter = columnOffset;
+
+	for (int i = 0; i < 2; i++) { //Block 0 1
+		for (int j = 0; j < BUFFER_SIZE; j++) { //inside Block
+			if (block[i][j] == '\n') { //if
+				line[i][j] = lineCounter;
+				column[i][j] = columnCounter;
+				columnCounter = 1;
+				lineCounter++;
+			} else {
+				line[i][j] = lineCounter;
+				column[i][j] = columnCounter;
+				columnCounter++;
+			}
+		}
+	}
+
+	// Fixed wrong line calculation when the last character of block 0 is \n
+	lineOffset = line[1][0];
+	columnOffset = column[1][0];
+
+	///////////////////////
+	currentBlock = tempBlock; //Position wiederherstellen
+	currentBlockPosition = tempBlockPosition;
+}
 
 static void checkReload() {
+	if (currentBlock > 1) { // wenn zu klein, nachladen
 
-}
-static void readNewBlockFromFile() {
-	FILE *fp;
-	char filename[512];
+		// Swap blocks instead of reloading
+		char * tmp = block[0];
+		block[0] = block[1];
+		block[1] = tmp;
 
-	fp = fopen("/tmp/test.txt", "w+");
+		currentBlock = 1;
+		//currentBlockPosition = 0;
+		readBlockFromFile(1);
+	}
 
-	//open for reading
-	//read BLOCKSIZE charactersa
-	//swap blocks and adjust position etc
-	//if not enough chars in file anymore, set EOF
+	/*
+	 startColumn = pos[0][BUFFER_SIZE-1].column;
+	 startLine = pos[0][BUFFER_SIZE-1].line;*/
 
-	//fprintf(fp, "This is testing for fprintf...\n");
-	//fputs("This is testing for fputs...\n", fp);
-	fclose(fp);
+	/*for(int i=0; i<BUFFER_SIZE; i++) {
+	 pos[1][i] = pos[1][i] =
+	 }*/
+	//block 1 mit line und cloumncount belegen
 }
 
 static void readBlockFromFile(unsigned int blockIndex) { //reads a BUFFER_SIZE -bytes sized block from the file and insert inserts it into block blockIndex
@@ -117,7 +181,33 @@ static void readBlockFromFile(unsigned int blockIndex) { //reads a BUFFER_SIZE -
 
 	//TODO adjustOffset
 
+	//offset adjust Funktioniert nur wenn Block 1 neu geladen wird
+	/*if(isNew == 0) {
+	 tempBlock = currentBlock; //Position zwischenspeichern
+	 tempBlockPosition = currentBlockPosition;
+
+	 currentBlock = 0; //Offset = Position des letzten Chars im zu ersetzenden / l�schenden Block
+	 currentBlockPosition = BUFFER_SIZE - 1;
+	 lineOffset = getCurrentLine();
+	 columnOffset = getCurrentColumn();
+
+	 cout	<< endl
+	 << "LineOffset: "
+	 << lineOffset
+	 << "ColumnOffset: "
+	 << columnOffset
+	 << endl;
+
+
+	 currentBlock = tempBlock; //Position wiederhestellen
+	 currentBlockPosition = tempBlockPosition;
+	 }*/
+
 	// block[blockIndex] = (char*) ptr; //neuen Block zuweisen
+
+	if (!isNew) {
+		calculatePosition();
+	}
 
 	if (sizeRead > 0) {
 		length += sizeRead;
@@ -148,7 +238,25 @@ static void readBlockFromFile(unsigned int blockIndex) { //reads a BUFFER_SIZE -
 	 << endl;*/
 }
 
+//TESTING
+/*void Buffer::print() {
+	cout << endl;
 
+	for (int i = 0; i <= 1; i++) {
+		cout << "block: "
+				<< i
+				<< " strlen:"
+				<< strnlen(block[i], BUFFER_SIZE)
+				<< endl
+				<< block[i]
+				<< endl
+				<< endl;
+	}
+
+	cout << "eof: "
+			<< eof
+			<< endl;
+}*/
 
 static void printWithNext() {
 	for (unsigned int i = 0; i <= length; i++) {
@@ -157,6 +265,42 @@ static void printWithNext() {
 	printf("\n\n");
 }
 
+/*
+void Buffer::testStuff() {
+	cout << endl << "TestSTUFF: " << endl;
+
+	next(); // Initialize that the first character is the current one.
+
+	for (unsigned int i = 0; i <= length; i++) {
+
+		cout << "c: "
+				<< getCurrent()
+				<< "\tline: "
+				<< getCurrentLine()
+				<< "\tcol: "
+				<< getCurrentColumn()
+				<< (isEOF() ? "\tEnd of file" : "\tMore chars")
+				<< endl;
+		next();
+	}
+
+	cout << endl << endl;
+
+}
+
+void Buffer::printPosition() {
+	for (int i = 0; i <= currentBlock; i++) { //Block 0 1
+		for (int j = 0; j <= currentBlockPosition; j++) { //inside Block
+			cout << "Char: "
+					<< block[i][j]
+					<< "\tLine: "
+					<< line[i][j]
+					<< "\tCol: "
+					<< column[i][j]
+					<< endl;
+		}
+	}
+}*/
 
 static bool isValid() {
 	return !(inputFileDescriptor < 0);

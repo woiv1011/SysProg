@@ -18,6 +18,7 @@ zurückgeliefert.*/
 //TODO kategorien und einzelwerte mergen ?
 #define ERROR 0xFFFF //max value of unsigned short int, bzw -1 bei signed
 #define TOKENMAXLENGTH 0xFFFF
+#define EOFTYPE 0x32
 
 //tokentype Kategorien, jeweils 1 Bit gesetzt
 //prefix hinzufügen ?

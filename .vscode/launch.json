@@ -3,10 +3,10 @@
   "configurations": [
     
     {
-      "name": "C++ Launch",
+      "name": "C Launch",
       "type": "cppdbg",
       "request": "launch",
-      "program": "enter program name, for example ${workspaceRoot}/a.out",
+      "program": "${workspaceRoot}/main.out",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceRoot}",

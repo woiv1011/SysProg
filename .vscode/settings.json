@@ -29,6 +29,7 @@
       "*.tcc": "cpp",
       "fstream": "cpp",
       "tuple": "cpp",
-      "utility": "cpp"
+      "utility": "cpp",
+      "ostream": "cpp"
     }
   }

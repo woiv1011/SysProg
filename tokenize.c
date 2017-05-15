@@ -1,12 +1,98 @@
 #include "globals.h"
+#include "tokenize.h"
 #include "stringinfo.c"
 
+#include "buffer.h"
 
 //return the next token from the char-array / c-string given though the parameters
 //token_t contains token length (in characters / bytes) and token type
 //wenn man struct = struct macht, werden alle werte korrekt  kopiert wie bei einer einzelnen variable ?
 
-#include "memory.h"
+//#include "memory.h"
+void initTokenList() {
+  startNode = malloc(sizeof(tokennode_t));
+  startNode->next = NULL;
+  startNode->data.type = 0;
+  startNode->data.line = 0;
+  startNode->data.column = 0;
+  startNode->data.length = 0;
+  startNode->data.value = malloc(1);
+  startNode->data.value[0] = 0;
+}
+
+void appendTokenToList(token_t tok) {
+  static int tokenListSize = 0;
+  static tokennode_t *currentNode;
+  static tokennode_t *newNode;
+
+  newNode = malloc(sizeof(tokennode_t));
+  newNode->next = NULL;
+  newNode->data = tok;
+
+  if(tokenListSize == 0) {
+    startNode = newNode; //startnnde wird ab hier nicht mehr verändert
+    currentNode = newNode; //am anfang current = start
+  }
+
+  else { //tokenListSize >= 1
+    currentNode->next = newNode;
+    currentNode = newNode;
+  }
+
+  tokenListSize++;
+}
+
+void printTokenList() {
+  static tokennode_t *currentNode;
+  static int index = 0;
+  int i = 0;
+  if(index == 0) {
+    currentNode = startNode;
+  }
+
+  while(1) {
+    if(currentNode == NULL || currentNode->data.type == EOFTYPE) {
+      printf("\nEND of TokenList, EOFTYPE found\n");
+      break;
+    }
+    printf("i: %8d ", index);
+    printf(" line: %3d", currentNode->data.line);
+    printf(" col: %3d", currentNode->data.column);
+    printf(" length: %5d", currentNode->data.length);
+    printf(" value: "); //TODO stattdessen mit %s ? -> benötigt stringende zeichen
+    for(i=0; i<currentNode->data.length; i++) {
+      printf("%c", currentNode->data.value[i]);
+    }
+    printf("\n");
+
+    if(currentNode->next == NULL) {
+      break;
+    }
+    else {
+      currentNode = currentNode->next;
+    }
+    if(currentNode->data.type = EOFTYPE) {
+      printf("\nEND of TokenList, EOFTYPE found\n");
+      break;
+    }
+  }
+  
+
+}
+
+token_t createToken(tokentype_t type, unsigned short length, int line, int column, char *value) {
+  token_t result;
+  result.type = type;
+  result.length = length;
+  result.line = line;
+  result.column = column;
+
+  result.value = malloc(length+1);
+  strncpy(result.value, value, length);
+
+  return result;
+}
+
 
 //creates and returns the single next token
 token_t getNextToken() {
@@ -21,11 +107,24 @@ token_t getNextToken() {
   short length = 1;
   //token_t resultToken;
   char active = 0;
+  
 
   while(true) { //überspringt alle whitespaces, generiert tokens für invalid chars(error) und signs
+    /*if (isEOF()) {
+      return NULL;
+    }*/
     c = getCurrentChar();
     currentLine   = getCurrentLine();
     currentColumn = getCurrentColumn();
+    if (c == EOF) { // || c == '\0') {
+      printf("EOF getNextToken! on line %d, column %d\n", currentLine, currentColumn);
+      return createToken(EOFTYPE, 0, currentLine, currentColumn, "EOFTYPE");
+    }
+
+    /*if (isSpecial(c)) {
+      printf("special char!\n");
+      return createToken(EOFTYPE, 0, currentLine, currentColumn, "EOFTYPE");
+    }*/
 
     //TODO  EOF ?
 
@@ -46,7 +145,7 @@ token_t getNextToken() {
     if(isSign(c)) {
       //if char is a sign that is guaranteed to be its own token
       if(isSingleSignToken(c)) {
-        return createToken(getSingleSignTokenType(c), length, currentLine, currentColumn, value*);
+        return createToken(getSingleSignTokenType(c), 1, currentLine, currentColumn, &c);
       }
 
       // 3 cases of ambiguity, tokenlengths for the different cases are known in advance
@@ -112,8 +211,8 @@ if(isLetter(c)) {
     }
     else { //neither letter nor digit -> string token is terminated
       //TODO determine whether keyword or identifier
-      tokentype = identifyString(length, temp);
-      return createToken(type, length, currentLine, currentColumn, temp);
+      //tokentype = identifyString(length, temp);
+      return createToken(identifyString(length, temp), length, currentLine, currentColumn, temp);
     }
     if(length == TOKENMAXLENGTH-1) { //if maxvalue of this loop is reached
       printf("TOKENMAXLENGTH reached. \n"); //TODO line column etc ausgeben
@@ -139,8 +238,8 @@ if(isDigit(c)) {
     else { //neither letter nor digit -> string token is terminated
       //TODO determine whether keyword or identifier
       //tokentype = identifyString(length, temp);
-      tokentype = INTEGER;
-      return createToken(type, length, currentLine, currentColumn, temp);
+      //tokentype = INTEGER;
+      return createToken(INTEGER, length, currentLine, currentColumn, temp);
     }
     if(length == TOKENMAXLENGTH-1) { //if maxvalue of this loop is reached
       printf("TOKENMAXLENGTH reached. \n"); //TODO line column etc ausgeben

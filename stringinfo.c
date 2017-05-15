@@ -1,9 +1,15 @@
+#include "stringinfo.h"
+
 //SINGLE CHAR start
+bool isSpecial(char c) {
+  return (c == '\0' || c == EOF);
+}
+
 bool isInvalid(char c) {
   //if (c >= 128) {
   //  return false;
   //}
-  return (!isWhitespace() && !isSign() && !isDigit() && !isLetter()); //muss alle optionen beinhalten, digit, letter, sign, whitespace
+  return (!isWhitespace(c) && !isSign(c) && !isDigit(c) && !isLetter(c) && !isSpecial(c)); //muss alle optionen beinhalten, digit, letter, sign, whitespace
 }
 
 bool isDigit(char c) {
@@ -26,14 +32,23 @@ bool isSign(char c) {
           c == '(' || c == ')' || c == '{' || c == '}' || c == '<' || c == '>' || c == '[' || c == ']');
 }
 
+
+/*bool isSingleSignToken(char c) {
+  return (c == '+' || c == '-' || c == '*' || c == '!' || c == ';' ||
+          c == '(' || c == ')' || c == '{' || c == '}' || c == '<' || c == '>' || c == '[' || c == ']');
+}*/
+
 /** returns true if c is a sign that is guaranteed to be its own, single-char token
 */
 bool isSingleSignToken(char c) {
   return (c == '+' || c == '-' || c == '*' || c == '!' || c == ';' ||
-          c == '(' || c == ')' || c == '{' || c == '}' || c == '<' || c == '>' || c == '[' || c == ']');
+          c == '(' || c == ')' || 
+          c == '{' || c == '}' || 
+          c == '<' || c == '>' || 
+          c == '[' || c == ']');
 }
 
-bool isAmbiguousSignToken(char c) {
+bool isAmbiguousSign(char c) {
   return (c == ':' || c == '&' || c == '='); //: kann zu := werden; & muss zu && werden; = kann zu =:= werden
 }
 
@@ -42,11 +57,11 @@ bool isAmbiguousSignToken(char c) {
 
 
 //TODO string compare end
-isEqualString(const char* s1, const char * s2) {
+/*isEqualString(const char* s1, const char * s2) {
   int temp = 0;
   temp = strcmp(s1, s2);
   return (temp == 1); 
-}
+}*/
 
 /**
 *   when the string token is terminated by a new token, whitespace, etc
@@ -58,24 +73,27 @@ tokentype_t identifyString(int length, char *c) {
   //TODO warning bzw compilerfehler ausgeben wenn gemischt upper-lower oder write/read uppercase ?
   //TODO strcmp rückgabewert und, gibt strcmp die Anzahl der ungleichheiten bzw fehler zurück ?
   //tokentype_t result = 0; //tokentype_t = short
+  char *temp = malloc(length+1); //convert parameters into proper c string
+  strncpy(temp, c, length);
+  temp[length] = '\0';
 
   //TODO replace with strNcmp
-  if (length == 2 && (strcmp(string, "if") || strcmp(string, "IF"))) {
+  if (length == 2 && (strcmp(temp, "if") || strcmp(temp, "IF"))) {
     return KW_IF;
   }
-  if (length == 4 && (strcmp(string, "else") || strcmp(string, "ELSE"))) {
+  if (length == 4 && (strcmp(temp, "else") || strcmp(temp, "ELSE"))) {
     return KW_ELSE;
   }
-  if (length == 5 && (strcmp(string, "while") || strcmp(string, "WHILE"))) {
+  if (length == 5 && (strcmp(temp, "while") || strcmp(temp, "WHILE"))) {
     return KW_WHILE;
   }
-  if (length == 3 && (strcmp(string, "int"))) {
+  if (length == 3 && (strcmp(temp, "int"))) {
     return KW_INT;
   }
-  if (length == 4 && (strcmp(string, "read"))) {
+  if (length == 4 && (strcmp(temp, "read"))) {
     return KW_READ;
   }
-  if (length == 5 && (strcmp(string, "write"))) {
+  if (length == 5 && (strcmp(temp, "write"))) {
     return KW_WRITE;
   }
 
@@ -107,10 +125,3 @@ tokentype_t getSingleSignTokenType(char c) {
   //return ERROR;
 }
 
-bool isSingleSignToken(char c) {
-  return (c == '+' || c == '-' || c == '*' || c == '!' || c == ';' ||
-          c == '(' || c == ')' || 
-          c == '{' || c == '}' || 
-          c == '<' || c == '>' || 
-          c == '[' || c == ']');
-}
