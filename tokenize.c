@@ -51,10 +51,10 @@ void printTokenList() {
   }
 
   while(1) {
-    if(currentNode == NULL || currentNode->data.type == EOFTYPE) {
+    /*if(currentNode == NULL || currentNode->data.type == EOFTYPE) {
       printf("\nEND of TokenList, EOFTYPE found\n");
       break;
-    }
+    }*/
     printf("i: %8d ", index);
     printf(" line: %3d", currentNode->data.line);
     printf(" col: %3d", currentNode->data.column);
@@ -71,10 +71,11 @@ void printTokenList() {
     else {
       currentNode = currentNode->next;
     }
-    if(currentNode->data.type = EOFTYPE) {
+    /*if(currentNode->data.type = EOFTYPE) {
       printf("\nEND of TokenList, EOFTYPE found\n");
       break;
-    }
+    }*/
+    index++;
   }
   
 
@@ -109,17 +110,17 @@ token_t getNextToken() {
   char active = 0;
   
 
-  while(true) { //überspringt alle whitespaces, generiert tokens für invalid chars(error) und signs
+  while(isNotFinished()) { //überspringt alle whitespaces, generiert tokens für invalid chars(error) und signs
     /*if (isEOF()) {
       return NULL;
     }*/
     c = getCurrentChar();
     currentLine   = getCurrentLine();
     currentColumn = getCurrentColumn();
-    if (c == EOF) { // || c == '\0') {
+    /*if (c == EOF) { // || c == '\0') {
       printf("EOF getNextToken! on line %d, column %d\n", currentLine, currentColumn);
       return createToken(EOFTYPE, 0, currentLine, currentColumn, "EOFTYPE");
-    }
+    }*/
 
     /*if (isSpecial(c)) {
       printf("special char!\n");
@@ -130,6 +131,7 @@ token_t getNextToken() {
 
     //skip whitespace chars
     if(isWhitespace(c)) {
+      next();
       continue;
     }
 
@@ -138,6 +140,7 @@ token_t getNextToken() {
       currentLine   = getCurrentLine();
       currentColumn = getCurrentColumn();
       printf("Invalid character (%c) on line %d, column %d\n", c, currentLine, currentColumn);
+      next();
       return createToken(ERROR, 5, currentLine, currentColumn, "ERROR");
       //continue; //TODO einfach überspringen und das nächste korrekte Token zurückgeben ?
     }
@@ -145,6 +148,7 @@ token_t getNextToken() {
     if(isSign(c)) {
       //if char is a sign that is guaranteed to be its own token
       if(isSingleSignToken(c)) {
+        next();
         return createToken(getSingleSignTokenType(c), 1, currentLine, currentColumn, &c);
       }
 
@@ -154,11 +158,13 @@ token_t getNextToken() {
         // & must become &&
         if(c == '&') { 
           if(getCharByOffset(1) == '&') { //2 mal & -> korrektes AND-Token
+            nextByOffset(2);
             return createToken(S_AND, 2, currentLine, currentColumn, "&&");
           }
           else {
             //& darf nicht einzeln vorkommen -> Fehler ausgeben, weiter tokenizen
             printf("Single & on line %d, column %d\n", currentLine, currentColumn);
+            next();
             return createToken(ERROR, 5, currentLine, currentColumn, "ERROR"); //TODO errortoken ?
           }
         }
@@ -166,9 +172,11 @@ token_t getNextToken() {
         // : can become :=
         if(c == ':') {
           if(getCharByOffset(1) == '=') {
+            nextByOffset(2);
             return createToken(S_DIV_EQ, 3, currentLine, currentColumn, ":=");
           }
           else {
+            next();
             return createToken(S_DIV, 3, currentLine, currentColumn, ":");
           }
         }
@@ -176,9 +184,11 @@ token_t getNextToken() {
         // = can become =:=
         if(c == '=') { 
           if(getCharByOffset(1) == ':' && getCharByOffset(2) == '=') {
+            nextByOffset(3);
             return createToken(S_EQ_DIV_EQ, 3, currentLine, currentColumn, "=:=");
           }
           else {
+            next();
             return createToken(S_EQ, 1, currentLine, currentColumn, "=");
           }
         }
@@ -194,8 +204,6 @@ token_t getNextToken() {
     if(isDigit(c)) {
       break;
     }
-
-    next();
   } //end for
 
 //string token, at the end determin whether keyword or identifier
@@ -212,12 +220,14 @@ if(isLetter(c)) {
     else { //neither letter nor digit -> string token is terminated
       //TODO determine whether keyword or identifier
       //tokentype = identifyString(length, temp);
+      nextByOffset(length);
       return createToken(identifyString(length, temp), length, currentLine, currentColumn, temp);
     }
     if(length == TOKENMAXLENGTH-1) { //if maxvalue of this loop is reached
       printf("TOKENMAXLENGTH reached. \n"); //TODO line column etc ausgeben
       //tokentype = identifyString(length, temp);
       //TODO return ERROR token or string token up to this point //identifier, so lange keywords gibts nicht
+      nextByOffset(length);
       return createToken(ERROR, 5, currentLine, currentColumn, "ERROR");
       //return createToken(type, length, currentLine, currentColumn, temp);
     }
@@ -239,12 +249,14 @@ if(isDigit(c)) {
       //TODO determine whether keyword or identifier
       //tokentype = identifyString(length, temp);
       //tokentype = INTEGER;
+      nextByOffset(length);
       return createToken(INTEGER, length, currentLine, currentColumn, temp);
     }
     if(length == TOKENMAXLENGTH-1) { //if maxvalue of this loop is reached
       printf("TOKENMAXLENGTH reached. \n"); //TODO line column etc ausgeben
       //tokentype = identifyString(length, temp);
       //TODO return ERROR token or string token up to this point //identifier, so lange keywords gibts nicht
+      nextByOffset(length);
       return createToken(ERROR, 5, currentLine, currentColumn, "ERROR");
       //return createToken(type, length, currentLine, currentColumn, temp);
     }

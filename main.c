@@ -8,13 +8,15 @@
 
 
 int main() {
-  char filename[512] = "/home/ravi/Desktop/Systemnahes-Programmieren/Test/parser/error-test-1.input.txt";
+  //char filename[512] = "/home/ravi/Desktop/Systemnahes-Programmieren/Test/parser/error-test-1.input.txt";
+  char filename[512] = "/home/ravi/Desktop/Systemnahes-Programmieren/Test/parser/error-test-2.input.txt";
 //  /home/ravi/Desktop/Systemnahes-Programmieren/Test/parser/error-test-1.input.txt
 //  /home/ravi/Desktop/Systemnahes-Programmieren/Test/parser/error-test-2.input.txt
 //  /home/ravi/Desktop/Systemnahes-Programmieren/Test/parser/simple-test-1.input.txt
 //  /home/ravi/Desktop/Systemnahes-Programmieren/Test/parser/simple-test-1.output.txt
 //  /home/ravi/Desktop/Systemnahes-Programmieren/Test/parser/simple-test-2.input.txt
 //  /home/ravi/Desktop/Systemnahes-Programmieren/Test/parser/simple-test-2.output.txt
+  int i = 0;
 
   //INIT BUFFER
   initBuffer(filename);
@@ -25,22 +27,24 @@ int main() {
 
   initBuffer(filename);
 
-//1. Tokenize; schleife bis EOF, getNextToken in Token-Linked List einfügen
-while(true) {
+  //1. Tokenize; schleife bis EOF, getNextToken in Token-Linked List einfügen
+  while(isNotFinished()) {
     
     //chars einlesen und entscheiden welcher tokentyp es ist, early out abbrechen wenn typ erkannt ist
     //TokenList.append(getNextToken()); //TODO c++ stil abändern
     token_t tempToken = getNextToken();
 
-    if(tempToken.type == EOFTYPE) {
-      break;
-    }
-
     appendTokenToList(tempToken);
+    /*for(i=0; i<tempToken.length; i++) {
+      next();
+    }*/
 
-}
+    /*if(tempToken.type == EOFTYPE) {
+      break;
+    }*/
+  }
 
-printTokenList();
+  printTokenList();
 
   return 0;
 }

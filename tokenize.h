@@ -12,7 +12,7 @@
 //TODO move code to tokenize.c
 
 
-typedef short tokentype_t ;
+typedef unsigned short tokentype_t ;
 
 typedef  struct {
   tokentype_t  type; //16 bit; oberes/linkes byte für Kategorie, unteres/rechtes byte für Wert innerhalb Kategorie

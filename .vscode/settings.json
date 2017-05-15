@@ -30,6 +30,10 @@
       "fstream": "cpp",
       "tuple": "cpp",
       "utility": "cpp",
-      "ostream": "cpp"
+      "ostream": "cpp",
+      "scoped_allocator": "cpp",
+      "slist": "cpp",
+      "rope": "cpp",
+      "cmath": "cpp"
     }
   }
