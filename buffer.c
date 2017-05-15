@@ -1,40 +1,59 @@
-/*
- * Buffer.cpp
- *
- *  Created on: Sep 26, 2012
- *      Author: woiv1011
- */
 #include "buffer.h"
+
+
+
+
+
+//TODO update position when loading new block
+
+
+static bool isNotFinished() {
+	return (counter < length);
+}
+
+
+
+static void printWithNext() {
+	for (unsigned int i = 0; isNotFinished(); i++) {
+	//for (unsigned int i = 0; i<=10000; i++) {
+		printf("%c", next());
+	}
+	printf("\n\n");
+}
 
 
 //STANDARD ACCESS
 
-static int currentPosition; //maximal buffer_size mal 2 
-static char next() {
-	currentPosition++;
 
-	if (currentPosition > BUFFER_SIZE - 1) { //currentBlockPosition >= 512 (0 bis 511 okay)
-		Load NEw BLock
-		update position
+static char next() {
+	char temp = getCurrentChar();
+	counter++;
+
+	//check whether previous char was a newline to adjust line and column count
+	if(temp == '\n') {
+		currentLine++;
+		currentColumn = 1;
+	}
+	else {
+		currentColumn++;
 	}
 
+	if (currentPosition > (BUFFER_SIZE - 260)) { // unsigned char (256) offset möglich in getCharByOffset()
+		readBlockFromFile();
+	}
+
+	currentPosition++;
 	return getCurrentChar();
 }
-/*
-static char previous(int a) {
-	for (int i = 0; i < a; i++) {
-		previous();
+
+static char nextByOffset(unsigned short offset) {
+	int i = 0;
+	for (i = 0; i<offset; i++) {
+		next();
 	}
-
-	return getCurrent();
-}*/
-
-//GETTER / SETTER
-static unsigned int getLength() { //??
-	return length;
 }
 
-static unsigned int getCurrentLine() { //Performance schlecht; erster Block wird immer neu durchgegangen etc
+static unsigned int getCurrentLine() {
 	return currentLine;
 }
 
@@ -43,188 +62,105 @@ static unsigned int getCurrentColumn() {
 }
 
 //INTERNAL
+static bool isEOF() {
+	//return ((eof == 1) && (getCurrentChar() == '\0'));
+	//return ((eof == 1) || (getCurrent() == '\0'));
+	//return feof(filepointer);
+	return eof;
+	//return (getCurrentChar() == EOF);
+}
 
-static char getCurrentChar() {
-	return block[currentBlock][currentBlockPosition];
+static inline char getCurrentChar() {
+	return getCharByPosition(currentPosition);
 	//return currentChar;
 }
 
-//TODO optimize performance ?
-static char getCharByOffset(unsigned char offset) {
-	int i = 0;
-	char tempChar = 0;
-	int tempBlock;
-	int tempBlockPosition;
-	/*for(i=0; i<offset; i++) {
-		next();
-	}
-	temp = getCurrentChar();
-	for(i=0; i<offset; i++) {
-		previous();
-	}*/
 
-	/*if(offset > 0) {
-		temp = next(offset);
+static inline char getCharByOffset(unsigned char offset) {
+	return getCharByPosition(currentPosition + offset);
+}
+
+
+static inline char getCharByPosition(unsigned short position) {
+	if(position > BUFFER_SIZE) {
+		return block2[position - BUFFER_SIZE];
 	}
 	else {
-		temp = previous(offset * (-1));
+		return block1[position];
+	}
+}
+
+//////////////////////
+
+//reads a block of memory with size BUFFER_SIZE (bytes) from the file and swaps the memory blocks
+static void readBlockFromFile() {
+	size_t sizeRead = 0; //Anzahl der erfolgreich gelesenen Zeichen
+
+	block1 = block2;
+	block2 = memset(block2, 0, BUFFER_SIZE); //overwrite block with zeros
+  sizeRead = fread(block2, 1, BUFFER_SIZE, filepointer);
+
+	length += sizeRead;
+
+	//position = position - BUFFER_SIZE;
+	currentPosition -= BUFFER_SIZE;
+
+	if ( ferror(filepointer) != 0 ) {
+		fputs("Error reading file", stderr);
 	}
 
-	return temp;*/
-	tempBlock = currentBlock;
-	tempBlockPosition = currentBlockPosition;
-	tempChar = next(offset);
-	currentBlock = tempBlock;
-	currentBlockPosition = tempBlockPosition;
-	return tempChar;
-}
-
-
-static void checkReload() {
-
-}
-static void readNewBlockFromFile() {
-	FILE *fp;
-	char filename[512];
-
-	fp = fopen("/tmp/test.txt", "w+");
-
-	//open for reading
-	//read BLOCKSIZE charactersa
-	//swap blocks and adjust position etc
-	//if not enough chars in file anymore, set EOF
-
-	//fprintf(fp, "This is testing for fprintf...\n");
-	//fputs("This is testing for fputs...\n", fp);
-	fclose(fp);
-}
-
-static void readBlockFromFile(unsigned int blockIndex) { //reads a BUFFER_SIZE -bytes sized block from the file and insert inserts it into block blockIndex
-	void * ptr; //Ziel-Speicherbereich
-	void ** ptrptr = &ptr; //pointerpointer auf Zielspeicherbereich f�r posix_memalign
-
-	int sizeRead = 0; //Anzahl der erfolgreich gelesenen Zeichen
-	int err = 0; //Fehlernumer; bis jetzt nicht verwendet
-
-	//int tempBlock; //Zwischenspeicher f�r Position wegen Offset-Adjust
-	//int tempBlockPosition;
-
-	// Use the last block for storing data, instead of creating a new one. The blocks were swapped before.
-//	err = posix_memalign(ptrptr, BUFFER_SIZE, BUFFER_SIZE);
-	ptr = block[blockIndex];
-//	memset(ptr, 0, BUFFER_SIZE);
-	sizeRead = read(inputFileDescriptor, ptr, BUFFER_SIZE);
-
-	//TODO adjustOffset
-
-	// block[blockIndex] = (char*) ptr; //neuen Block zuweisen
-
-	if (sizeRead > 0) {
-		length += sizeRead;
-	}
-
-	if (sizeRead < BUFFER_SIZE) {
+	if ((sizeRead < BUFFER_SIZE)) {
 		eof = 1;
-
-		// Clear the unused memory
-		memset(block[blockIndex] + sizeRead, 0, BUFFER_SIZE - sizeRead);
+		//fputs("Buffer EOF reached", stderr);
+		//printf("Buffer EOF reached\n");
 	}
-
-	if (sizeRead == -1 || err != 0) {
-		//Fehler
-		//cout << endl << "Fehler!" << endl;
-		printf("\nFehler in readBlockFromFile!\n");
-	}
-
-	/*cout << endl //Testausgabe
-	 << endl
-	 << "readBlock: " ////
-	 << blockIndex
-	 << " SizeRead:"
-	 << sizeRead
-	 << " Length:"
-	 << length
-	 << endl
-	 << endl;*/
-}
-
-
-
-static void printWithNext() {
-	for (unsigned int i = 0; i <= length; i++) {
-		printf("%c", next());
-	}
-	printf("\n\n");
-}
-
-
-static bool isValid() {
-	return !(inputFileDescriptor < 0);
 }
 
 //CONSTRUCTOR / DESTRUCTOR
 static void initBuffer(const char* filename) {
+	size_t sizeRead = 0; //Anzahl der erfolgreich gelesenen Zeichen
 	length = 0;
 	counter = 0;
-	eof = 0;
 
-	currentBlock = 0;
-	currentBlockPosition = 0;
+	//allocate memory for both blocks
+	block1 = malloc(BUFFER_SIZE);
+	block2 = malloc(BUFFER_SIZE);
 
-	block[0] = NULL;
-	block[1] = NULL;
+	filepointer = fopen(filename, "r"); //fp = fopen("foo.txt", "r");
 
-// Reserve memory at buffer initialization.
-	int err = 0; //Fehlernumer; bis jetzt nicht verwendet
-	void * ptr; //Ziel-Speicherbereich
-	void ** ptrptr = &ptr; //pointerpointer auf Zielspeicherbereich f�r posix_memalign
-
-	err = posix_memalign(ptrptr, BUFFER_SIZE, BUFFER_SIZE);
-	block[0] = (char*) ptr; //neuen Block zuweisen
-	err = posix_memalign(ptrptr, BUFFER_SIZE, BUFFER_SIZE);
-	block[1] = (char*) ptr; //neuen Block zuweisen
-
-	currentLine = 1;
-	currentColumn = 1;
-	lineOffset = 1;
-	columnOffset = 1;
-	isNew = 1;
-
-	//inputFileDescriptor = open(filename, O_RDONLY | O_DIRECT);
-	inputFileDescriptor = open(filename, O_RDONLY);
-
-	// check if the file is valid for reading
-	if (inputFileDescriptor < 0) {
-		eof = 1;
+	if (filepointer == NULL || ferror(filepointer)) {
+		//fputs("Error openinf file", stderr);
+		printf("Error opening file\n");
 		return;
 	}
+	//else {
+		block1 = memset(block1, 0, BUFFER_SIZE); //overwrite block with zeros
+		sizeRead = fread(block1, 1, BUFFER_SIZE, filepointer);
 
-	readBlockFromFile(0); //f�lle beide Blocks
-	readBlockFromFile(1);
+	if ((sizeRead < BUFFER_SIZE)) {
+		eof = 1;
+		//printf("Buffer EOF reached\n");
+		//fputs("Buffer EOF reached", stderr);
+	}
 
-//	isNew = 0;
-//	if(length >= BUFFER_SIZE) {
-//		calculatePosition(); //crash vielleicht wenn keine zwei vollen Bl�cke geladen werden k�nnen
-//	}
+	length += sizeRead;
 
-	//printWithNext();
-	calculatePosition();
-	resetBlockPosition();
+		currentPosition = 0;
+		currentColumn = 1;
+		currentLine = 1;
+		eof = 0;
+	//}
 
-	//printWithNext();
-	//testStuff();
 
-	//printPosition();
 }
+
 
 static void deinitBuffer() {
-	close(inputFileDescriptor);
-	free(block[0]);
-	free(block[1]);
+	//close(inputFileDescriptor);
+	fclose(filepointer);
+	free(block1);
+	free(block2);
 }
 
-static bool isEOF() {
-	return ((eof == 1) && (getCurrent() == '\0'));
-	//return ((eof == 1) || (getCurrent() == '\0'));
-}
+
 
