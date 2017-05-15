@@ -27,6 +27,8 @@
       "type_traits": "cpp",
       "initializer_list": "cpp",
       "*.tcc": "cpp",
-      "fstream": "cpp"
+      "fstream": "cpp",
+      "tuple": "cpp",
+      "utility": "cpp"
     }
   }
