@@ -109,7 +109,7 @@ char* tokenTypeToString(tokentype_t toktype) {
 
 /**
 *   when the string token is terminated by a new token, whitespace, etc
-*   this function determines whether it is an identifier with only letters or a keyword and returns the corresponding token/ tokenType?
+*   this function determines whether it is an identifier or a keyword and returns the corresponding token/ tokenType?
 */
 tokentype_t identifyString(int length, char *c) {
   //"fOr", "FoR", etc nicht erlaubt, upper lowercase muss gleichbleiben

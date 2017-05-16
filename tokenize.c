@@ -222,7 +222,7 @@ token_t getNextToken() {
     }
   } //end for
 
-//string token, at the end determin whether keyword or identifier
+//string token, at the end determine whether keyword or identifier
 if(isLetter(c)) {
   temp[0] = c; //first char is c
   for(length=1; length<TOKENMAXLENGTH;) {
@@ -234,8 +234,7 @@ if(isLetter(c)) {
       length++;
     }
     else { //neither letter nor digit -> string token is terminated
-      //TODO determine whether keyword or identifier
-      //tokentype = identifyString(length, temp);
+      //identifyString determines whether temp is a keyword or identifier
       nextByOffset(length);
       return createToken(identifyString(length, temp), length, currentLine, currentColumn, temp);
     }
