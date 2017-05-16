@@ -57,40 +57,44 @@ char* tokenTypeToString(tokentype_t toktype) {
   char *temp;
   temp = malloc(15);
   switch(toktype) {
-    case ERROR: return "ERROR";
-    case INTEGER: return "INTEGER";
-    case IDENTIFIER: return "IDENTIFIER";
+    case ERROR: temp =  "ERROR"; break;
+    case INTEGER: temp =  "INTEGER"; break;
+    case IDENTIFIER: temp =  "IDENTIFIER"; break;
 
-    case KW_WRITE: return "KW_WRITE";
-    case KW_READ: return "KW_READ";
-    case KW_INT: return "KW_INT";
-    case KW_IF: return "KW_IF";
-    case KW_ELSE: return "KW_ELSE";
-    case KW_WHILE: return "KW_WHILE";
+    case KW_WRITE: temp =  "KW_WRITE"; break;
+    case KW_READ: temp =  "KW_READ"; break;
+    case KW_INT: temp =  "KW_INT"; break;
+    case KW_IF: temp =  "KW_IF"; break;
+    case KW_ELSE: temp =  "KW_ELSE"; break;
+    case KW_WHILE: temp =  "KW_WHILE"; break;
 
-    case S_ADD: return "S_ADD";
-    case S_SUB: return "S_SUB";               
-    case S_MUL: return "S_MUL";
-    case S_DIV: return "S_DIV";
-    case S_EQ: return "S_EQ";                      
-    case S_DIV_EQ: return "S_DIV_EQ";
-    case S_EQ_DIV_EQ: return "S_EQ_DIV_EQ";
+    case S_ADD: temp =  "S_ADD"; break;
+    case S_SUB: temp =  "S_SUB"; break;               
+    case S_MUL: temp =  "S_MUL"; break;
+    case S_DIV: temp =  "S_DIV"; break;
+    case S_EQ: temp =  "S_EQ"; break;                      
+    case S_DIV_EQ: temp =  "S_DIV_EQ"; break;
+    case S_EQ_DIV_EQ: temp =  "S_EQ_DIV_EQ"; break;
+    case S_NOT: temp =  "S_NOT"; break;                      
+    case S_AND: temp =  "S_AND"; break;
+    case S_SEMICOLON: temp =  "S_SEMICOLON"; break;
 
-    case B_SQUARE_O: return "B_SQUARE_O";
-    case B_SQUARE_C: return "B_SQUARE_C";               
-    case B_CURLY_O: return "B_CURLY_O";
-    case B_CURLY_C: return "B_CURLY_C";
+    case B_SQUARE_O: temp =  "B_SQUARE_O"; break;
+    case B_SQUARE_C: temp =  "B_SQUARE_C"; break;               
+    case B_CURLY_O: temp =  "B_CURLY_O"; break;
+    case B_CURLY_C: temp =  "B_CURLY_C"; break;
 
-    case B_ROUND_O: return "B_ROUND_O";                      
-    case B_ROUND_C: return "B_ROUND_C";
-    case B_ANGLE_O: return "B_ANGLE_O";
-    case B_ANGLE_C: return "B_ANGLE_C";
+    case B_ROUND_O: temp =  "B_ROUND_O"; break;                      
+    case B_ROUND_C: temp =  "B_ROUND_C"; break;
+    case B_ANGLE_O: temp =  "B_ANGLE_O"; break;
+    case B_ANGLE_C: temp =  "B_ANGLE_C"; break;
 
-    case EOFTYPE: return "EOFTYPE";
+    case EOFTYPE: temp =  "EOFTYPE"; break;
 
     //default:  //TODO print warning ? ist result 0 erlaubt, ohne schaden möglich ?
-              //return NOTHING;
+              //temp =  NOTHING;
   }
+  return temp;
 }
 
 //+, -, *, :, <, >, =, :=, =:=, !, &&, ;, (, ), {, }, [, ]
@@ -118,22 +122,22 @@ tokentype_t identifyString(int length, char *c) {
   temp[length] = '\0';
 
   //TODO replace with strNcmp
-  if (length == 2 && (strcmp(temp, "if") || strcmp(temp, "IF"))) {
+  if (length == 2 && ((strncmp(temp, "if", 2) == 0) || (strncmp(temp, "IF", 2) == 0))) {
     return KW_IF;
   }
-  if (length == 4 && (strcmp(temp, "else") || strcmp(temp, "ELSE"))) {
+  if (length == 4 && ((strncmp(temp, "else", 4) == 0) || (strncmp(temp, "ELSE", 4) == 0))) {
     return KW_ELSE;
   }
-  if (length == 5 && (strcmp(temp, "while") || strcmp(temp, "WHILE"))) {
+  if (length == 5 && ((strncmp(temp, "while", 5) == 0) || (strncmp(temp, "WHILE", 5) == 0))) {
     return KW_WHILE;
   }
-  if (length == 3 && (strcmp(temp, "int"))) {
+  if (length == 3 && (strncmp(temp, "int", 3) == 0)) {
     return KW_INT;
   }
-  if (length == 4 && (strcmp(temp, "read"))) {
+  if (length == 4 && (strncmp(temp, "read", 4) == 0)) {
     return KW_READ;
   }
-  if (length == 5 && (strcmp(temp, "write"))) {
+  if (length == 5 && (strncmp(temp, "write", 5) == 0)) {
     return KW_WRITE;
   }
 

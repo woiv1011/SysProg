@@ -62,9 +62,9 @@ void printTokenList() {
     printf(" length: %4d", currentNode->data.length);
     //printf(" type: %s", tokenTypeToString(currentNode->data.type));
     //printf(" type: %.5s", test);
-    printf(" type: %.5s", tokenTypeToString(currentNode->data.type));
-    printf(" type: %4d", currentNode->data.type);
-    printf(" typetest: %s", tokenTypeToString(512));
+    printf(" type: %15.15s", tokenTypeToString(currentNode->data.type));
+    //printf(" type: %4d", currentNode->data.type);
+    //printf(" typetest: %s", tokenTypeToString(512));
     printf(" value: "); //TODO stattdessen mit %s ? -> benötigt stringende zeichen
     for(i=0; i<currentNode->data.length; i++) {
       printf("%c", currentNode->data.value[i]);
