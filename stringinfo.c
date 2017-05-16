@@ -1,4 +1,5 @@
 #include "stringinfo.h"
+#include "globals.h"
 
 //SINGLE CHAR start
 bool isSpecial(char c) {
@@ -53,6 +54,8 @@ bool isAmbiguousSign(char c) {
 }
 
 char* tokenTypeToString(tokentype_t toktype) {
+  char *temp;
+  temp = malloc(15);
   switch(toktype) {
     case ERROR: return "ERROR";
     case INTEGER: return "INTEGER";

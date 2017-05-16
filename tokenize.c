@@ -45,6 +45,7 @@ void appendTokenToList(token_t tok) {
 void printTokenList() {
   static tokennode_t *currentNode;
   static int index = 0;
+  char test[] = "HALLO wie geht es dir heute so, mir geht es gut";
   int i = 0;
   if(index == 0) {
     currentNode = startNode;
@@ -55,10 +56,15 @@ void printTokenList() {
       printf("\nEND of TokenList, EOFTYPE found\n");
       break;
     }*/
-    printf("i: %8d ", index);
+    printf("i: %4d ", index);
     printf(" line: %3d", currentNode->data.line);
-    printf(" col: %3d", currentNode->data.column);
-    printf(" length: %5d", currentNode->data.length);
+    printf(" col: %4d", currentNode->data.column);
+    printf(" length: %4d", currentNode->data.length);
+    //printf(" type: %s", tokenTypeToString(currentNode->data.type));
+    //printf(" type: %.5s", test);
+    printf(" type: %.5s", tokenTypeToString(currentNode->data.type));
+    printf(" type: %4d", currentNode->data.type);
+    printf(" typetest: %s", tokenTypeToString(512));
     printf(" value: "); //TODO stattdessen mit %s ? -> benötigt stringende zeichen
     for(i=0; i<currentNode->data.length; i++) {
       printf("%c", currentNode->data.value[i]);
@@ -88,8 +94,18 @@ token_t createToken(tokentype_t type, unsigned short length, int line, int colum
   result.line = line;
   result.column = column;
 
-  result.value = malloc(length+1);
-  strncpy(result.value, value, length);
+  if(length == 1) {
+    result.value = malloc(2);
+    result.value[0] = value[0];
+    result.value[1] = '\0';
+  }
+  else {
+    result.value = malloc(length+1);
+    strncpy(result.value, value, length);
+  }
+
+
+
 
   return result;
 }

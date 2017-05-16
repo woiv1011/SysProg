@@ -34,6 +34,10 @@
       "scoped_allocator": "cpp",
       "slist": "cpp",
       "rope": "cpp",
-      "cmath": "cpp"
+      "cmath": "cpp",
+      "chrono": "cpp",
+      "functional": "cpp",
+      "ratio": "cpp",
+      "bitset": "cpp"
     }
   }

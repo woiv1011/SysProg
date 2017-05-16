@@ -17,7 +17,7 @@ bool isSign(char c);
 */
 bool isSingleSignToken(char c);
 bool isAmbiguousSign(char c);
-
+char* tokenTypeToString(tokentype_t toktype);
 
 //+, -, *, :, <, >, =, :=, =:=, !, &&, ;, (, ), {, }, [, ]
 

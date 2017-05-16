@@ -12,9 +12,9 @@
 //TODO move code to tokenize.c
 
 
-typedef unsigned short tokentype_t ;
+typedef unsigned short tokentype_t;
 
-typedef  struct {
+typedef struct {
   tokentype_t  type; //16 bit; oberes/linkes byte für Kategorie, unteres/rechtes byte für Wert innerhalb Kategorie
   short        length; //aus wievielen chars besteht das token, fängt bei 1 an, kein "Stringende-Zeichen" notwendig, max 65536 tokenLength //TODO warnung und fehler ausgeben wenn tokenlength > MAX (beim lesen in getNextToken)
   char        *value; //string bei identifier / int

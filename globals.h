@@ -23,8 +23,8 @@ zurückgeliefert.*/
 //tokentype Kategorien, jeweils 1 Bit gesetzt
 //prefix hinzufügen ?
 #define ERROR 0xFFFF
-#define INTEGER    0x100
-#define IDENTIFIER 0x200
+#define INTEGER    0x100 //256
+#define IDENTIFIER 0x200 //512
 //#define KEYWORD    0x400
 //#define SIGN       0x800
 
@@ -48,7 +48,7 @@ zurückgeliefert.*/
 #define S_EQ_DIV_EQ   0xE   // =:=
 #define S_NOT         0xF   // !
 #define S_AND         0x10  // &&
-#define S_SEMICOLON   0x11  // ;
+#define S_SEMICOLON   0x11  // ; 16?
 //TODO rename SEMICOLON to SEMI ?
 
 //Brackets B_*
